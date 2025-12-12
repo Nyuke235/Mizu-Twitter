@@ -1,0 +1,72 @@
+body.hideGrok header a[href*="/i/grok"] {
+  display: none !important;
+}
+body.hideGrok div#layers div[data-testid=GrokDrawer] {
+  display: none !important;
+}
+
+body.hideSidebar div[data-testid=sidebarColumn] div:has(> div > aside > a[href="/i/premium_sign_up"]),
+body.hideSidebar div[data-testid=sidebarColumn] div:has(> div > aside > ul > li[data-testid=UserCell]),
+body.hideSidebar div[data-testid=sidebarColumn] div:has(> section div > div > div[data-testid=trend]),
+body.hideSidebar div[data-testid=sidebarColumn] div[data-testid=super-upsell-UpsellCardRenderProperties],
+body.hideSidebar div[data-testid=sidebarColumn] div:has(> div[data-testid=news_sidebar]) {
+  display: none !important;
+}
+
+body.hidePremium header a[href*="/i/premium_sign_up"] {
+  display: none !important;
+}
+
+body.hideCommunities header a[href*="/communities"] {
+  display: none !important;
+}
+
+body.hideExplore a[data-testid=AppTabBar_Explore_Link] {
+  display: none !important;
+}
+
+.css-1jxf684 {
+  color: rgb(255, 191, 191) !important;
+  text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.95);
+}
+
+.r-a023e6, .r-n6v787 {
+  color: rgb(255, 0, 0) !important;
+}
+
+.css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
+  background-color: rgb(122, 0, 0) !important;
+  box-shadow: 0 0 2px #fff, 0 0 5px rgb(122, 0, 0), 0 0 10px rgb(122, 0, 0) !important;
+}
+
+html[data-theme=dark] body * {
+  font-family: "Helvetica", "Arial", sans-serif !important;
+  font-style: bold;
+}
+
+.jetfuel-style-root,
+html[data-theme=dark] body,
+#react-root > div,
+#react-root > div > div > div,
+.r-1oshtsd, .r-1if0iil, .r-aqfbo4, .r-1otgn73, .r-1aockhh,
+.css-1dbjc4n,
+[data-testid=placement-root],
+main {
+  background-color: transparent !important;
+}
+
+.r-kemksi {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+#x-background-overlay {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: -1 !important;
+  pointer-events: none !important;
+  background-image: var(--mizu-bg-url) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  opacity: 0.3 !important;
+}

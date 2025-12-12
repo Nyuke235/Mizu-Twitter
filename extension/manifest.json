@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Mizu Twitter",
+  "version": "0.1",
+  "description": "Filters out political posts, hides distracting sections, and adds cozy themes.",
+  "icons": {
+    "16": "images/icon16.png",
+    "128": "images/icon128.png"
+  },
+  "permissions": ["storage", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://twitter.com/*", "*://x.com/*"],
+      "css": ["dist/styles.css"],
+      "js": [
+        "scripts/defaultsettings.js",
+        "scripts/content.js"
+      ],
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["images/*"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "Mizu Twitter Settings"
+  }
+}

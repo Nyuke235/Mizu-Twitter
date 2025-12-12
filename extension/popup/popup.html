@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <script src="../scripts/defaultsettings.js"></script>
+    <script src="../scripts/settings.js"></script>
+    <script src="popup.js"></script>
+
+    <h2>
+        <img src="../images/chenicon.gif" class="logo">
+        Mizu Twitter Settings
+    </h2>
+
+    <h3>Feature Toggles</h3>
+    <div id="settings"></div>
+
+    <h3>Appearance</h3>
+    <div id="appearance">
+        <div class="row">
+            <label for="fontSelect">Text Font:</label>
+            <select id="fontSelect">
+                <option value="sans-serif">Sans-serif</option>
+                <option value="serif">Serif</option>
+                <option value="monospace">Monospace</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <label for="themeSelect">Theme:</label>
+            <select id="themeSelect">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+                <option value="cozy">Cozy</option>
+            </select>
+        </div>
+    </div>
+</body>
+</html>
