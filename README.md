@@ -1,21 +1,21 @@
 # MIZU TWITTER
-Mizu Twitter is a browser extension designed primarily for anime fans and anyone who wants a better Twitter experience. It makes Twitter more enjoyable, customizable and helps avoid toxic content.
+**Mizu Twitter** is a browser extension designed primarily for anime fans and anyone seeking a better Twitter experience. It enhances Twitter with anime-inspired themes and customization options, hides unnecessary or distracting interface elements, and helps reduce exposure to toxic content such as rage-bait posts and political content.
 
 ## Theme Examples
 <p align="center">
-  <img src="images/ex-remiliascarlet.png" width="300">
-  <br>
-  <em>Remilia Scarlet theme</em>
-</p>
-
-<p align="center">
-  <img src="images/ex-umineko.png" width="300">
+  <img src="images/ex-umineko.png" width="600">
   <br>
   <em>Umineko Beatrice theme</em>
 </p>
 
 <p align="center">
-  <img src="images/ex-matrix.png" width="300">
+  <img src="images/ex-remiliascarlet.png" width="600">
+  <br>
+  <em>Remilia Scarlet theme</em>
+</p>
+
+<p align="center">
+  <img src="images/ex-matrix.png" width="600">
   <br>
   <em>Matrix theme</em>
 </p>
