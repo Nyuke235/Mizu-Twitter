@@ -22,12 +22,7 @@ async function initializeSettings() {
 
     observer.observe(document.body, { childList: true, subtree: true });
 
-    // load background image (CSP-proof)
-    const bgImgURL = chrome.runtime.getURL("images/backgrounds/remiliascarlet.jpg");
-    document.documentElement.style.setProperty("--mizu-bg-url", `url("${bgImgURL}")`);
-    const overlay = document.createElement("div");
-    overlay.id = "x-background-overlay";
-    document.body.prepend(overlay);
+    ensureBackgroundOverlay();
 }
 
 function getStorageValues(keys) {
@@ -58,39 +53,40 @@ function applySettings(settings) {
         body.classList.toggle(key, !!enabled);
     });
 
+    const theme = settings.theme || "default_twitter";
+
+    body.classList.remove("matrix", "touhou_remiliascarlet", "umineko_beatrice");
+    body.classList.add(`${settings.theme}`);
+
+    applyBackground(theme);
+
     if (settings.hideForYouPage) {
         const tabList = document.querySelector('[data-testid="ScrollSnap-List"]');
-        const prevBtn = document.querySelector('[data-testid="ScrollSnap-prevButtonWrapper"]');
-        const nextBtn = document.querySelector('[data-testid="ScrollSnap-nextButtonWrapper"]');
+        if (!tabList) return;
 
-        if (tabList) {
-            // Remove "For you" tab
-            const forYouTab = Array.from(tabList.querySelectorAll('[role="tab"]'))
-                .find(tab => tab.textContent.trim() === "For you");
-            if (forYouTab) forYouTab.remove();
-
-            if (prevBtn) prevBtn.style.display = "none";
-            if (nextBtn) nextBtn.style.display = "none";
-
-            tabList.style.scrollPadding = "0";
-            tabList.style.paddingLeft = "0";
-            tabList.style.paddingRight = "0";
-
-            tabList.style.display = "flex";
-            tabList.style.justifyContent = "center";
-            tabList.style.width = "100%";
-
-            tabList.style.flexGrow = "0";
-
-            const followingTab = Array.from(tabList.querySelectorAll('[role="tab"]'))
-                .find(tab => tab.textContent.trim() === "Following");
-            if (followingTab) {
-                followingTab.setAttribute("aria-selected", "true");
-                followingTab.tabIndex = 0;
-                followingTab.style.margin = "0 auto";
-            }
-        }
+        const forYouTab = [...tabList.querySelectorAll('[role="tab"]')]
+            .find(tab => tab.textContent.trim() === "For you");
+        if (forYouTab) forYouTab.remove();
     }
+}
+
+function ensureBackgroundOverlay() {
+    if (document.getElementById("x-background-overlay")) return;
+    const overlay = document.createElement("div");
+    overlay.id = "x-background-overlay";
+    document.body.prepend(overlay);
+}
+
+function applyBackground(theme) {
+    const images = {
+        touhou_remiliascarlet: "images/backgrounds/touhou_remiliascarlet.jpg",
+        umineko_beatrice: "images/backgrounds/umineko_beatrice.png",
+    };
+
+    const imagePath = images[theme] || images.touhou_remiliascarlet;
+
+    const url = chrome.runtime.getURL(imagePath);
+    document.documentElement.style.setProperty("--mizu-bg-url", `url("${url}")`);
 }
 
 chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
@@ -100,9 +96,3 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
     }
     sendResponse({ success: true });
 });
-
-try {
-    chrome.runtime.sendMessage({ from: "content", subject: "showPageAction" });
-} catch (err) {
-    console.warn("Could not activate extension icon:", err);
-}

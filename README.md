@@ -1,6 +1,25 @@
 # MIZU TWITTER
 Mizu Twitter is a browser extension designed primarily for anime fans and anyone who wants a better Twitter experience. It makes Twitter more enjoyable, customizable and helps avoid toxic content.
 
+## Theme Examples
+<p align="center">
+  <img src="images/ex-remiliascarlet.png" width="300">
+  <br>
+  <em>Remilia Scarlet theme</em>
+</p>
+
+<p align="center">
+  <img src="images/ex-umineko.png" width="300">
+  <br>
+  <em>Umineko Beatrice theme</em>
+</p>
+
+<p align="center">
+  <img src="images/ex-matrix.png" width="300">
+  <br>
+  <em>Matrix theme</em>
+</p>
+
 ## Key Features
 - **Distraction Removal**: Hide unnecessary elements like Grok, Twitter Premium, trending topics and other clutter.
 - **Political Content Filter**: Automatically hides politically-driven tweets for users who prefer to avoid politics on Twitter *(not implemented yet).*
@@ -8,19 +27,20 @@ Mizu Twitter is a browser extension designed primarily for anime fans and anyone
 - **Simple Settings**: Every feature can be enabled or disabled via the extension popup.
 
 ## Themes
+**Available:**
+- Default Twitter (Black)
+- Matrix (Lime)
+- Touhou - Remilia Scarlet (Dark red)
+- Umineko - Beatrice (Gold)
+<br>
 **Planned:**
-- Default Twitter theme
-- Jellyfish theme
 - Cyberpunk theme
-- Matrix theme
 - Amethyst theme
-- Touhou - Remilia Scarlet (dark red)
 - Touhou - Sanae Kochiya (green)
 - Touhou - Yuuka Kazami (dark green)
 - Touhou - Cirno (light-blue)
 - Touhou - Okuu (dark yellow)
 - Higurashi - Rena (dark orange)
-- Umineko - Beatrice (gold)
 - Umineko - Bernkastel (purple)
 - Chainsaw Man (dark orange)
 - Initial D (dark gray)

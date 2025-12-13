@@ -1,0 +1,108 @@
+/* GLOBAL FONT & BASE */
+body.touhou_remiliascarlet * {
+    font-family: "Helvetica", "Arial", sans-serif !important;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* LINKS */
+body.touhou_remiliascarlet a {
+    color: rgb(255, 109, 109) !important;
+    text-decoration: none !important;
+    transition: 0.2s !important;
+}
+body.touhou_remiliascarlet a:hover {
+    color: rgb(255, 174, 174) !important;
+    text-shadow: 0 0 4px rgb(255, 0, 0) !important;
+}
+
+/* SELECTED MENU ITEMS */
+body.touhou_remiliascarlet .r-1nao33i {
+    color: rgb(255, 0, 0) !important;
+    text-shadow: 0 0 6px rgb(255, 0, 0);
+}
+
+/* REACTIONS TEXT */
+body.touhou_remiliascarlet .r-n6v787 {
+    color: rgb(255, 0, 0) !important;
+    text-shadow: 0 0 4px rgb(255, 0, 0);
+}
+
+/* WHAT'S HAPPENING TEXT */
+bodY.touhou_remiliascarlet .public-DraftEditorPlaceholder-root {
+  color: rgb(177, 52, 52) !important;
+  opacity: 0.7 !important;
+}
+
+/* ICONS */
+body.touhou_remiliascarlet svg { 
+    color: rgb(181, 0, 0) !important;
+    filter: drop-shadow(0 0 3px rgb(255, 0, 0));
+    transition: 0.2s;
+}
+body.touhou_remiliascarlet svg:hover {
+    filter: drop-shadow(0 0 6px rgb(255, 0, 0));
+}
+
+/* MAIN TEXT */
+body.touhou_remiliascarlet .r-a023e6 {
+    color: rgb(255, 148, 148) !important;
+    text-shadow: 0 0 3px rgb(255, 0, 0);
+    font-weight: bold;
+}
+
+/* TWEET TEXT */
+body.touhou_remiliascarlet [data-testid="tweetText"] { 
+    color: rgb(255, 207, 207) !important;
+    font-weight: normal;
+}
+
+/* BUTTONS (Post/Edit etc.) */
+body.touhou_remiliascarlet .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
+    background-color: #000 !important;
+    box-shadow:
+        0 0 1px #fff,
+        0 0 3px rgb(122, 0, 0),
+        0 0 5px rgb(255, 0, 0) !important;
+    border-radius: 30px !important;
+    transition: 0.2s;
+}
+
+body.touhou_remiliascarlet .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21:hover {
+    box-shadow:
+        0 0 2px #fff,
+        0 0 4px rgb(255, 0, 0),
+        0 0 7px rgb(255, 0, 0) !important;
+}
+
+/* transparent layers so the background image is visible */
+body.touhou_remiliascarlet .jetfuel-style-root,
+body.touhou_remiliascarlet #react-root > div,
+body.touhou_remiliascarlet #react-root > div > div > div,
+body.touhou_remiliascarlet .r-1oshtsd,
+body.touhou_remiliascarlet .r-1if0iil,
+body.touhou_remiliascarlet .r-aqfbo4,
+body.touhou_remiliascarlet .r-1otgn73,
+body.touhou_remiliascarlet .r-1aockhh,
+body.touhou_remiliascarlet .css-1dbjc4n,
+body.touhou_remiliascarlet [data-testid="placement-root"],
+body.touhou_remiliascarlet main {
+  background-color: transparent !important;
+}
+
+/* feed background */
+body.touhou_remiliascarlet .r-kemksi {
+  background-color: rgba(0, 0, 0, 0.25) !important;
+}
+
+/* background image overlay */
+body.touhou_remiliascarlet #x-background-overlay {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: -1 !important;
+  pointer-events: none !important;
+  background-image: var(--mizu-bg-url) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  opacity: 0.35 !important;
+}

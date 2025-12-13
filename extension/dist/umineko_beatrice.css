@@ -1,0 +1,106 @@
+/* GLOBAL FONT & BASE */
+body.umineko_beatrice * {
+    font-family: "Merriweather", "Georgia", "Times New Roman", serif !important;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+}
+
+/* LINKS */
+body.umineko_beatrice a {
+    color: rgb(255, 215, 0) !important;
+    text-decoration: none;
+    transition: 0.2s;
+}
+body.umineko_beatrice a:hover {
+    color: rgb(255, 245, 135) !important;
+    text-shadow: 0 0 6px rgb(255, 215, 0);
+}
+
+/* SELECTED MENU ITEMS */
+body.umineko_beatrice .r-1nao33i {
+    color: rgb(255, 200, 0) !important;
+    text-shadow: 0 0 6px rgb(255, 215, 0);
+}
+
+/* MAIN TEXT */
+body.umineko_beatrice .r-a023e6 {
+    color: rgb(255, 235, 179) !important;
+    text-shadow: 0 0 3px rgb(255, 215, 0);
+}
+
+/* REACTIONS TEXT */
+body.umineko_beatrice .r-n6v787 {
+    color: rgb(255, 180, 0) !important;
+    text-shadow: 0 0 4px rgb(255, 215, 0);
+}
+
+/* PLACEHOLDER TEXT */
+body.umineko_beatrice .public-DraftEditorPlaceholder-root {
+    color: rgb(200, 160, 0) !important;
+    opacity: 0.7;
+}
+
+/* ICONS */
+body.umineko_beatrice svg { 
+    color: rgb(255, 215, 0) !important;
+    filter: drop-shadow(0 0 3px rgb(255, 215, 0));
+    transition: 0.2s;
+}
+body.umineko_beatrice svg:hover {
+    filter: drop-shadow(0 0 6px rgb(255, 245, 135));
+}
+
+/* TWEET TEXT */
+body.umineko_beatrice [data-testid="tweetText"] { 
+    color: rgb(255, 243, 210) !important;
+    text-shadow: 0 0 2px rgb(255, 215, 0);
+}
+
+/* BUTTONS (Post/Edit etc.) */
+body.umineko_beatrice .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
+    background-color: #2b1f00 !important;
+    box-shadow:
+        0 0 1px #fff,
+        0 0 3px rgb(255, 215, 0),
+        0 0 5px rgb(255, 245, 135) !important;
+    border-radius: 30px !important;
+    transition: 0.2s;
+}
+body.umineko_beatrice .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21:hover {
+    box-shadow:
+        0 0 2px #fff,
+        0 0 4px rgb(255, 215, 0),
+        0 0 7px rgb(255, 245, 135) !important;
+}
+
+/* transparent layers so the background image is visible */
+body.umineko_beatrice .jetfuel-style-root,
+body.umineko_beatrice #react-root > div,
+body.umineko_beatrice #react-root > div > div > div,
+body.umineko_beatrice .r-1oshtsd,
+body.umineko_beatrice .r-1if0iil,
+body.umineko_beatrice .r-aqfbo4,
+body.umineko_beatrice .r-1otgn73,
+body.umineko_beatrice .r-1aockhh,
+body.umineko_beatrice .css-1dbjc4n,
+body.umineko_beatrice [data-testid="placement-root"],
+body.umineko_beatrice main {
+  background-color: transparent !important;
+}
+
+/* feed background */
+body.umineko_beatrice .r-kemksi {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+/* background image overlay */
+body.umineko_beatrice #x-background-overlay {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: -1 !important;
+  pointer-events: none !important;
+  background-image: var(--mizu-bg-url) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  opacity: 0.35 !important;
+}

@@ -11,7 +11,12 @@
   "content_scripts": [
     {
       "matches": ["*://twitter.com/*", "*://x.com/*"],
-      "css": ["dist/styles.css"],
+      "css": [
+        "dist/styles.css",
+        "dist/matrix.css",
+        "dist/touhou_remiliascarlet.css",
+        "dist/umineko_beatrice.css"
+      ],
       "js": [
         "scripts/defaultsettings.js",
         "scripts/content.js"

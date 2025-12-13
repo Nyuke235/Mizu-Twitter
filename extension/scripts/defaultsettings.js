@@ -3,11 +3,13 @@ const DEFAULT_SETTINGS = {
     hideGrok : true,
     hidePremium: true,
     hideCommunities: true,
-    hideExplore: false,
+    hideExplore: true,
     hideForYouPage: false,
     hideViewCount: false,
 
     filterPolitics: true,
     filterSports: false,
-    filterCrypto: false
+    filterCrypto: false,
+
+    theme: "default_twitter"
 };
