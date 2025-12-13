@@ -1,10 +1,11 @@
 const DEFAULT_SETTINGS = {
-    hideForYouPage: false,
-    hideGrok : true,
     hideSidebar: true,
+    hideGrok : true,
     hidePremium: true,
     hideCommunities: true,
     hideExplore: false,
+    hideForYouPage: false,
+    hideViewCount: false,
 
     filterPolitics: true,
     filterSports: false,

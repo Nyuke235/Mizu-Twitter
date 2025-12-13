@@ -25,6 +25,19 @@ body.hideExplore a[data-testid=AppTabBar_Explore_Link] {
   display: none !important;
 }
 
+body.hideViewCount article[data-testid=tweet] div.r-1wtj0ep a[href*="/status/"] + span + span span {
+  display: none;
+}
+body.hideViewCount article[data-testid=tweet] a[href$="/analytics"] span {
+  display: none;
+}
+body.hideViewCount article[data-testid=tweet] div:has(> a > time) ~ div span:has(> span) {
+  display: none;
+}
+body.hideViewCount div[role=dialog] a[href$="/analytics"] span {
+  display: none;
+}
+
 .css-1jxf684 {
   color: rgb(255, 191, 191) !important;
   text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.95);

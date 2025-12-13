@@ -38,6 +38,29 @@ body.hideExplore {
   }
 }
 
+body.hideViewCount {
+  article[data-testid="tweet"] {
+    div.r-1wtj0ep a[href*="/status/"] + span + span span {
+      display: none;
+    }
+    a[href$="/analytics"] {
+      span {
+        display: none;
+      }
+    }
+    div:has(>a>time) ~ div span:has(>span)  {
+      display: none;
+    }
+  }
+  div[role="dialog"] {
+    a[href$="/analytics"] {
+      span {
+        display: none;
+      }
+    }
+  }
+}
+
 // TESTING STUFF FOR NOW (will be separated later)
 
 // main text color
