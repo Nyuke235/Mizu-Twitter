@@ -33,6 +33,7 @@
 - Touhou - Remilia Scarlet (Dark red)
 - Umineko - Beatrice (Gold)
 <br>
+
 **Planned:**
 - Cyberpunk theme
 - Amethyst theme
