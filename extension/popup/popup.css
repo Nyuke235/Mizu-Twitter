@@ -55,3 +55,22 @@ select {
 select:focus {
   border-color: #1da1f2;
 }
+
+.theme-notice {
+  margin-top: 16px;
+  font-size: 10px;
+  line-height: 1.4;
+  color: #666;
+  opacity: 0.9;
+}
+
+.theme-notice strong {
+  font-weight: 600;
+}
+
+.theme-notice .path {
+  display: block;
+  margin-top: 4px;
+  font-size: 8px;
+  opacity: 0.75;
+}
