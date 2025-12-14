@@ -57,39 +57,13 @@ or `brave://extensions/` depending on your browser
 1. Visit Twitter/X and open the extension popup.
 2. Toggle features like Filter Politics or Themes to make sure they work.
 
-## Themes
-**Available:**
-- Default Twitter (Black)
-- Matrix (Lime)
-- Touhou - Remilia Scarlet (Dark red)
-- Umineko - Beatrice (Gold)
-<br>
+## Planned
+- Way more themes
+- Custom CSS theme
+- Custom filter
+- Enhanced political filtering
+- Firefox support
 
-**Planned:**
-- Cyberpunk theme
-- Amethyst theme
-- Touhou - Sanae Kochiya (green)
-- Touhou - Yuuka Kazami (dark green)
-- Touhou - Cirno (light-blue)
-- Touhou - Okuu (dark yellow)
-- Higurashi - Rena (dark orange)
-- Umineko - Bernkastel (purple)
-- Chainsaw Man (dark orange)
-- Initial D (dark gray)
-- Umamusume
-...
-
-## Content Filter
-Mizu Twitter blocks political content such as:
-- political discourse
-- ideology debates
-- culture-war content
-- current world conflicts
-- social controversies
-- political figures or commentators, mostly from America
-
-**Limitations:**
-The filter is **keyword-based**, so it cannot detect sarcasm, jokes, quotes, or neutral mentions.
 
 ## Contributing
 Contributions are welcome! Feel free to suggest ideas, report bugs or improve the extension via pull requests.
