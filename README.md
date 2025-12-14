@@ -1,4 +1,4 @@
-# ![icon](images/mizutwitter-icon.png) MIZU TWITTER
+# MIZU TWITTER
 **Mizu Twitter** is a browser extension designed for anime fans and anyone looking for a cleaner, more enjoyable Twitter experience. It enhances Twitter with anime-inspired themes and customization options, hides unnecessary or distracting interface elements, and helps reduce exposure to toxic content—including rage-bait posts and political content. **Mizu Twitter** aims to bring a bit of that old internet spirit back, putting you in control so you can enjoy Twitter the way it was meant to be-fun, personal, and stress-free.
 
 ## Key Features
