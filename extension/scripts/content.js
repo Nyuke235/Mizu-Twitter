@@ -1,13 +1,17 @@
 let LAST_SETTINGS = { ...DEFAULT_SETTINGS };
+let POLITICAL_KEYWORDS = [];
+let POLITICAL_WORDS_LOADED = false;
 
 initializeSettings();
 
 async function initializeSettings() {
     try {
+        await loadPoliticalWords();
         const keys = Object.keys(DEFAULT_SETTINGS);
         const data = await getStorageValues(keys);
         LAST_SETTINGS = { ...data };
         applySettings(LAST_SETTINGS);
+        filterPoliticalTweets();
     } catch (err) {
         console.warn("Failed to initialize settings:", err);
     }
@@ -15,6 +19,7 @@ async function initializeSettings() {
     const observer = new MutationObserver(() => {
         try {
             applySettings(LAST_SETTINGS);
+            filterPoliticalTweets();
         } catch (err) {
             console.warn("Observer failed:", err);
         }
@@ -30,7 +35,7 @@ function getStorageValues(keys) {
         try {
             chrome.storage.local.get(keys, (data) => {
                 if (chrome.runtime.lastError) {
-                    console.warn("Storage error:", chrome.runtime.lastError);
+                    console.warn("Mizu Twitter: Storage error:", chrome.runtime.lastError);
                     resolve({ ...DEFAULT_SETTINGS });
                 } else {
                     const settings = keys.reduce((acc, key) => {
@@ -41,7 +46,7 @@ function getStorageValues(keys) {
                 }
             });
         } catch (err) {
-            console.error("Failed to get storage:", err);
+            console.error("Mizu Twitter: Failed to get storage:", err);
             resolve({ ...DEFAULT_SETTINGS });
         }
     });
@@ -89,10 +94,46 @@ function applyBackground(theme) {
     document.documentElement.style.setProperty("--mizu-bg-url", `url("${url}")`);
 }
 
+async function loadPoliticalWords() {
+    try {
+        const url = chrome.runtime.getURL("data/pol.json");
+        const response = await fetch(url);
+        const data = await response.json();
+
+        POLITICAL_KEYWORDS = data.words.map(w => w.toLowerCase());
+        POLITICAL_WORDS_LOADED = true;
+    } catch (err) {
+        console.warn("Mizu Twitter: Failed to load political words", err);
+    }
+}
+
+function filterPoliticalTweets() {
+    if (!LAST_SETTINGS.filterPolitics) return;
+    if (!POLITICAL_WORDS_LOADED) return;
+
+    const tweets = document.querySelectorAll("article");
+
+    tweets.forEach(tweet => {
+        if (tweet.dataset.mizuFiltered === "true") return;
+
+        const text = tweet.innerText.toLowerCase();
+
+        const isPolitical = POLITICAL_KEYWORDS.some(word =>
+            text.includes(word)
+        );
+
+        if (isPolitical) {
+            tweet.style.display = "none";
+            tweet.dataset.mizuFiltered = "true";
+        }
+    });
+}
+
 chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
     if (msg.type === "UPDATE_SETTINGS" && msg.settings) {
         LAST_SETTINGS = { ...LAST_SETTINGS, ...msg.settings };
         applySettings(LAST_SETTINGS);
+        filterPoliticalTweets();
     }
     sendResponse({ success: true });
 });

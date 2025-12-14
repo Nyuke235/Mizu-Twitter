@@ -26,7 +26,10 @@
   ],
   "web_accessible_resources": [
     {
-      "resources": ["images/*"],
+      "resources": [
+        "images/*",
+        "data/pol.json"
+      ],
       "matches": ["<all_urls>"]
     }
   ],
