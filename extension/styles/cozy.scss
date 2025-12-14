@@ -60,3 +60,34 @@ body.hideViewCount {
     }
   }
 }
+
+body.hideReactionCount {
+  div[data-testid="primaryColumn"] article:not(:hover) button {
+    &[data-testid="reply"] ,
+    &[data-testid="retweet"] ,
+    &[data-testid="unretweet"] ,
+    &[data-testid="like"] ,
+    &[data-testid="unlike"],
+    &[data-testid="bookmark"],
+    &[data-testid="removeBookmark"] {
+      span {
+        opacity: 0 !important;
+        transition-property: transform, opacity !important;
+      }
+    }
+  }
+  div[data-testid="primaryColumn"] article button {
+    &[data-testid="reply"] ,
+    &[data-testid="retweet"] ,
+    &[data-testid="unretweet"] ,
+    &[data-testid="like"] ,
+    &[data-testid="unlike"],
+    &[data-testid="bookmark"],
+    &[data-testid="removeBookmark"] {
+      span {
+        opacity: 0 !important;
+        transition-property: transform, opacity !important;
+      }
+    }
+  }
+}

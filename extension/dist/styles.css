@@ -37,3 +37,12 @@ body.hideViewCount article[data-testid=tweet] div:has(> a > time) ~ div span:has
 body.hideViewCount div[role=dialog] a[href$="/analytics"] span {
   display: none;
 }
+
+body.hideReactionCount div[data-testid=primaryColumn] article:not(:hover) button[data-testid=reply] span, body.hideReactionCount div[data-testid=primaryColumn] article:not(:hover) button[data-testid=retweet] span, body.hideReactionCount div[data-testid=primaryColumn] article:not(:hover) button[data-testid=unretweet] span, body.hideReactionCount div[data-testid=primaryColumn] article:not(:hover) button[data-testid=like] span, body.hideReactionCount div[data-testid=primaryColumn] article:not(:hover) button[data-testid=unlike] span, body.hideReactionCount div[data-testid=primaryColumn] article:not(:hover) button[data-testid=bookmark] span, body.hideReactionCount div[data-testid=primaryColumn] article:not(:hover) button[data-testid=removeBookmark] span {
+  opacity: 0 !important;
+  transition-property: transform, opacity !important;
+}
+body.hideReactionCount div[data-testid=primaryColumn] article button[data-testid=reply] span, body.hideReactionCount div[data-testid=primaryColumn] article button[data-testid=retweet] span, body.hideReactionCount div[data-testid=primaryColumn] article button[data-testid=unretweet] span, body.hideReactionCount div[data-testid=primaryColumn] article button[data-testid=like] span, body.hideReactionCount div[data-testid=primaryColumn] article button[data-testid=unlike] span, body.hideReactionCount div[data-testid=primaryColumn] article button[data-testid=bookmark] span, body.hideReactionCount div[data-testid=primaryColumn] article button[data-testid=removeBookmark] span {
+  opacity: 0 !important;
+  transition-property: transform, opacity !important;
+}

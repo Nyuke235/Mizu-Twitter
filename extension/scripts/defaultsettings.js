@@ -6,10 +6,9 @@ const DEFAULT_SETTINGS = {
     hideExplore: true,
     hideForYouPage: false,
     hideViewCount: false,
+    hideReactionCount: false,
 
     filterPolitics: true,
-    filterSports: false,
-    filterCrypto: false,
 
     theme: "default_twitter"
 };
