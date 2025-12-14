@@ -60,7 +60,7 @@ function applySettings(settings) {
 
     const theme = settings.theme || "default_twitter";
 
-    body.classList.remove("matrix", "touhou_remiliascarlet", "umineko_beatrice");
+    body.classList.remove("matrix", "touhou_remiliascarlet", "touhou_yukari", "higurashi_rena", "umineko_beatrice");
     body.classList.add(`${settings.theme}`);
 
     applyBackground(theme);
@@ -85,7 +85,9 @@ function ensureBackgroundOverlay() {
 function applyBackground(theme) {
     const images = {
         touhou_remiliascarlet: "images/backgrounds/touhou_remiliascarlet.jpg",
-        umineko_beatrice: "images/backgrounds/umineko_beatrice.png",
+        touhou_yukari: "images/backgrounds/touhou_yukari.png",
+        higurashi_rena: "images/backgrounds/higurashi_rena.jpg",
+        umineko_beatrice: "images/backgrounds/umineko_beatrice.png"
     };
 
     const imagePath = images[theme] || images.touhou_remiliascarlet;

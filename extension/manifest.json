@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Mizu Twitter",
-  "version": "0.1",
+  "version": "0.1.1",
   "description": "Filters out political posts, hides distracting sections, and adds cozy themes.",
   "icons": {
     "16": "images/icon16.png",
@@ -15,6 +15,8 @@
         "dist/styles.css",
         "dist/matrix.css",
         "dist/touhou_remiliascarlet.css",
+        "dist/touhou_yukari.css",
+        "dist/higurashi_rena.css",
         "dist/umineko_beatrice.css"
       ],
       "js": [
