@@ -21,6 +21,10 @@ body.hideCommunities header a[href*="/communities"] {
   display: none !important;
 }
 
+body.hideBusiness header a[href*="/premium-business"] {
+  display: none !important;
+}
+
 body.hideExplore a[data-testid=AppTabBar_Explore_Link] {
   display: none !important;
 }

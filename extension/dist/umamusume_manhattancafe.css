@@ -1,0 +1,101 @@
+/* GLOBAL FONT & BASE */
+body.umamusume_manhattancafe * {
+    font-family: "Manrope", "Segoe UI", sans-serif !important;
+    letter-spacing: 0.01em;
+}
+
+/* LINKS */
+body.umamusume_manhattancafe a {
+    color: #FFEA00 !important; /* signature yellow */
+    text-decoration: none;
+    transition: 0.25s;
+}
+body.umamusume_manhattancafe a:hover {
+    color: #fff36a !important;
+}
+
+/* SELECTED MENU ITEMS */
+body.umamusume_manhattancafe .r-1nao33i {
+    color: #FFEA00 !important;
+}
+
+/* MAIN TEXT */
+body.umamusume_manhattancafe .r-a023e6 {
+    color: #f5f3ee !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.65);
+}
+
+/* REACTIONS / SECONDARY TEXT */
+body.umamusume_manhattancafe .r-n6v787 {
+    color: #e6e0c8 !important;
+}
+
+/* PLACEHOLDER TEXT */
+body.umamusume_manhattancafe .public-DraftEditorPlaceholder-root {
+    color: #cfc9a6 !important;
+    opacity: 0.6;
+}
+
+/* ICONS */
+body.umamusume_manhattancafe svg {
+    color: #FFEA00 !important;
+    transition: 0.25s;
+}
+body.umamusume_manhattancafe svg:hover {
+    color: #fff36a !important;
+}
+
+/* TWEET TEXT */
+body.umamusume_manhattancafe [data-testid="tweetText"] {
+    color: #faf8f2 !important;
+}
+
+/* BUTTONS (Post / Edit etc.) */
+body.umamusume_manhattancafe .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
+    background: linear-gradient(
+        135deg,
+        rgba(90, 70, 25, 0.95),
+        rgba(130, 105, 35, 1)
+    ) !important;
+    color: #FFEA00 !important;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.75);
+    border-radius: 22px !important;
+    transition: 0.25s;
+}
+body.umamusume_manhattancafe .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21:hover {
+    background: linear-gradient(
+        135deg,
+        rgba(120, 95, 35, 1),
+        rgba(160, 135, 55, 1)
+    ) !important;
+}
+
+/* TRANSPARENT LAYERS */
+body.umamusume_manhattancafe .jetfuel-style-root,
+body.umamusume_manhattancafe #react-root > div,
+body.umamusume_manhattancafe #react-root > div > div > div,
+body.umamusume_manhattancafe .css-1dbjc4n,
+body.umamusume_manhattancafe [data-testid="placement-root"],
+body.umamusume_manhattancafe main {
+    background-color: transparent !important;
+}
+
+/* FEED BACKGROUND */
+body.umamusume_manhattancafe .r-kemksi {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    backdrop-filter: blur(2px);
+}
+
+/* BACKGROUND IMAGE */
+body.umamusume_manhattancafe #x-background-overlay {
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: -1 !important;
+    pointer-events: none !important;
+    background-image: var(--mizu-bg-url) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    opacity: 0.4 !important;
+}

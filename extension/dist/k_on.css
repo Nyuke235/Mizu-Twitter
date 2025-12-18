@@ -6,12 +6,12 @@ body.k_on * {
 
 /* LINKS */
 body.k_on a {
-    color: #d66b96 !important; /* muted rose */
+    color: #ff8fbc !important; /* muted rose */
     text-decoration: none;
     transition: 0.25s;
 }
 body.k_on a:hover {
-    color: #f0a3bf !important;
+    color: #ffb6d3 !important;
 }
 
 /* SELECTED MENU ITEMS */

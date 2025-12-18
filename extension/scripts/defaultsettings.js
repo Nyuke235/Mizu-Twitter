@@ -3,6 +3,7 @@ const DEFAULT_SETTINGS = {
     hideGrok : true,
     hidePremium: true,
     hideCommunities: true,
+    hideBusiness: true,
     hideExplore: true,
     hideForYouPage: false,
     hideViewCount: false,
