@@ -92,6 +92,7 @@ body.touhou_remiliascarlet main {
 /* feed background */
 body.touhou_remiliascarlet .r-kemksi {
   background-color: rgba(0, 0, 0, 0.25) !important;
+  backdrop-filter: blur(2px);
 }
 
 /* background image overlay */

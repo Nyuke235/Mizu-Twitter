@@ -14,10 +14,11 @@
       "css": [
         "dist/styles.css",
         "dist/matrix.css",
+        "dist/k_on.css",
         "dist/touhou_remiliascarlet.css",
-        "dist/touhou_yukari.css",
         "dist/higurashi_rena.css",
-        "dist/umineko_beatrice.css"
+        "dist/umineko_beatrice.css",
+        "dist/umineko_bernkastel.css"
       ],
       "js": [
         "scripts/defaultsettings.js",

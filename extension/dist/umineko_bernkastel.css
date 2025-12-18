@@ -1,0 +1,102 @@
+/* GLOBAL FONT & BASE */
+body.umineko_bernkastel * {
+    font-family: "Manrope", "Segoe UI", sans-serif !important;
+    letter-spacing: 0.01em;
+}
+
+/* LINKS */
+body.umineko_bernkastel a {
+    color: #b38cff !important; /* elegant violet */
+    text-decoration: none;
+    transition: 0.25s;
+}
+body.umineko_bernkastel a:hover {
+    color: #d6c1ff !important;
+}
+
+/* SELECTED MENU ITEMS */
+body.umineko_bernkastel .r-1nao33i {
+    color: #c38cff !important;
+    text-shadow: 0 0 6px rgba(195, 140, 255, 0.9);
+}
+
+/* MAIN TEXT */
+body.umineko_bernkastel .r-a023e6 {
+    color: #d2c6ff !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+/* REACTIONS TEXT */
+body.umineko_bernkastel .r-n6v787 {
+    color: #dfd5fe !important;
+}
+
+/* PLACEHOLDER TEXT */
+body.umineko_bernkastel .public-DraftEditorPlaceholder-root {
+    color: #a0a6cc !important;
+    opacity: 0.6;
+}
+
+/* ICONS */
+body.umineko_bernkastel svg {
+    color: #c7b7ff !important;
+    transition: 0.25s;
+}
+body.umineko_bernkastel svg:hover {
+    color: #dbc8ff !important;
+}
+
+/* TWEET TEXT */
+body.umineko_bernkastel [data-testid="tweetText"] {
+    color: #f6f3ff !important;
+}
+
+/* BUTTONS (Post / Edit etc.) */
+body.umineko_bernkastel .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
+    background: linear-gradient(
+        135deg,
+        rgba(90, 55, 140, 0.85),
+        rgba(125, 80, 180, 0.9)
+    ) !important;
+    color: #ffffff !important;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+    border-radius: 22px !important;
+    transition: 0.25s;
+}
+body.umineko_bernkastel .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21:hover {
+    background: linear-gradient(
+        135deg,
+        rgba(120, 80, 180, 0.95),
+        rgba(160, 110, 215, 1)
+    ) !important;
+}
+
+/* TRANSPARENT LAYERS */
+body.umineko_bernkastel .jetfuel-style-root,
+body.umineko_bernkastel #react-root > div,
+body.umineko_bernkastel #react-root > div > div > div,
+body.umineko_bernkastel .css-1dbjc4n,
+body.umineko_bernkastel [data-testid="placement-root"],
+body.umineko_bernkastel main {
+    background-color: transparent !important;
+}
+
+/* FEED BACKGROUND */
+body.umineko_bernkastel .r-kemksi {
+    background-color: rgba(9, 2, 19, 0.5) !important;
+    backdrop-filter: blur(2px);
+}
+
+/* BACKGROUND IMAGE */
+body.umineko_bernkastel #x-background-overlay {
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: -1 !important;
+    pointer-events: none !important;
+    background-image: var(--mizu-bg-url) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    opacity: 0.45 !important;
+}
