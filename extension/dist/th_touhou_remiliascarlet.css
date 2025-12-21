@@ -1,109 +1,107 @@
 /* GLOBAL FONT & BASE */
 body.th_touhou_remiliascarlet * {
-    font-family: "Helvetica", "Arial", sans-serif !important;
-    text-shadow: 0 0 3px rgba(0, 0, 0, 0.8) !important;
+    font-family: "Manrope", "Helvetica", "Arial", sans-serif !important;
+    letter-spacing: 0.01em;
 }
 
 /* LINKS */
 body.th_touhou_remiliascarlet a {
-    color: rgb(255, 109, 109) !important;
+    color: #c94a4a !important; /* deep crimson */
     text-decoration: none !important;
-    transition: 0.2s !important;
+    transition: 0.25s !important;
 }
 body.th_touhou_remiliascarlet a:hover {
-    color: rgb(255, 174, 174) !important;
-    text-shadow: 0 0 4px rgb(255, 0, 0) !important;
+    color: #ff9b9b !important;
+    text-shadow: 0 0 4px rgba(255, 80, 80, 0.6) !important;
 }
 
 /* SELECTED MENU ITEMS */
 body.th_touhou_remiliascarlet .r-1nao33i {
-    color: rgb(255, 0, 0) !important;
-    text-shadow: 0 0 6px rgb(255, 0, 0);
+    color: #e35b5b !important;
+    text-shadow: 0 0 4px rgba(255, 80, 80, 0.6);
 }
 
 /* REACTIONS TEXT */
 body.th_touhou_remiliascarlet .r-n6v787 {
-    color: rgb(255, 0, 0) !important;
-    text-shadow: 0 0 4px rgb(255, 0, 0);
+    color: #d18a8a !important;
 }
 
-/* WHAT'S HAPPENING TEXT */
-bodY.th_touhou_remiliascarlet .public-DraftEditorPlaceholder-root {
-  color: rgb(177, 52, 52) !important;
-  opacity: 0.7 !important;
+/* PLACEHOLDER TEXT */
+body.th_touhou_remiliascarlet .public-DraftEditorPlaceholder-root {
+    color: #9c6b6b !important;
+    opacity: 0.6 !important;
 }
 
 /* ICONS */
 body.th_touhou_remiliascarlet svg { 
-    color: rgb(181, 0, 0) !important;
-    filter: drop-shadow(0 0 3px rgb(255, 0, 0));
-    transition: 0.2s;
+    color: #c94a4a !important;
+    transition: 0.25s;
 }
 body.th_touhou_remiliascarlet svg:hover {
-    filter: drop-shadow(0 0 6px rgb(255, 0, 0));
+    color: #ff9b9b !important;
+    filter: drop-shadow(0 0 5px rgba(255, 80, 80, 0.7));
 }
 
 /* MAIN TEXT */
 body.th_touhou_remiliascarlet .r-a023e6 {
-    color: rgb(255, 148, 148) !important;
-    text-shadow: 0 0 3px rgb(255, 0, 0);
-    font-weight: bold;
+    color: #f4eaea !important; /* soft cream */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+    font-weight: 500;
 }
 
 /* TWEET TEXT */
 body.th_touhou_remiliascarlet [data-testid="tweetText"] { 
-    color: rgb(255, 207, 207) !important;
-    font-weight: normal;
+    color: #f9f3f3 !important;
+    font-weight: 400;
 }
 
-/* BUTTONS (Post/Edit etc.) */
+/* BUTTONS (Post / Edit etc.) */
 body.th_touhou_remiliascarlet .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
-    background-color: #000 !important;
-    box-shadow:
-        0 0 1px #fff,
-        0 0 3px rgb(122, 0, 0),
-        0 0 5px rgb(255, 0, 0) !important;
-    border-radius: 30px !important;
-    transition: 0.2s;
+    background: linear-gradient(
+        135deg,
+        rgba(90, 20, 20, 0.95),
+        rgba(130, 35, 35, 1)
+    ) !important;
+    color: #ffffff !important;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+    border-radius: 24px !important;
+    transition: 0.25s;
 }
-
 body.th_touhou_remiliascarlet .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21:hover {
-    box-shadow:
-        0 0 2px #fff,
-        0 0 4px rgb(255, 0, 0),
-        0 0 7px rgb(255, 0, 0) !important;
+    background: linear-gradient(
+        135deg,
+        rgba(130, 35, 35, 1),
+        rgba(180, 60, 60, 1)
+    ) !important;
+    box-shadow: 0 0 8px rgba(255, 80, 80, 0.6);
 }
 
-/* transparent layers so the background image is visible */
+/* TRANSPARENT LAYERS */
 body.th_touhou_remiliascarlet .jetfuel-style-root,
 body.th_touhou_remiliascarlet #react-root > div,
 body.th_touhou_remiliascarlet #react-root > div > div > div,
-body.th_touhou_remiliascarlet .r-1oshtsd,
-body.th_touhou_remiliascarlet .r-1if0iil,
-body.th_touhou_remiliascarlet .r-aqfbo4,
-body.th_touhou_remiliascarlet .r-1otgn73,
-body.th_touhou_remiliascarlet .r-1aockhh,
 body.th_touhou_remiliascarlet .css-1dbjc4n,
 body.th_touhou_remiliascarlet [data-testid="placement-root"],
 body.th_touhou_remiliascarlet main {
-  background-color: transparent !important;
+    background-color: transparent !important;
 }
 
-/* feed background */
+/* FEED BACKGROUND */
 body.th_touhou_remiliascarlet .r-kemksi {
-  background-color: rgba(0, 0, 0, 0.25) !important;
-  backdrop-filter: blur(2px);
+    background-color: rgba(15, 5, 5, 0.65) !important;
+    backdrop-filter: blur(5px);
 }
 
-/* background image overlay */
+/* BACKGROUND IMAGE */
 body.th_touhou_remiliascarlet #x-background-overlay {
-  position: fixed !important;
-  inset: 0 !important;
-  z-index: -1 !important;
-  pointer-events: none !important;
-  background-image: var(--mizu-bg-url) !important;
-  background-size: cover !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  opacity: 0.35 !important;
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: -1 !important;
+    pointer-events: none !important;
+    background-image: var(--mizu-bg-url) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    opacity: 0.35 !important;
 }

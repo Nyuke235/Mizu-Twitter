@@ -1,73 +1,90 @@
 /* GLOBAL FONT & BASE */
 body.th_matrix * {
-    font-family: "Fira Code", "JetBrains Mono", "Source Code Pro", monospace !important;
+    font-family:
+        "IBM Plex Mono",
+        "JetBrains Mono",
+        "Source Code Pro",
+        monospace !important;
+    letter-spacing: 0.02em;
+}
+
+/* BASE BACKGROUND */
+body.th_matrix,
+body.th_matrix #react-root,
+body.th_matrix main {
+    background-color: #000000 !important;
 }
 
 /* LINKS */
 body.th_matrix a {
-    color: #fbff00 !important;
+    color: #f9ff9e !important;
     text-decoration: none;
 }
 body.th_matrix a:hover {
-    color: #fffbcc !important;
+    color: #feffca !important;
 }
 
 /* SELECTED MENU ITEMS */
 body.th_matrix .r-1nao33i {
-    color: #00ff00 !important;
+    color: #6dff6d !important;
 }
 
 /* MAIN TEXT */
 body.th_matrix .r-a023e6 {
-    color: #00ff00 !important;
+    color: #8aff8a !important;
+    font-weight: 450;
 }
 
-/* REACTIONS TEXT */
+/* REACTIONS / SECONDARY TEXT */
 body.th_matrix .r-n6v787 {
-    color: #ccffcc !important;
+    color: #6fbf6f !important;
 }
 
 /* PLACEHOLDER TEXT */
 body.th_matrix .public-DraftEditorPlaceholder-root {
-    color: #33ff33 !important;
-    opacity: 0.7;
+    color: #4a8a4a !important;
+    opacity: 0.65;
 }
 
 /* ICONS */
 body.th_matrix svg { 
-    color: #00ff00 !important;
-    filter: drop-shadow(0 0 2px #00ff00);
-    transition: 0.2s;
+    color: #7fff7f !important;
+    transition: 0.15s;
 }
 body.th_matrix svg:hover {
-    filter: drop-shadow(0 0 6px #00ff00);
+    color: #baffba !important;
 }
 
 /* TWEET TEXT */
 body.th_matrix [data-testid="tweetText"] { 
-    color: #ffffff !important;
+    color: #e6ffe6 !important;
 }
 
-/* BUTTONS (Post/Edit etc.) */
+/* BUTTONS (Post / Edit etc.) */
 body.th_matrix .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
-    background-color: #000 !important;
-    border: 2px solid #00ff00 !important;
-    color: #00ff00 !important;
-    box-shadow:
-        0 0 2px #00ff00,
-        0 0 4px #00ff00,
-        0 0 6px #00ff00 !important;
-    border-radius: 6px !important;
-    font-weight: bold;
-    transition: 0.2s;
+    background-color: #000000 !important;
+    border: 1px solid #4cff4c !important;
+    color: #9eff9e !important;
+    border-radius: 4px !important;
+    font-weight: 600;
+    transition: 0.15s;
 }
 
 /* HOVER STATE */
 body.th_matrix .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21:hover {
-    background-color: #111 !important;
-    box-shadow:
-        0 0 3px #00ff00,
-        0 0 6px #00ff00,
-        0 0 9px #00ff00 !important;
-    transform: translateY(-1px);
+    background-color: #040804 !important;
+    border-color: #7fff7f !important;
+}
+
+/* REMOVE ALL GLOWS / EFFECTS */
+body.th_matrix * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    backdrop-filter: none !important;
+}
+
+/* REMOVE BACKGROUND IMAGE */
+body.th_matrix #x-background-overlay {
+    display: none !important;
 }
