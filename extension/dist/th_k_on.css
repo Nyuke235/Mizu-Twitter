@@ -1,57 +1,57 @@
 /* GLOBAL FONT & BASE */
-body.k_on * {
+body.th_k_on * {
     font-family: "Manrope", "Segoe UI", sans-serif !important;
     letter-spacing: 0.01em;
 }
 
 /* LINKS */
-body.k_on a {
+body.th_k_on a {
     color: #ff8fbc !important; /* muted rose */
     text-decoration: none;
     transition: 0.25s;
 }
-body.k_on a:hover {
+body.th_k_on a:hover {
     color: #ffb6d3 !important;
 }
 
 /* SELECTED MENU ITEMS */
-body.k_on .r-1nao33i {
+body.th_k_on .r-1nao33i {
     color: #c48db3 !important;
 }
 
 /* MAIN TEXT */
-body.k_on .r-a023e6 {
+body.th_k_on .r-a023e6 {
     color: #f1e9ef !important;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 /* REACTIONS / SECONDARY TEXT */
-body.k_on .r-n6v787 {
+body.th_k_on .r-n6v787 {
     color: #d8c1cf !important;
 }
 
 /* PLACEHOLDER TEXT */
-body.k_on .public-DraftEditorPlaceholder-root {
+body.th_k_on .public-DraftEditorPlaceholder-root {
     color: #b89aa9 !important;
     opacity: 0.6;
 }
 
 /* ICONS */
-body.k_on svg {
+body.th_k_on svg {
     color: #d66b96 !important;
     transition: 0.25s;
 }
-body.k_on svg:hover {
+body.th_k_on svg:hover {
     color: #f0a3bf !important;
 }
 
 /* TWEET TEXT */
-body.k_on [data-testid="tweetText"] {
+body.th_k_on [data-testid="tweetText"] {
     color: #f6eff4 !important;
 }
 
 /* BUTTONS (Post / Edit etc.) */
-body.k_on .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
+body.th_k_on .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
     background: linear-gradient(
         135deg,
         rgba(120, 55, 85, 0.95),
@@ -63,7 +63,7 @@ body.k_on .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
     border-radius: 22px !important;
     transition: 0.25s;
 }
-body.k_on .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21:hover {
+body.th_k_on .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21:hover {
     background: linear-gradient(
         135deg,
         rgba(150, 75, 110, 1),
@@ -72,23 +72,23 @@ body.k_on .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21:hover {
 }
 
 /* TRANSPARENT LAYERS */
-body.k_on .jetfuel-style-root,
-body.k_on #react-root > div,
-body.k_on #react-root > div > div > div,
-body.k_on .css-1dbjc4n,
-body.k_on [data-testid="placement-root"],
-body.k_on main {
+body.th_k_on .jetfuel-style-root,
+body.th_k_on #react-root > div,
+body.th_k_on #react-root > div > div > div,
+body.th_k_on .css-1dbjc4n,
+body.th_k_on [data-testid="placement-root"],
+body.th_k_on main {
     background-color: transparent !important;
 }
 
 /* FEED BACKGROUND */
-body.k_on .r-kemksi {
+body.th_k_on .r-kemksi {
     background-color: rgba(35, 20, 30, 0.3) !important;
     backdrop-filter: blur(2px);
 }
 
 /* BACKGROUND IMAGE */
-body.k_on #x-background-overlay {
+body.th_k_on #x-background-overlay {
     position: fixed !important;
     inset: 0 !important;
     z-index: -1 !important;

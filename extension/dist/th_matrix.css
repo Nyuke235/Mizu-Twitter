@@ -1,55 +1,55 @@
 /* GLOBAL FONT & BASE */
-body.matrix * {
+body.th_matrix * {
     font-family: "Fira Code", "JetBrains Mono", "Source Code Pro", monospace !important;
 }
 
 /* LINKS */
-body.matrix a {
+body.th_matrix a {
     color: #fbff00 !important;
     text-decoration: none;
 }
-body.matrix a:hover {
+body.th_matrix a:hover {
     color: #fffbcc !important;
 }
 
 /* SELECTED MENU ITEMS */
-body.matrix .r-1nao33i {
+body.th_matrix .r-1nao33i {
     color: #00ff00 !important;
 }
 
 /* MAIN TEXT */
-body.matrix .r-a023e6 {
+body.th_matrix .r-a023e6 {
     color: #00ff00 !important;
 }
 
 /* REACTIONS TEXT */
-body.matrix .r-n6v787 {
+body.th_matrix .r-n6v787 {
     color: #ccffcc !important;
 }
 
 /* PLACEHOLDER TEXT */
-body.matrix .public-DraftEditorPlaceholder-root {
+body.th_matrix .public-DraftEditorPlaceholder-root {
     color: #33ff33 !important;
     opacity: 0.7;
 }
 
 /* ICONS */
-body.matrix svg { 
+body.th_matrix svg { 
     color: #00ff00 !important;
     filter: drop-shadow(0 0 2px #00ff00);
     transition: 0.2s;
 }
-body.matrix svg:hover {
+body.th_matrix svg:hover {
     filter: drop-shadow(0 0 6px #00ff00);
 }
 
 /* TWEET TEXT */
-body.matrix [data-testid="tweetText"] { 
+body.th_matrix [data-testid="tweetText"] { 
     color: #ffffff !important;
 }
 
 /* BUTTONS (Post/Edit etc.) */
-body.matrix .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
+body.th_matrix .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
     background-color: #000 !important;
     border: 2px solid #00ff00 !important;
     color: #00ff00 !important;
@@ -63,7 +63,7 @@ body.matrix .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
 }
 
 /* HOVER STATE */
-body.matrix .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21:hover {
+body.th_matrix .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21:hover {
     background-color: #111 !important;
     box-shadow:
         0 0 3px #00ff00,

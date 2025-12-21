@@ -1,82 +1,82 @@
 /* GLOBAL FONT & BASE */
-body.higurashi_rena * {
+body.th_higurashi_rena * {
     font-family: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif !important;
 }
 
 /* LINKS */
-body.higurashi_rena a {
+body.th_higurashi_rena a {
     color: #ff6b6b !important;
     text-decoration: none;
     transition: 0.2s;
 }
-body.higurashi_rena a:hover {
+body.th_higurashi_rena a:hover {
     color: #ff9a9a !important;
 }
 
 /* SELECTED MENU ITEMS */
-body.higurashi_rena .r-1nao33i {
+body.th_higurashi_rena .r-1nao33i {
     color: #ff6b6b !important;
 }
 
 /* MAIN TEXT */
-body.higurashi_rena .r-a023e6 {
+body.th_higurashi_rena .r-a023e6 {
     color: #fffafa !important;
 }
 
 /* REACTIONS TEXT */
-body.higurashi_rena .r-n6v787 {
+body.th_higurashi_rena .r-n6v787 {
     color: #ffb3b3 !important;
 }
 
 /* PLACEHOLDER TEXT */
-body.higurashi_rena .public-DraftEditorPlaceholder-root {
+body.th_higurashi_rena .public-DraftEditorPlaceholder-root {
     color: #999 !important;
     opacity: 0.6;
 }
 
 /* ICONS */
-body.higurashi_rena svg {
+body.th_higurashi_rena svg {
     color: #ff6b6b !important;
     transition: 0.2s;
 }
-body.higurashi_rena svg:hover {
+body.th_higurashi_rena svg:hover {
     color: #ff9a9a !important;
 }
 
 /* TWEET TEXT */
-body.higurashi_rena [data-testid="tweetText"] {
+body.th_higurashi_rena [data-testid="tweetText"] {
     color: #f2f2f2 !important;
 }
 
 /* BUTTONS (Post/Edit etc.) */
-body.higurashi_rena .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
+body.th_higurashi_rena .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
     background-color: rgba(120, 0, 0, 0.6) !important;
     color: #fff !important;
     border-radius: 20px !important;
     transition: 0.2s;
 }
-body.higurashi_rena .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21:hover {
+body.th_higurashi_rena .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21:hover {
     background-color: rgba(160, 0, 0, 0.7) !important;
 }
 
 /* TRANSPARENT LAYERS */
-body.higurashi_rena .jetfuel-style-root,
-body.higurashi_rena #react-root > div,
-body.higurashi_rena #react-root > div > div > div,
-body.higurashi_rena .css-1dbjc4n,
-body.higurashi_rena [data-testid="placement-root"],
-body.higurashi_rena main {
+body.th_higurashi_rena .jetfuel-style-root,
+body.th_higurashi_rena #react-root > div,
+body.th_higurashi_rena #react-root > div > div > div,
+body.th_higurashi_rena .css-1dbjc4n,
+body.th_higurashi_rena [data-testid="placement-root"],
+body.th_higurashi_rena main {
     background-color: transparent !important;
 }
 
 /* FEED BACKGROUND */
-body.higurashi_rena .r-kemksi {
+body.th_higurashi_rena .r-kemksi {
     background-color: rgba(0, 0, 0, 0.55) !important;
     backdrop-filter: blur(2px);
 }
 
 /* BACKGROUND IMAGE */
-body.higurashi_rena #x-background-overlay {
+body.th_higurashi_rena #x-background-overlay {
     position: fixed !important;
     inset: 0 !important;
     z-index: -1 !important;

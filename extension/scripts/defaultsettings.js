@@ -11,5 +11,5 @@ const DEFAULT_SETTINGS = {
 
     filterPolitics: true,
 
-    theme: "default_twitter"
+    theme: "th_default_twitter"
 };

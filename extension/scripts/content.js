@@ -55,13 +55,19 @@ function getStorageValues(keys) {
 function applySettings(settings) {
     const body = document.body;
     Object.entries(settings).forEach(([key, enabled]) => {
-        body.classList.toggle(key, !!enabled);
+        if (key !== "theme") {
+            body.classList.toggle(key, !!enabled);
+        }
     });
 
-    const theme = settings.theme || "default_twitter";
+    [...body.classList].forEach(cls => {
+        if (cls.startsWith("th_")) {
+            body.classList.remove(cls);
+        }
+    });
 
-    body.classList.remove("matrix", "k_on", "touhou_remiliascarlet", "higurashi_rena", "umamusume_manhattancafe", "umineko_beatrice", "umineko_bernkastel");
-    body.classList.add(`${settings.theme}`);
+    const theme = settings.theme || "th_default_twitter";
+    body.classList.add(theme);
 
     applyBackground(theme);
 
@@ -83,18 +89,9 @@ function ensureBackgroundOverlay() {
 }
 
 function applyBackground(theme) {
-    const images = {
-        k_on: "images/backgrounds/k_on.jpg",
-        touhou_remiliascarlet: "images/backgrounds/touhou_remiliascarlet.jpg",
-        higurashi_rena: "images/backgrounds/higurashi_rena.jpg",
-        umamusume_manhattancafe: "images/backgrounds/umamusume_manhattancafe.png",
-        umineko_beatrice: "images/backgrounds/umineko_beatrice.png",
-        umineko_bernkastel: "images/backgrounds/umineko_bernkastel.png"
-    };
-
-    const imagePath = images[theme] || images.touhou_remiliascarlet;
-
+    const imagePath = `images/backgrounds/${theme}.png`;
     const url = chrome.runtime.getURL(imagePath);
+
     document.documentElement.style.setProperty("--mizu-bg-url", `url("${url}")`);
 }
 
