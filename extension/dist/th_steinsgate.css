@@ -1,0 +1,105 @@
+/* GLOBAL FONT */
+body.th_steinsgate * {
+    font-family: 'Consolas', 'Lucida Console', 'Monaco', monospace !important;
+}
+
+/* LINKS */
+body.th_steinsgate a {
+    color: #ffa500 !important;
+    text-decoration: none !important;
+    transition: 0.25s;
+}
+body.th_steinsgate a:hover {
+    color: #ffcc66 !important;
+    text-shadow: 0 0 6px rgba(255, 165, 0, 0.8);
+}
+
+/* SELECTED MENU ITEMS */
+body.th_steinsgate .r-1nao33i {
+    color: #ff9f00 !important;
+    text-shadow: 0 0 8px rgba(255, 165, 0, 0.9);
+}
+
+/* REACTIONS TEXT */
+body.th_steinsgate .r-n6v787 {
+    color: #c27c3c !important;
+}
+
+/* PLACEHOLDER TEXT */
+body.th_steinsgate .public-DraftEditorPlaceholder-root {
+    color: #a05d1f !important;
+    opacity: 0.6;
+}
+
+/* ICONS */
+body.th_steinsgate svg {
+    color: #ffa500 !important;
+    transition: 0.25s;
+}
+body.th_steinsgate svg:hover {
+    color: #ffcc66 !important;
+    filter: drop-shadow(0 0 6px rgba(255, 165, 0, 0.8));
+}
+
+/* MAIN TEXT */
+body.th_steinsgate .r-a023e6 {
+    color: #f2d8a7 !important;
+    font-weight: 500;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* TWEET TEXT */
+body.th_steinsgate [data-testid="tweetText"] {
+    color: #f9e6c2 !important;
+}
+
+/* BUTTONS */
+body.th_steinsgate .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
+    background: linear-gradient(
+        135deg,
+        rgba(50, 25, 0, 0.95),
+        rgba(120, 60, 0, 1)
+    ) !important;
+    color: #fff !important;
+    font-weight: 600;
+    border-radius: 22px !important;
+    transition: 0.25s;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.7);
+}
+body.th_steinsgate .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21:hover {
+    background: linear-gradient(
+        135deg,
+        rgba(120, 60, 0, 1),
+        rgba(255, 140, 0, 1)
+    ) !important;
+    box-shadow: 0 0 10px rgba(255,165,0,0.7);
+}
+
+/* TRANSPARENT LAYERS */
+body.th_steinsgate .jetfuel-style-root,
+body.th_steinsgate #react-root > div,
+body.th_steinsgate #react-root > div > div > div,
+body.th_steinsgate .css-1dbjc4n,
+body.th_steinsgate [data-testid="placement-root"],
+body.th_steinsgate main {
+    background-color: transparent !important;
+}
+
+/* FEED BACKGROUND */
+body.th_steinsgate .r-kemksi {
+    background-color: rgba(0, 0, 0, 0.45) !important;
+    backdrop-filter: blur(3px);
+}
+
+/* BACKGROUND IMAGE */
+body.th_steinsgate #x-background-overlay {
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: -1 !important;
+    pointer-events: none !important;
+    background-image: var(--mizu-bg-url) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    opacity: 0.45 !important;
+}
