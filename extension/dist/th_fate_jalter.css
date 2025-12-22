@@ -1,0 +1,110 @@
+body.th_fate_jalter * {
+    font-family: "Segoe UI", "Helvetica Neue", "Arial", sans-serif !important;
+    letter-spacing: 0.02em;
+}
+
+body.th_fate_jalter {
+    --jalter-red: #9f1d26;
+    --jalter-red-soft: rgba(159, 29, 38, 0.6);
+}
+
+body.th_fate_jalter a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    transition: 0.25s;
+}
+body.th_fate_jalter a:hover {
+    color: #ffe1e1 !important;
+    text-shadow:
+        0 0 6px rgba(255, 255, 255, 0.4),
+        0 0 10px var(--jalter-red-soft);
+}
+
+body.th_fate_jalter .r-1nao33i {
+    color: #ffffff !important;
+    text-shadow:
+        0 0 8px rgba(255, 255, 255, 0.5),
+        0 0 12px var(--jalter-red-soft);
+}
+
+body.th_fate_jalter .r-a023e6 {
+    color: #ececef !important;
+    font-weight: 500;
+}
+
+body.th_fate_jalter [data-testid="tweetText"] {
+    color: #f7f7fa !important;
+}
+
+body.th_fate_jalter .r-n6v787 {
+    color: #c8c9cf !important;
+}
+
+body.th_fate_jalter .public-DraftEditorPlaceholder-root {
+    color: #a3a4ab !important;
+    opacity: 0.65;
+}
+
+body.th_fate_jalter svg {
+    color: #f0f0f2 !important;
+    transition: 0.25s;
+}
+body.th_fate_jalter svg:hover {
+    color: #ffffff !important;
+    filter:
+        drop-shadow(0 0 4px rgba(255, 255, 255, 0.5))
+        drop-shadow(0 0 8px var(--jalter-red-soft));
+}
+
+body.th_fate_jalter .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
+    background: linear-gradient(
+        135deg,
+        #3a0d11,
+        #9f1d26
+    ) !important;
+    color: #ffffff !important;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-shadow:
+        0 0 6px rgba(255, 255, 255, 0.6),
+        0 0 10px rgba(0, 0, 0, 0.9);
+    border-radius: 22px !important;
+    transition: 0.25s;
+}
+
+body.th_fate_jalter .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21:hover {
+    background: linear-gradient(
+        135deg,
+        #5a141a,
+        #c12a34
+    ) !important;
+    box-shadow:
+        0 0 10px rgba(255, 255, 255, 0.35),
+        0 0 16px var(--jalter-red-soft);
+}
+
+body.th_fate_jalter .jetfuel-style-root,
+body.th_fate_jalter #react-root > div,
+body.th_fate_jalter #react-root > div > div > div,
+body.th_fate_jalter .css-1dbjc4n,
+body.th_fate_jalter [data-testid="placement-root"],
+body.th_fate_jalter main {
+    background-color: transparent !important;
+}
+
+body.th_fate_jalter .r-kemksi {
+    background-color: rgba(10, 12, 18, 0.6) !important;
+    backdrop-filter: blur(2px);
+}
+
+body.th_fate_jalter #x-background-overlay {
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: -1 !important;
+    pointer-events: none !important;
+    background-image: var(--mizu-bg-url) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    opacity: 0.3 !important;
+}
