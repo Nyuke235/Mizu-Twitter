@@ -9,14 +9,14 @@ body.th_fate_jalter {
 }
 
 body.th_fate_jalter a {
-    color: #ffffff !important;
+    color: #be252f !important;
     text-decoration: none !important;
     transition: 0.25s;
 }
 body.th_fate_jalter a:hover {
-    color: #ffe1e1 !important;
+    color: #ff3845 !important;
     text-shadow:
-        0 0 6px rgba(255, 255, 255, 0.4),
+        0 0 6px rgba(255, 21, 21, 0.4),
         0 0 10px var(--jalter-red-soft);
 }
 

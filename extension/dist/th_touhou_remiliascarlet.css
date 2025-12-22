@@ -6,7 +6,7 @@ body.th_touhou_remiliascarlet * {
 
 /* LINKS */
 body.th_touhou_remiliascarlet a {
-    color: #c94a4a !important; /* deep crimson */
+    color: #c94a4a !important;
     text-decoration: none !important;
     transition: 0.25s !important;
 }
@@ -44,7 +44,7 @@ body.th_touhou_remiliascarlet svg:hover {
 
 /* MAIN TEXT */
 body.th_touhou_remiliascarlet .r-a023e6 {
-    color: #f4eaea !important; /* soft cream */
+    color: #f4eaea !important;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
     font-weight: 500;
 }
@@ -90,7 +90,7 @@ body.th_touhou_remiliascarlet main {
 /* FEED BACKGROUND */
 body.th_touhou_remiliascarlet .r-kemksi {
     background-color: rgba(15, 5, 5, 0.65) !important;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
 }
 
 /* BACKGROUND IMAGE */
@@ -103,5 +103,5 @@ body.th_touhou_remiliascarlet #x-background-overlay {
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
-    opacity: 0.35 !important;
+    opacity: 0.4 !important;
 }
