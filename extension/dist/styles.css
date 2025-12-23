@@ -13,6 +13,10 @@ body.hideSidebar div[data-testid=sidebarColumn] div:has(> div[data-testid=news_s
   display: none !important;
 }
 
+body.hideFooter nav[role=navigation][aria-label*=Footer] {
+  display: none !important;
+}
+
 body.hidePremium header a[href*="/i/premium_sign_up"] {
   display: none !important;
 }

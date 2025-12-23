@@ -1,5 +1,6 @@
 const DEFAULT_SETTINGS = {
     hideSidebar: true,
+    hideFooter: true,
     hideGrok : true,
     hidePremium: true,
     hideCommunities: true,
