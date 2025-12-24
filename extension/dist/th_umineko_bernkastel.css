@@ -53,6 +53,8 @@ body.th_umineko_bernkastel [data-testid="tweetText"] {
 
 /* BUTTONS (Post / Edit etc.) */
 body.th_umineko_bernkastel .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
+    border: none !important;
+    outline: none !important;
     background: linear-gradient(
         135deg,
         rgba(90, 55, 140, 0.85),

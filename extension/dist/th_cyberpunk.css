@@ -62,6 +62,8 @@ body.th_cyberpunk svg:hover {
 
 /* BUTTONS */
 body.th_cyberpunk .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
+    border: none !important;
+    outline: none !important;
     background: linear-gradient(
         135deg,
         rgba(50, 230, 255, 0.9),

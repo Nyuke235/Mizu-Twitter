@@ -55,6 +55,8 @@ body.th_steinsgate [data-testid="tweetText"] {
 
 /* BUTTONS */
 body.th_steinsgate .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
+    border: none !important;
+    outline: none !important;
     background: linear-gradient(
         135deg,
         rgba(50, 25, 0, 0.95),

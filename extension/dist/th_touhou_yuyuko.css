@@ -1,0 +1,115 @@
+body.th_touhou_yuyuko * {
+    font-family: "Segoe UI", "Helvetica Neue", "Arial", sans-serif !important;
+    letter-spacing: 0.02em;
+}
+
+body.th_touhou_yuyuko {
+    --yuyuko-pink: #f5bfdc;
+    --yuyuko-blue: #a6c8f2;
+    --yuyuko-blue-soft: #c6ddf8;
+    --yuyuko-button-dark: #4b2742;
+    --yuyuko-button-mid: #5f3b63;
+    --yuyuko-button-light: #7aa2d6;
+}
+
+body.th_touhou_yuyuko a {
+    color: var(--yuyuko-blue-soft) !important;
+    text-decoration: none !important;
+    transition: 0.25s;
+}
+body.th_touhou_yuyuko a:hover {
+    color: #ffe9f3 !important;
+    text-shadow:
+        0 0 4px rgba(166, 200, 242, 0.45),
+        0 0 6px rgba(245, 191, 220, 0.35);
+}
+
+body.th_touhou_yuyuko .r-1nao33i {
+    color: #f3f7ff !important;
+    text-shadow:
+        0 0 5px rgba(166, 200, 242, 0.5),
+        0 0 6px rgba(245, 191, 220, 0.35);
+}
+
+body.th_touhou_yuyuko .r-a023e6 {
+    color: #f3aed3 !important;
+    font-weight: 500;
+}
+
+body.th_touhou_yuyuko [data-testid="tweetText"] {
+    color: #f9fbff !important;
+}
+
+body.th_touhou_yuyuko .r-n6v787 {
+    color: #cdd6e6 !important;
+}
+
+body.th_touhou_yuyuko .public-DraftEditorPlaceholder-root {
+    color: #b6bfd4 !important;
+    opacity: 0.65;
+}
+
+body.th_touhou_yuyuko svg {
+    color: #e7eef8 !important;
+    transition: 0.25s;
+}
+body.th_touhou_yuyuko svg:hover {
+    color: #ffffff !important;
+    filter:
+        drop-shadow(0 0 4px rgba(166, 200, 242, 0.5))
+        drop-shadow(0 0 4px rgba(245, 191, 220, 0.35));
+}
+
+body.th_touhou_yuyuko .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
+    border: none !important;
+    outline: none !important;
+    background: linear-gradient(
+        135deg,
+        var(--yuyuko-button-dark),
+        var(--yuyuko-button-mid) 45%,
+        var(--yuyuko-button-light)
+    ) !important;
+    color: #fdfcff !important;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    border-radius: 40px !important;
+    transition: 0.25s;
+}
+
+body.th_touhou_yuyuko .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21:hover {
+    background: linear-gradient(
+        135deg,
+        #5a3260,
+        #6f4a86 45%,
+        #8bb7e8
+    ) !important;
+    box-shadow:
+        0 0 6px rgba(166, 200, 242, 0.45),
+        0 0 6px rgba(245, 191, 220, 0.3);
+}
+
+body.th_touhou_yuyuko .jetfuel-style-root,
+body.th_touhou_yuyuko #react-root > div,
+body.th_touhou_yuyuko #react-root > div > div > div,
+body.th_touhou_yuyuko .css-1dbjc4n,
+body.th_touhou_yuyuko [data-testid="placement-root"],
+body.th_touhou_yuyuko main {
+    background-color: transparent !important;
+}
+
+body.th_touhou_yuyuko .r-kemksi {
+    background-color: rgba(12, 14, 26, 0.55) !important;
+    backdrop-filter: blur(2px);
+}
+
+body.th_touhou_yuyuko #x-background-overlay {
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: -1 !important;
+    pointer-events: none !important;
+    background-image: var(--mizu-bg-url) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    opacity: 0.38 !important;
+}

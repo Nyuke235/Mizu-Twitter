@@ -57,6 +57,8 @@ body.th_fate_jalter svg:hover {
 }
 
 body.th_fate_jalter .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
+    border: none !important;
+    outline: none !important;
     background: linear-gradient(
         135deg,
         #3a0d11,
