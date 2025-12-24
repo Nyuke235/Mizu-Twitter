@@ -70,6 +70,7 @@ function applySettings(settings) {
     body.classList.add(theme);
 
     applyBackground(theme);
+    replaceHomeLogo();
 
     if (settings.hideForYouPage) {
         const tabList = document.querySelector('[data-testid="ScrollSnap-List"]');
@@ -128,6 +129,20 @@ function filterPoliticalTweets() {
             tweet.dataset.mizuFiltered = "true";
         }
     });
+}
+
+function replaceHomeLogo() {
+    const homeLink = document.querySelector('header a[href="/home"]');
+    if (!homeLink) return;
+
+    if (homeLink.querySelector(".mizu-home-logo")) return;
+
+    const img = document.createElement("img");
+    img.className = "mizu-home-logo";
+    img.alt = "Home";
+    img.src = chrome.runtime.getURL("images/icontransparent.png");
+
+    homeLink.prepend(img);
 }
 
 chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {

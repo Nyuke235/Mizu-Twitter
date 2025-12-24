@@ -103,3 +103,23 @@ body.hideReactionCount {
     }
   }
 }
+
+header a[href="/home"]:not([data-testid]) {
+  position: relative;
+  width: 48px;
+  height: 48px;
+}
+
+header a[href="/home"]:not([data-testid]) svg {
+  display: none !important;
+}
+
+header a[href="/home"]:not([data-testid]) .mizu-home-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 42px;
+  height: 42px;
+  display: block;
+}
