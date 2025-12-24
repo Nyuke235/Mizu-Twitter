@@ -74,3 +74,7 @@ header a[href="/home"]:not([data-testid]) .mizu-home-logo {
   height: 42px;
   display: block;
 }
+
+a[href^="/i/imagine"] {
+  display: none !important;
+}
