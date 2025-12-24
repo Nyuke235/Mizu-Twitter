@@ -31,13 +31,14 @@ async function initPopup() {
         });
     });
 
-    const themeSelect = document.getElementById("themeSelect");
+    const themeSelect = document.getElementById("theme-select");
     themeSelect.value = settings.theme;
+    updateThemeArtistFromSelect();
 
     themeSelect.addEventListener("change", async () => {
         settings.theme = themeSelect.value;
         await saveSettings(settings);
-
+        updateThemeArtistFromSelect();
         chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
             chrome.tabs.sendMessage(tabs[0].id, {
                 type: "UPDATE_SETTINGS",
@@ -45,6 +46,23 @@ async function initPopup() {
             });
         });
     });
+}
+
+function updateThemeArtistFromSelect() {
+    const select = document.getElementById("theme-select");
+    const artistBox = document.getElementById("theme-artist");
+const artistName = document.getElementById("artist-name");
+
+    const option = select.options[select.selectedIndex];
+    const artist = option.dataset.artist;
+
+    if (!artist) {
+        artistBox.style.display = "none";
+        return;
+    }
+
+    artistName.textContent = artist;
+    artistBox.style.display = "block";
 }
 
 document.addEventListener("DOMContentLoaded", initPopup);

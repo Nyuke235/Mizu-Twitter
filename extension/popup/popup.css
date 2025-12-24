@@ -59,6 +59,25 @@ select:focus {
   box-shadow: 0 0 6px rgba(79, 195, 247, 0.4);
 }
 
+#theme-artist {
+  margin-top: 6px;
+  font-size: 11px;
+  color: #b0bec5;
+  opacity: 0.85;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+#theme-artist.hidden {
+  display: none;
+}
+
+#artist-name {
+  color: #4fc3f7;
+  font-weight: 500;
+}
+
 .theme-notice {
   margin-top: 16px;
   font-size: 10px;
