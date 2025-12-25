@@ -6,7 +6,7 @@ body.th_umamusume_manhattancafe * {
 
 /* LINKS */
 body.th_umamusume_manhattancafe a {
-    color: #FFEA00 !important; /* signature yellow */
+    color: #FFEA00 !important;
     text-decoration: none;
     transition: 0.25s;
 }

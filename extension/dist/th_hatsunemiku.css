@@ -1,0 +1,110 @@
+body.th_hatsunemiku * {
+    font-family: "Manrope", "Segoe UI", sans-serif !important;
+    letter-spacing: 0.02em;
+}
+
+body.th_hatsunemiku {
+    --miku-cyan: #6feaf4;
+    --miku-cyan-soft: #a8f5ff;
+    --miku-dark-1: #0f3f4a;
+    --miku-dark-2: #145c6b;
+    --miku-dark-3: #1a7286;
+}
+
+body.th_hatsunemiku a {
+    color: var(--miku-cyan) !important;
+    text-decoration: none !important;
+    transition: 0.25s;
+}
+
+body.th_hatsunemiku a:hover {
+    color: var(--miku-cyan-soft) !important;
+}
+
+body.th_hatsunemiku .r-1nao33i {
+    color: #c8f8ff !important;
+}
+
+body.th_hatsunemiku .r-a023e6 {
+    color: #c4f6ff !important;
+}
+
+body.th_hatsunemiku [data-testid="tweetText"] {
+    color: #f2fdff !important;
+}
+
+body.th_hatsunemiku .r-n6v787 {
+    color: #a6dfe8 !important;
+}
+
+body.th_hatsunemiku .public-DraftEditorPlaceholder-root {
+    color: #88cdd8 !important;
+    opacity: 0.65;
+}
+
+body.th_hatsunemiku svg {
+    color: #bff3ff !important;
+    transition: 0.25s;
+}
+
+body.th_hatsunemiku svg:hover {
+    color: #ffffff !important;
+}
+
+body.th_hatsunemiku span[style*="font-weight: 700"],
+body.th_hatsunemiku span[style*="font-weight: 800"] {
+    color: var(--miku-cyan) !important;
+}
+
+body.th_hatsunemiku .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
+    background: linear-gradient(
+        145deg,
+        var(--miku-dark-1),
+        var(--miku-dark-2) 50%,
+        var(--miku-dark-3)
+    ) !important;
+    border: none !important;
+    border-radius: 22px !important;
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.08),
+        inset 0 -1px 0 rgba(0,0,0,0.45);
+    transition: 0.25s;
+}
+
+body.th_hatsunemiku .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21:hover {
+    background: linear-gradient(
+        145deg,
+        #165d6e,
+        #1e7f96 50%,
+        #2aa4bf
+    ) !important;
+    box-shadow:
+        0 0 10px rgba(111, 234, 244, 0.35),
+        inset 0 1px 0 rgba(255,255,255,0.1);
+}
+
+body.th_hatsunemiku .jetfuel-style-root,
+body.th_hatsunemiku #react-root > div,
+body.th_hatsunemiku #react-root > div > div > div,
+body.th_hatsunemiku .css-1dbjc4n,
+body.th_hatsunemiku [data-testid="placement-root"],
+body.th_hatsunemiku main {
+    background-color: transparent !important;
+}
+
+body.th_hatsunemiku .r-kemksi {
+    background-color: rgba(10, 14, 20, 0.55) !important;
+    backdrop-filter: blur(2px);
+}
+
+body.th_hatsunemiku #x-background-overlay {
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: -1 !important;
+    pointer-events: none !important;
+    background-image: var(--mizu-bg-url) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    opacity: 0.35 !important;
+}

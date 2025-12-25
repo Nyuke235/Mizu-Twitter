@@ -46,7 +46,6 @@ body.th_touhou_remiliascarlet svg:hover {
 body.th_touhou_remiliascarlet .r-a023e6 {
     color: #f4eaea !important;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
-    font-weight: 500;
 }
 
 /* TWEET TEXT */
@@ -57,8 +56,6 @@ body.th_touhou_remiliascarlet [data-testid="tweetText"] {
 
 /* BUTTONS (Post / Edit etc.) */
 body.th_touhou_remiliascarlet .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
-    border: none !important;
-    outline: none !important;
     background: linear-gradient(
         135deg,
         rgba(90, 20, 20, 0.95),
