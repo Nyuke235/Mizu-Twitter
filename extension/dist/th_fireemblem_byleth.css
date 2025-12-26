@@ -1,0 +1,113 @@
+body.th_fireemblem_byleth * {
+    font-family: "Segoe UI", "Helvetica Neue", "Arial", sans-serif !important;
+    letter-spacing: 0.02em;
+}
+
+body.th_fireemblem_byleth {
+    --byleth-green: #6ddc9a;
+    --byleth-lime: #a7f3b2;
+    --byleth-green-soft: #88e6ad;
+    --byleth-text-main: #e9f7ef;
+    --byleth-text-muted: #b8d6c6;
+    --byleth-dark-1: #14261f;
+    --byleth-dark-2: #1b342a;
+    --byleth-dark-3: #24463a;
+}
+
+body.th_fireemblem_byleth a {
+    color: var(--byleth-lime) !important;
+    text-decoration: none !important;
+    transition: 0.25s;
+}
+
+body.th_fireemblem_byleth a:hover {
+    color: #d6ffe3 !important;
+}
+
+body.th_fireemblem_byleth .r-1nao33i {
+    color: var(--byleth-lime) !important;
+}
+
+body.th_fireemblem_byleth .r-a023e6 {
+    color: var(--byleth-text-main) !important;
+}
+
+body.th_fireemblem_byleth [data-testid="tweetText"] {
+    color: #f3fff9 !important;
+}
+
+body.th_fireemblem_byleth .r-n6v787 {
+    color: var(--byleth-text-muted) !important;
+}
+
+body.th_fireemblem_byleth .public-DraftEditorPlaceholder-root {
+    color: #8fb9a5 !important;
+    opacity: 0.65;
+}
+
+body.th_fireemblem_byleth svg {
+    color: var(--byleth-green-soft) !important;
+    transition: 0.25s;
+}
+
+body.th_fireemblem_byleth svg:hover {
+    color: var(--byleth-lime) !important;
+}
+
+body.th_fireemblem_byleth span[style*="font-weight: 700"],
+body.th_fireemblem_byleth span[style*="font-weight: 800"] {
+    color: var(--byleth-lime) !important;
+}
+
+body.th_fireemblem_byleth .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
+    background: linear-gradient(
+        145deg,
+        var(--byleth-dark-1),
+        var(--byleth-dark-2) 50%,
+        var(--byleth-dark-3)
+    ) !important;
+    border: none !important;
+    border-radius: 18px !important;
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.08),
+        inset 0 -1px 0 rgba(0,0,0,0.5);
+    transition: 0.25s;
+}
+
+body.th_fireemblem_byleth .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21:hover {
+    background: linear-gradient(
+        145deg,
+        #1f3f32,
+        #295546 50%,
+        #336d5b
+    ) !important;
+    box-shadow:
+        0 0 10px rgba(109, 220, 154, 0.35),
+        inset 0 1px 0 rgba(255,255,255,0.12);
+}
+
+body.th_fireemblem_byleth .jetfuel-style-root,
+body.th_fireemblem_byleth #react-root > div,
+body.th_fireemblem_byleth #react-root > div > div > div,
+body.th_fireemblem_byleth .css-1dbjc4n,
+body.th_fireemblem_byleth [data-testid="placement-root"],
+body.th_fireemblem_byleth main {
+    background-color: transparent !important;
+}
+
+body.th_fireemblem_byleth .r-kemksi {
+    background-color: rgba(11, 18, 16, 0.6) !important;
+    backdrop-filter: blur(3px);
+}
+
+body.th_fireemblem_byleth #x-background-overlay {
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: -1 !important;
+    pointer-events: none !important;
+    background-image: var(--mizu-bg-url) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    opacity: 0.35 !important;
+}
