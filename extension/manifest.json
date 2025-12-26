@@ -22,10 +22,10 @@
         "dist/th_touhou_remiliascarlet.css",
         "dist/th_touhou_yuyuko.css",
         "dist/th_higurashi_rena.css",
-        "dist/th_higurashi_rika.css",
         "dist/th_umamusume_manhattancafe.css",
         "dist/th_umineko_beatrice.css",
-        "dist/th_umineko_bernkastel.css"
+        "dist/th_umineko_bernkastel.css",
+        "dist/th_zzz_yixuan.css"
       ],
       "js": [
         "scripts/defaultsettings.js",

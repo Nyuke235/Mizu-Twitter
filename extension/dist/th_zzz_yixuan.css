@@ -1,0 +1,112 @@
+body.th_zzz_yixuan * {
+    font-family: "Segoe UI", "Helvetica Neue", "Arial", sans-serif !important;
+    letter-spacing: 0.02em;
+}
+
+body.th_zzz_yixuan {
+    --yixuan-gold: #f2d06b;
+    --yixuan-gold-soft: #ffe7a3;
+    --yixuan-gray-light: #cfcfcf;
+    --yixuan-gray-mid: #8f8f8f;
+    --yixuan-dark-1: #2a2a2a;
+    --yixuan-dark-2: #353535;
+    --yixuan-dark-3: #444444;
+}
+
+body.th_zzz_yixuan a {
+    color: var(--yixuan-gold) !important;
+    text-decoration: none !important;
+    transition: 0.25s;
+}
+
+body.th_zzz_yixuan a:hover {
+    color: var(--yixuan-gold-soft) !important;
+}
+
+body.th_zzz_yixuan .r-1nao33i {
+    color: #fff3c4 !important;
+}
+
+body.th_zzz_yixuan .r-a023e6 {
+    color: #eeeeee !important;
+}
+
+body.th_zzz_yixuan [data-testid="tweetText"] {
+    color: #f5f5f5 !important;
+}
+
+body.th_zzz_yixuan .r-n6v787 {
+    color: var(--yixuan-gray-light) !important;
+}
+
+body.th_zzz_yixuan .public-DraftEditorPlaceholder-root {
+    color: var(--yixuan-gray-mid) !important;
+    opacity: 0.65;
+}
+
+body.th_zzz_yixuan svg {
+    color: var(--yixuan-gold) !important;
+    transition: 0.25s;
+}
+
+body.th_zzz_yixuan svg:hover {
+    color: #ffffff !important;
+}
+
+body.th_zzz_yixuan span[style*="font-weight: 700"],
+body.th_zzz_yixuan span[style*="font-weight: 800"] {
+    color: var(--yixuan-gold) !important;
+}
+
+body.th_zzz_yixuan .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
+    background: linear-gradient(
+        145deg,
+        var(--yixuan-dark-1),
+        var(--yixuan-dark-2) 50%,
+        var(--yixuan-dark-3)
+    ) !important;
+    border: none !important;
+    border-radius: 20px !important;
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.08),
+        inset 0 -1px 0 rgba(0,0,0,0.45);
+    transition: 0.25s;
+}
+
+body.th_zzz_yixuan .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21:hover {
+    background: linear-gradient(
+        145deg,
+        #3a3a3a,
+        #4a4a4a 50%,
+        #5a5a5a
+    ) !important;
+    box-shadow:
+        0 0 10px rgba(242, 208, 107, 0.35),
+        inset 0 1px 0 rgba(255,255,255,0.12);
+}
+
+body.th_zzz_yixuan .jetfuel-style-root,
+body.th_zzz_yixuan #react-root > div,
+body.th_zzz_yixuan #react-root > div > div > div,
+body.th_zzz_yixuan .css-1dbjc4n,
+body.th_zzz_yixuan [data-testid="placement-root"],
+body.th_zzz_yixuan main {
+    background-color: transparent !important;
+}
+
+body.th_zzz_yixuan .r-kemksi {
+    background-color: rgba(18, 18, 18, 0.6) !important;
+    backdrop-filter: blur(3px);
+}
+
+body.th_zzz_yixuan #x-background-overlay {
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: -1 !important;
+    pointer-events: none !important;
+    background-image: var(--mizu-bg-url) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    opacity: 0.4 !important;
+}
