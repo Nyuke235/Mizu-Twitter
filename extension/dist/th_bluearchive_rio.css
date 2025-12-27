@@ -1,0 +1,118 @@
+/* GLOBAL FONT & BASE */
+body.th_bluearchive_rio * {
+    font-family: "Segoe UI", "Helvetica Neue", "Arial", sans-serif !important;
+    letter-spacing: 0.02em;
+}
+
+/* THEME COLORS */
+body.th_bluearchive_rio {
+    --rio-red: #c52c2c;
+    --rio-red-soft: #e05050;
+    --rio-teal: #e05050;
+    --rio-text-main: #ffffff;
+    --rio-text-muted: #b3dce6;
+    --rio-dark-1: #1a2a3a;
+    --rio-dark-2: #22354a;
+    --rio-dark-3: #2b4160;
+    --rio-glow: #e05050;
+}
+
+/* LINKS */
+body.th_bluearchive_rio a {
+    color: var(--rio-red) !important;
+    text-decoration: none !important;
+    transition: 0.25s;
+}
+body.th_bluearchive_rio a:hover {
+    color: var(--rio-red-soft) !important;
+    text-shadow: 0 0 1px var(--rio-glow);
+}
+
+/* SELECTED MENU ITEMS */
+body.th_bluearchive_rio .r-1nao33i {
+    color: var(--rio-red-soft) !important;
+}
+
+/* MAIN TEXT */
+body.th_bluearchive_rio .r-a023e6 {
+    color: var(--rio-text-main) !important;
+}
+
+/* REACTIONS TEXT */
+body.th_bluearchive_rio .r-n6v787 {
+    color: var(--rio-text-muted) !important;
+}
+
+/* PLACEHOLDER TEXT */
+body.th_bluearchive_rio .public-DraftEditorPlaceholder-root {
+    color: #8fc8e6 !important;
+    opacity: 0.65;
+}
+
+/* ICONS */
+body.th_bluearchive_rio svg { 
+    color: var(--rio-teal) !important;
+    filter: drop-shadow(0 0 1px var(--rio-glow));
+    transition: 0.25s;
+}
+body.th_bluearchive_rio svg:hover {
+    filter: drop-shadow(0 0 6px var(--rio-red-soft));
+}
+
+/* TWEET TEXT */
+body.th_bluearchive_rio [data-testid="tweetText"] { 
+    color: #e0f7ff !important;
+}
+
+/* BUTTONS (Post/Edit etc.) */
+body.th_bluearchive_rio .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
+    background: linear-gradient(
+        145deg,
+        var(--rio-dark-1),
+        var(--rio-dark-2) 50%,
+        var(--rio-dark-3)
+    ) !important;
+    border: none !important;
+    border-radius: 20px !important;
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.08),
+        inset 0 -1px 0 rgba(0,0,0,0.45);
+    transition: 0.25s;
+}
+body.th_bluearchive_rio .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21:hover {
+    background: linear-gradient(
+        145deg,
+        #1e3a50,
+        #2c4d6a 50%,
+        #3a6090
+    ) !important;
+    box-shadow:
+        0 0 10px var(--rio-glow),
+        inset 0 1px 0 rgba(255,255,255,0.12);
+}
+
+body.th_bluearchive_rio .jetfuel-style-root,
+body.th_bluearchive_rio #react-root > div,
+body.th_bluearchive_rio #react-root > div > div > div,
+body.th_bluearchive_rio .css-1dbjc4n,
+body.th_bluearchive_rio [data-testid="placement-root"],
+body.th_bluearchive_rio main {
+    background-color: transparent !important;
+}
+
+body.th_bluearchive_rio .r-kemksi {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    backdrop-filter: blur(2px);
+}
+
+body.th_bluearchive_rio #x-background-overlay {
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: -1 !important;
+    pointer-events: none !important;
+    background-image: var(--mizu-bg-url) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    opacity: 0.4 !important;
+}

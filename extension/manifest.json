@@ -26,7 +26,8 @@
         "dist/th_umamusume_manhattancafe.css",
         "dist/th_umineko_beatrice.css",
         "dist/th_umineko_bernkastel.css",
-        "dist/th_zzz_yixuan.css"
+        "dist/th_zzz_yixuan.css",
+        "dist/th_bluearchive_rio.css"
       ],
       "js": [
         "scripts/defaultsettings.js",
