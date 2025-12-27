@@ -1,82 +1,83 @@
-/* GLOBAL FONT & BASE */
 body.th_touhou_remiliascarlet * {
     font-family: sans-serif !important;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.015em;
 }
 
-/* LINKS */
 body.th_touhou_remiliascarlet a {
-    color: #c94a4a !important;
+    color: #d35a5a !important;
     text-decoration: none !important;
     transition: 0.25s !important;
 }
+
 body.th_touhou_remiliascarlet a:hover {
-    color: #ff9b9b !important;
-    text-shadow: 0 0 4px rgba(255, 80, 80, 0.6) !important;
+    color: #ffb3b3 !important;
+    text-shadow: 0 0 5px rgba(255, 90, 90, 0.55) !important;
 }
 
-/* SELECTED MENU ITEMS */
 body.th_touhou_remiliascarlet .r-1nao33i {
-    color: #e35b5b !important;
-    text-shadow: 0 0 4px rgba(255, 80, 80, 0.6);
+    color: #ec6a6a !important;
+    text-shadow: 0 0 5px rgba(255, 90, 90, 0.55);
 }
 
-/* REACTIONS TEXT */
 body.th_touhou_remiliascarlet .r-n6v787 {
-    color: #d18a8a !important;
+    color: #d8a0a0 !important;
 }
 
-/* PLACEHOLDER TEXT */
 body.th_touhou_remiliascarlet .public-DraftEditorPlaceholder-root {
-    color: #9c6b6b !important;
+    color: #b07c7c !important;
     opacity: 0.6 !important;
 }
 
-/* ICONS */
-body.th_touhou_remiliascarlet svg { 
-    color: #c94a4a !important;
+body.th_touhou_remiliascarlet svg {
+    color: #d35a5a !important;
     transition: 0.25s;
 }
+
 body.th_touhou_remiliascarlet svg:hover {
-    color: #ff9b9b !important;
-    filter: drop-shadow(0 0 5px rgba(255, 80, 80, 0.7));
+    color: #ffb3b3 !important;
+    filter: drop-shadow(0 0 6px rgba(255, 90, 90, 0.65));
 }
 
-/* MAIN TEXT */
 body.th_touhou_remiliascarlet .r-a023e6 {
-    color: #f4eaea !important;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+    color: #f7eeee !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.65);
+    font-weight: 500;
 }
 
-/* TWEET TEXT */
-body.th_touhou_remiliascarlet [data-testid="tweetText"] { 
-    color: #f9f3f3 !important;
-    font-weight: 400;
+body.th_touhou_remiliascarlet [data-testid="tweetText"] {
+    color: #fff7f7 !important;
 }
 
-/* BUTTONS (Post / Edit etc.) */
 body.th_touhou_remiliascarlet .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
     background: linear-gradient(
         135deg,
-        rgba(90, 20, 20, 0.95),
-        rgba(130, 35, 35, 1)
+        #6b1a1a,
+        #8e2a2a 45%,
+        #b03b3b
     ) !important;
-    color: #ffffff !important;
-    font-weight: 600;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
-    border-radius: 24px !important;
+    color: #fff5f5 !important;
+    font-weight: 650;
+    letter-spacing: 0.04em;
+    border-radius: 26px !important;
+    border: none !important;
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.5);
     transition: 0.25s;
 }
+
 body.th_touhou_remiliascarlet .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21:hover {
     background: linear-gradient(
         135deg,
-        rgba(130, 35, 35, 1),
-        rgba(180, 60, 60, 1)
+        #8a2626,
+        #b03b3b 45%,
+        #d44d4d
     ) !important;
-    box-shadow: 0 0 8px rgba(255, 80, 80, 0.6);
+    box-shadow:
+        0 0 10px rgba(255, 90, 90, 0.6),
+        inset 0 1px 0 rgba(255, 255, 255, 0.12);
 }
 
-/* TRANSPARENT LAYERS */
 body.th_touhou_remiliascarlet .jetfuel-style-root,
 body.th_touhou_remiliascarlet #react-root > div,
 body.th_touhou_remiliascarlet #react-root > div > div > div,
@@ -86,13 +87,11 @@ body.th_touhou_remiliascarlet main {
     background-color: transparent !important;
 }
 
-/* FEED BACKGROUND */
 body.th_touhou_remiliascarlet .r-kemksi {
-    background-color: rgba(15, 5, 5, 0.65) !important;
+    background-color: rgba(18, 7, 7, 0.6) !important;
     backdrop-filter: blur(2px);
 }
 
-/* BACKGROUND IMAGE */
 body.th_touhou_remiliascarlet #x-background-overlay {
     position: fixed !important;
     inset: 0 !important;
@@ -102,5 +101,5 @@ body.th_touhou_remiliascarlet #x-background-overlay {
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
-    opacity: 0.4 !important;
+    opacity: 0.38 !important;
 }

@@ -96,8 +96,8 @@ body.th_fireemblem_byleth main {
 }
 
 body.th_fireemblem_byleth .r-kemksi {
-    background-color: rgba(11, 18, 16, 0.6) !important;
-    backdrop-filter: blur(3px);
+    background-color: rgba(11, 18, 16, 0.5) !important;
+    backdrop-filter: blur(2px);
 }
 
 body.th_fireemblem_byleth #x-background-overlay {
