@@ -1,0 +1,124 @@
+/* GLOBAL FONT & BASE */
+body.th_rezero_rem * {
+    font-family: "Segoe UI", "Helvetica Neue", "Arial", sans-serif !important;
+    letter-spacing: 0.02em;
+}
+
+/* THEME COLORS */
+body.th_rezero_rem {
+    --rem-light-blue: #8fd3ff;
+    --rem-light-blue-soft: #cfeeff;
+    --rem-dark-blue: #1b2a44;
+    --rem-dark-blue-2: #24365a;
+    --rem-dark-blue-3: #2f4675;
+
+    --rem-text-main: #eef6ff;
+    --rem-text-muted: #b7cbe6;
+    --rem-glow: #9ad9ff;
+}
+
+/* LINKS */
+body.th_rezero_rem a {
+    color: var(--rem-light-blue) !important;
+    text-decoration: none !important;
+    transition: 0.25s;
+}
+body.th_rezero_rem a:hover {
+    color: var(--rem-light-blue-soft) !important;
+    text-shadow: 0 0 6px var(--rem-glow);
+}
+
+/* SELECTED MENU ITEMS */
+body.th_rezero_rem .r-1nao33i {
+    color: var(--rem-light-blue-soft) !important;
+}
+
+/* MAIN TEXT */
+body.th_rezero_rem .r-a023e6 {
+    color: var(--rem-text-main) !important;
+}
+
+/* REACTIONS / META TEXT */
+body.th_rezero_rem .r-n6v787 {
+    color: var(--rem-text-muted) !important;
+}
+
+/* PLACEHOLDER TEXT */
+body.th_rezero_rem .public-DraftEditorPlaceholder-root {
+    color: #9bb6d9 !important;
+    opacity: 0.65;
+}
+
+/* ICONS */
+body.th_rezero_rem svg {
+    color: var(--rem-light-blue) !important;
+    filter: drop-shadow(0 0 3px var(--rem-glow));
+    transition: 0.25s;
+}
+body.th_rezero_rem svg:hover {
+    color: var(--rem-light-blue-soft) !important;
+    filter: drop-shadow(0 0 6px var(--rem-glow));
+}
+
+/* TWEET TEXT */
+body.th_rezero_rem [data-testid="tweetText"] {
+    color: #f3f9ff !important;
+    text-shadow: 0 0 2px rgba(154, 217, 255, 0.6);
+}
+
+/* BUTTONS (Post / Edit etc.) */
+body.th_rezero_rem .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
+    background: linear-gradient(
+        145deg,
+        var(--rem-dark-blue),
+        var(--rem-dark-blue-2) 50%,
+        var(--rem-dark-blue-3)
+    ) !important;
+    border: none !important;
+    border-radius: 22px !important;
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.1),
+        inset 0 -1px 0 rgba(0,0,0,0.45);
+    transition: 0.25s;
+}
+
+body.th_rezero_rem .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21:hover {
+    background: linear-gradient(
+        145deg,
+        #2a3d66,
+        #365187 50%,
+        #3f63a3
+    ) !important;
+    box-shadow:
+        0 0 10px rgba(143, 211, 255, 0.45),
+        inset 0 1px 0 rgba(255,255,255,0.15);
+}
+
+/* TRANSPARENT LAYERS FOR BACKGROUND IMAGE */
+body.th_rezero_rem .jetfuel-style-root,
+body.th_rezero_rem #react-root > div,
+body.th_rezero_rem #react-root > div > div > div,
+body.th_rezero_rem .css-1dbjc4n,
+body.th_rezero_rem [data-testid="placement-root"],
+body.th_rezero_rem main {
+    background-color: transparent !important;
+}
+
+/* FEED BACKGROUND */
+body.th_rezero_rem .r-kemksi {
+    background-color: rgba(12, 20, 40, 0.5) !important;
+    backdrop-filter: blur(2px);
+}
+
+/* BACKGROUND IMAGE OVERLAY */
+body.th_rezero_rem #x-background-overlay {
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: -1 !important;
+    pointer-events: none !important;
+    background-image: var(--mizu-bg-url) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    opacity: 0.35 !important;
+}

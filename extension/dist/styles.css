@@ -78,3 +78,8 @@ header a[href="/home"]:not([data-testid]) .mizu-home-logo {
 a[href^="/i/imagine"] {
   display: none !important;
 }
+
+[class*=r-kemksi]:has(div[data-testid=SearchBox_Search_Input_label]) {
+  background: transparent !important;
+  background-color: transparent !important;
+}

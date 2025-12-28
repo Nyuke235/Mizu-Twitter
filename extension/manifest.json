@@ -12,7 +12,6 @@
     {
       "matches": ["*://twitter.com/*", "*://x.com/*"],
       "css": [
-        "dist/styles.css",
         "dist/th_matrix.css",
         "dist/th_cyberpunk.css",
         "dist/th_fate_jalter.css",
@@ -27,7 +26,9 @@
         "dist/th_umineko_beatrice.css",
         "dist/th_umineko_bernkastel.css",
         "dist/th_zzz_yixuan.css",
-        "dist/th_bluearchive_rio.css"
+        "dist/th_bluearchive_rio.css",
+        "dist/th_rezero_rem.css",
+        "dist/styles.css"
       ],
       "js": [
         "scripts/defaultsettings.js",
