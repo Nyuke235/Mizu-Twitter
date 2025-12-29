@@ -1,0 +1,82 @@
+body.th_graphite * {
+    font-family: "Inter", "Segoe UI", system-ui, sans-serif !important;
+    letter-spacing: 0.01em;
+}
+
+body.th_graphite,
+body.th_graphite #react-root,
+body.th_graphite main {
+    background-color: #0e0e11 !important;
+}
+
+body.th_graphite .css-1dbjc4n,
+body.th_graphite .r-kemksi {
+    background-color: #16161a !important;
+}
+
+body.th_graphite a {
+    color: #d4d4d8 !important;
+    text-decoration: none !important;
+}
+body.th_graphite a:hover {
+    color: #f4f4f5 !important;
+}
+
+body.th_graphite .r-1nao33i {
+    color: #f4f4f5 !important;
+    font-weight: 600;
+}
+
+body.th_graphite .r-a023e6 {
+    color: #eaeaea !important;
+}
+
+body.th_graphite [data-testid="tweetText"] {
+    color: #f5f5f5 !important;
+}
+
+body.th_graphite .r-n6v787 {
+    color: #a1a1aa !important;
+}
+
+body.th_graphite .public-DraftEditorPlaceholder-root {
+    color: #71717a !important;
+    opacity: 0.8;
+}
+
+body.th_graphite svg {
+    color: #a1a1aa !important;
+    transition: color 0.15s;
+}
+body.th_graphite svg:hover {
+    color: #e5e5e5 !important;
+}
+
+body.th_graphite .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
+    background-color: #1f1f23 !important;
+    color: #eaeaea !important;
+    border-radius: 6px !important;
+    border: 1px solid #2a2a2e !important;
+    font-weight: 600;
+    transition: background-color 0.15s, border-color 0.15s;
+}
+body.th_graphite .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21:hover {
+    background-color: #2a2a2e !important;
+    border-color: #3f3f46 !important;
+}
+
+body.th_graphite hr,
+body.th_graphite [role="separator"] {
+    border-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+body.th_graphite * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    backdrop-filter: none !important;
+}
+
+body.th_graphite #x-background-overlay {
+    display: none !important;
+}
