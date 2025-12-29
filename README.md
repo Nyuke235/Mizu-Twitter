@@ -10,25 +10,25 @@
 
 ## Theme Examples
 <p align="center">
-  <img src="images/ex-yuyuko.png" width="700">
+  <img src="images/ex-yuyuko.png" width="800">
   <br>
   <em>Touhou - Yuyuko theme</em>
 </p>
 
 <p align="center">
-  <img src="images/ex-beatrice.png" width="700">
+  <img src="images/ex-beatrice.png" width="800">
   <br>
   <em>Umineko - Beatrice theme</em>
 </p>
 
 <p align="center">
-  <img src="images/ex-yixuan.png" width="700">
+  <img src="images/ex-yixuan.png" width="800">
   <br>
   <em>Zenless Zone Zero - Yi Xuan theme</em>
 </p>
 
 <p align="center">
-  <img src="images/ex-matrix.png" width="700">
+  <img src="images/ex-matrix.png" width="800">
   <br>
   <em>Matrix theme</em>
 </p>
