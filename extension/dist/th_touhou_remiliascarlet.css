@@ -1,83 +1,99 @@
+/* GLOBAL FONT & BASE */
 body.th_touhou_remiliascarlet * {
-    font-family: sans-serif !important;
-    letter-spacing: 0.015em;
+    font-family: "Segoe UI", "Helvetica Neue", "Arial", sans-serif !important;
+    letter-spacing: 0.02em;
 }
 
+/* THEME COLORS */
+body.th_touhou_remiliascarlet {
+    --remilia-blood: #d71e3a;
+    --remilia-dark-red: #5a0f14;
+    --remilia-deep-red: #2b070a;
+    --remilia-light-red: #ff9aa2;
+
+    --remilia-text-main: #ffecec;
+    --remilia-text-muted: #d6a3a8;
+    --remilia-glow: #ff4d5a;
+}
+
+/* LINKS */
 body.th_touhou_remiliascarlet a {
-    color: #d35a5a !important;
+    color: var(--remilia-blood) !important;
     text-decoration: none !important;
-    transition: 0.25s !important;
-}
-
-body.th_touhou_remiliascarlet a:hover {
-    color: #ffb3b3 !important;
-    text-shadow: 0 0 5px rgba(255, 90, 90, 0.55) !important;
-}
-
-body.th_touhou_remiliascarlet .r-1nao33i {
-    color: #ec6a6a !important;
-    text-shadow: 0 0 5px rgba(255, 90, 90, 0.55);
-}
-
-body.th_touhou_remiliascarlet .r-n6v787 {
-    color: #d8a0a0 !important;
-}
-
-body.th_touhou_remiliascarlet .public-DraftEditorPlaceholder-root {
-    color: #b07c7c !important;
-    opacity: 0.6 !important;
-}
-
-body.th_touhou_remiliascarlet svg {
-    color: #d35a5a !important;
     transition: 0.25s;
 }
-
-body.th_touhou_remiliascarlet svg:hover {
-    color: #ffb3b3 !important;
-    filter: drop-shadow(0 0 6px rgba(255, 90, 90, 0.65));
+body.th_touhou_remiliascarlet a:hover {
+    color: var(--remilia-light-red) !important;
+    text-shadow: 0 0 6px var(--remilia-glow);
 }
 
+/* SELECTED MENU ITEMS */
+body.th_touhou_remiliascarlet .r-1nao33i {
+    color: var(--remilia-light-red) !important;
+}
+
+/* MAIN TEXT */
 body.th_touhou_remiliascarlet .r-a023e6 {
-    color: #f7eeee !important;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.65);
-    font-weight: 500;
+    color: var(--remilia-text-main) !important;
 }
 
+/* META / REACTIONS TEXT */
+body.th_touhou_remiliascarlet .r-n6v787 {
+    color: var(--remilia-text-muted) !important;
+}
+
+/* PLACEHOLDER TEXT */
+body.th_touhou_remiliascarlet .public-DraftEditorPlaceholder-root {
+    color: #b07a80 !important;
+    opacity: 0.65;
+}
+
+/* ICONS */
+body.th_touhou_remiliascarlet svg {
+    color: var(--remilia-blood) !important;
+    filter: drop-shadow(0 0 3px var(--remilia-glow));
+    transition: 0.25s;
+}
+body.th_touhou_remiliascarlet svg:hover {
+    color: var(--remilia-light-red) !important;
+    filter: drop-shadow(0 0 7px var(--remilia-glow));
+}
+
+/* TWEET TEXT */
 body.th_touhou_remiliascarlet [data-testid="tweetText"] {
-    color: #fff7f7 !important;
+    color: #fff0f0 !important;
+    text-shadow: 0 0 2px rgba(255, 77, 90, 0.6);
 }
 
+/* BUTTONS (Post / Edit etc.) */
 body.th_touhou_remiliascarlet .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
     background: linear-gradient(
-        135deg,
-        #6b1a1a,
-        #8e2a2a 45%,
-        #b03b3b
+        145deg,
+        var(--remilia-deep-red),
+        var(--remilia-dark-red) 50%,
+        #7a121a
     ) !important;
-    color: #fff5f5 !important;
-    font-weight: 650;
-    letter-spacing: 0.04em;
-    border-radius: 26px !important;
     border: none !important;
+    border-radius: 26px !important;
     box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.1),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+        inset 0 1px 0 rgba(255,255,255,0.08),
+        inset 0 -1px 0 rgba(0,0,0,0.55);
     transition: 0.25s;
 }
 
 body.th_touhou_remiliascarlet .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21:hover {
     background: linear-gradient(
-        135deg,
-        #8a2626,
-        #b03b3b 45%,
-        #d44d4d
+        145deg,
+        #7a121a,
+        #a01522 50%,
+        var(--remilia-blood)
     ) !important;
     box-shadow:
-        0 0 10px rgba(255, 90, 90, 0.6),
-        inset 0 1px 0 rgba(255, 255, 255, 0.12);
+        0 0 14px rgba(255, 77, 90, 0.55),
+        inset 0 1px 0 rgba(255,255,255,0.15);
 }
 
+/* TRANSPARENT LAYERS FOR BACKGROUND IMAGE */
 body.th_touhou_remiliascarlet .jetfuel-style-root,
 body.th_touhou_remiliascarlet #react-root > div,
 body.th_touhou_remiliascarlet #react-root > div > div > div,
@@ -87,11 +103,13 @@ body.th_touhou_remiliascarlet main {
     background-color: transparent !important;
 }
 
+/* FEED BACKGROUND */
 body.th_touhou_remiliascarlet .r-kemksi {
-    background-color: rgba(18, 7, 7, 0.6) !important;
+    background-color: rgba(30, 5, 8, 0.65) !important;
     backdrop-filter: blur(2px);
 }
 
+/* BACKGROUND IMAGE OVERLAY */
 body.th_touhou_remiliascarlet #x-background-overlay {
     position: fixed !important;
     inset: 0 !important;
@@ -101,5 +119,5 @@ body.th_touhou_remiliascarlet #x-background-overlay {
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
-    opacity: 0.38 !important;
+    opacity: 0.35 !important;
 }
