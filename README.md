@@ -41,7 +41,7 @@ Firefox support has not been tested yet.
 <br><br>
 For now, follow these steps to install the extension locally in your browser:
 ### 1. Download the latest release on GitHub
-1. Download here: [Download ZIP](https://github.com/Nyuke235/Mizu-Twitter/releases/download/v0.1/MizuTwitter.zip)
+1. Download here: [Download ZIP](https://github.com/Nyuke235/Mizu-Twitter/releases/download/v0.2/MizuTwitter.zip)
 2. Extract the ZIP file on your computer.
 
 ### 2. Open your Extensions Page
