@@ -15,7 +15,6 @@
         "dist/th_matrix.css",
         "dist/th_cyberpunk.css",
         "dist/th_fate_jalter.css",
-        "dist/th_fireemblem_byleth.css",
         "dist/th_hatsunemiku.css",
         "dist/th_steinsgate.css",
         "dist/th_touhou_remiliascarlet.css",
@@ -28,6 +27,7 @@
         "dist/th_zzz_yixuan.css",
         "dist/th_bluearchive_rio.css",
         "dist/th_rezero_rem.css",
+        "dist/th_touhou_koishi.css",
         "dist/styles.css"
       ],
       "js": [

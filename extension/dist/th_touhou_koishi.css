@@ -1,0 +1,124 @@
+/* GLOBAL FONT & BASE */
+body.th_touhou_koishi * {
+    font-family: "Segoe UI", "Helvetica Neue", "Arial", sans-serif !important;
+    letter-spacing: 0.02em;
+}
+
+/* THEME COLORS */
+body.th_touhou_koishi {
+    --koishi-lime: #9dff3a;
+    --koishi-lime-soft: #caff7a;
+    --koishi-green: #2e7d32;
+    --koishi-green-dark: #1b3a24;
+    --koishi-green-deep: #132a1b;
+
+    --koishi-text-main: #f1ffe8;
+    --koishi-text-muted: #b8e6b8;
+    --koishi-glow: #b6ff5a;
+}
+
+/* LINKS */
+body.th_touhou_koishi a {
+    color: var(--koishi-lime) !important;
+    text-decoration: none !important;
+    transition: 0.25s;
+}
+body.th_touhou_koishi a:hover {
+    color: var(--koishi-lime-soft) !important;
+    text-shadow: 0 0 6px var(--koishi-glow);
+}
+
+/* SELECTED MENU ITEMS */
+body.th_touhou_koishi .r-1nao33i {
+    color: var(--koishi-lime-soft) !important;
+}
+
+/* MAIN TEXT */
+body.th_touhou_koishi .r-a023e6 {
+    color: var(--koishi-text-main) !important;
+}
+
+/* META / REACTIONS TEXT */
+body.th_touhou_koishi .r-n6v787 {
+    color: var(--koishi-text-muted) !important;
+}
+
+/* PLACEHOLDER TEXT */
+body.th_touhou_koishi .public-DraftEditorPlaceholder-root {
+    color: #9ccf9c !important;
+    opacity: 0.65;
+}
+
+/* ICONS */
+body.th_touhou_koishi svg {
+    color: var(--koishi-lime) !important;
+    filter: drop-shadow(0 0 3px var(--koishi-glow));
+    transition: 0.25s;
+}
+body.th_touhou_koishi svg:hover {
+    color: var(--koishi-lime-soft) !important;
+    filter: drop-shadow(0 0 6px var(--koishi-glow));
+}
+
+/* TWEET TEXT */
+body.th_touhou_koishi [data-testid="tweetText"] {
+    color: #f6fff0 !important;
+    text-shadow: 0 0 2px rgba(182, 255, 90, 0.6);
+}
+
+/* BUTTONS (Post / Edit etc.) */
+body.th_touhou_koishi .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
+    background: linear-gradient(
+        145deg,
+        var(--koishi-green-deep),
+        var(--koishi-green-dark) 50%,
+        var(--koishi-green)
+    ) !important;
+    border: none !important;
+    border-radius: 24px !important;
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.1),
+        inset 0 -1px 0 rgba(0,0,0,0.45);
+    transition: 0.25s;
+}
+
+body.th_touhou_koishi .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21:hover {
+    background: linear-gradient(
+        145deg,
+        #245a34,
+        #2f7d3f 50%,
+        #3fa552
+    ) !important;
+    box-shadow:
+        0 0 12px rgba(182, 255, 90, 0.45),
+        inset 0 1px 0 rgba(255,255,255,0.15);
+}
+
+/* TRANSPARENT LAYERS FOR BACKGROUND IMAGE */
+body.th_touhou_koishi .jetfuel-style-root,
+body.th_touhou_koishi #react-root > div,
+body.th_touhou_koishi #react-root > div > div > div,
+body.th_touhou_koishi .css-1dbjc4n,
+body.th_touhou_koishi [data-testid="placement-root"],
+body.th_touhou_koishi main {
+    background-color: transparent !important;
+}
+
+/* FEED BACKGROUND */
+body.th_touhou_koishi .r-kemksi {
+    background-color: rgba(10, 25, 15, 0.6) !important;
+    backdrop-filter: blur(2px);
+}
+
+/* BACKGROUND IMAGE OVERLAY */
+body.th_touhou_koishi #x-background-overlay {
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: -1 !important;
+    pointer-events: none !important;
+    background-image: var(--mizu-bg-url) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    opacity: 0.4 !important;
+}
