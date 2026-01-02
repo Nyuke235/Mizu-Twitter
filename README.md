@@ -34,7 +34,7 @@
 </p>
 
 ## Installation
-You can download the extension on the Chrome Web Store: [Download](https://chromewebstore.google.com/detail/mizu-twitter/apebifiehlkceokaifbboakijidojhnp)
+You can get easily the extension on the *Chrome Web Store*: [Link](https://chromewebstore.google.com/detail/mizu-twitter/apebifiehlkceokaifbboakijidojhnp)
 <br>
 The extension is also compatible with Firefox
 <br><br>
