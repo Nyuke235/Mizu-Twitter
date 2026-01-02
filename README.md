@@ -10,36 +10,34 @@
 
 ## Theme Examples
 <p align="center">
-  <img src="images/ex-yuyuko.png" width="800">
+  <img src="images/ex-yuyuko.png">
   <br>
   <em>Touhou - Yuyuko theme</em>
 </p>
 
 <p align="center">
-  <img src="images/ex-beatrice.png" width="800">
+  <img src="images/ex-beatrice.png">
   <br>
   <em>Umineko - Beatrice theme</em>
 </p>
 
 <p align="center">
-  <img src="images/ex-yixuan.png" width="800">
+  <img src="images/ex-yixuan.png">
   <br>
   <em>Zenless Zone Zero - Yi Xuan theme</em>
 </p>
 
 <p align="center">
-  <img src="images/ex-matrix.png" width="800">
+  <img src="images/ex-matrix.png">
   <br>
   <em>Matrix theme</em>
 </p>
 
 ## Installation
-Extension will only work for now on Chromium-based browsers such as Chrome, Edge, Brave, Opera, Vivaldi and more.
-Firefox support has not been tested yet.
-
-*The extension will later be added to the Chrome Web Store when its development is more complete.*
+You can download the extension on the Chrome Web Store: [Download](https://chromewebstore.google.com/detail/mizu-twitter/apebifiehlkceokaifbboakijidojhnp)
+The extension is also compatible with Firefox
 <br><br>
-For now, follow these steps to install the extension locally in your browser:
+**Here's how you can download the extension without using the Chrome Web Store:**
 ### 1. Download the latest release on GitHub
 1. Download here: [Download ZIP](https://github.com/Nyuke235/Mizu-Twitter/releases/download/v0.2/MizuTwitter.zip)
 2. Extract the ZIP file on your computer.
