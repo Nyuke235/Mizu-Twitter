@@ -35,9 +35,10 @@
 
 ## Installation
 You can download the extension on the Chrome Web Store: [Download](https://chromewebstore.google.com/detail/mizu-twitter/apebifiehlkceokaifbboakijidojhnp)
+<br>
 The extension is also compatible with Firefox
 <br><br>
-**Here's how you can download the extension without using the Chrome Web Store:**
+__**Here's how you can download the extension without using the Chrome Web Store:**__
 ### 1. Download the latest release on GitHub
 1. Download here: [Download ZIP](https://github.com/Nyuke235/Mizu-Twitter/releases/download/v0.2/MizuTwitter.zip)
 2. Extract the ZIP file on your computer.
