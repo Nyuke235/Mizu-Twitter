@@ -26,7 +26,6 @@
         "dist/th_umineko_bernkastel.css",
         "dist/th_zzz_yixuan.css",
         "dist/th_bluearchive_rio.css",
-        "dist/th_rezero_rem.css",
         "dist/th_touhou_koishi.css",
         "dist/th_midnight.css",
         "dist/th_graphite.css",
@@ -46,7 +45,7 @@
         "images/*",
         "data/pol.json"
       ],
-      "matches": ["<all_urls>"]
+      "matches": ["*://twitter.com/*", "*://x.com/*"]
     }
   ],
   "action": {
