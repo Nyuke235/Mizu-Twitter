@@ -130,8 +130,10 @@ header a[href="/home"]:not([data-testid]) .mizu-home-logo {
   display: block;
 }
 
-a[href^="/i/imagine"] {
+a[aria-label="Edit image"] {
   display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
 }
 
 [class*="r-kemksi"]:has(div[data-testid="SearchBox_Search_Input_label"]) {
