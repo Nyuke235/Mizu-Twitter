@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Mizu Twitter",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Browser extension that adds anime themes, hides unnecessary ui elements, and helps reduce exposure to political content on Twitter.",
   "browser_specific_settings": {
     "gecko": {

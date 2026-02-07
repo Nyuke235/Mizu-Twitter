@@ -29,6 +29,10 @@ body.hideBusiness header a[href*="/premium-business"] {
   display: none !important;
 }
 
+body.hideCreatorStudio header a[href*="/i/jf/creators/studio"] {
+  display: none !important;
+}
+
 body.hideExplore a[data-testid=AppTabBar_Explore_Link] {
   display: none !important;
 }

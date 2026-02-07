@@ -10,7 +10,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "sass": "^1.97.1"
+  "dependencies": {
+    "sass": "^1.97.3"
   }
 }
