@@ -35,6 +35,7 @@
         "dist/th_touhou_koishi.css",
         "dist/th_midnight.css",
         "dist/th_graphite.css",
+        "dist/th_celestia_ludenberg.css",
         "dist/styles.css"
       ],
       "js": [
