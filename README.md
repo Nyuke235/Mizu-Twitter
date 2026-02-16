@@ -32,9 +32,9 @@ You can get easily the extension on the *Chrome Web Store*: [Link](https://chrom
 <br>
 The extension is also compatible with Firefox
 <br><br>
-__**Here's how you can download the extension without using the Chrome Web Store:**__
+__**Here's how you can download the extension manually:**__
 ### 1. Download the latest release on GitHub
-1. Download here: [Download ZIP](https://github.com/Nyuke235/Mizu-Twitter/releases/download/v0.2/MizuTwitter.zip)
+1. Download here: [Download ZIP](https://github.com/Nyuke235/Mizu-Twitter/releases/download/v0.3/MizuTwitter.zip)
 2. Extract the ZIP file on your computer.
 
 ### 2. Open your Extensions Page
