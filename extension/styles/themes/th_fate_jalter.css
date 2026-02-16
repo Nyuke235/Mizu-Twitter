@@ -1,0 +1,32 @@
+body.th_fate_jalter {
+    --font-main: "Segoe UI", "Helvetica Neue", "Arial", sans-serif;
+    --color-text-main: #ececef;
+    --color-text-muted: #c8c9cf;
+    --color-tweet-text: #f7f7fa;
+    --color-placeholder: #a3a4ab;
+    --color-link: #be252f;
+    --color-link-hover: #ff3845;
+    --color-accent: #ffffff;
+    --color-glow: rgba(159, 29, 38, 0.6);
+    --color-icon: #f0f0f2;
+    --color-icon-hover: #ffffff;
+    --color-surface-1: #3a0d11;
+    --color-surface-2: var(--jalter-red);
+    --color-surface-3: var(--jalter-red);
+    --color-surface-1-hover: #5a141a;
+    --color-surface-2-hover: #c12a34;
+    --color-surface-3-hover: #c12a34;
+    --btn-color: #ffffff;
+    --btn-font-weight: 700;
+    --btn-letter-spacing: 0.04em;
+    --btn-radius: 22px;
+    --btn-text-shadow:
+        0 0 6px rgba(255, 255, 255, 0.6),
+        0 0 10px rgba(0, 0, 0, 0.9);
+    --btn-hover-shadow:
+        0 0 10px rgba(255, 255, 255, 0.35),
+        0 0 16px var(--jalter-red-soft);
+    --color-surface-bg: rgba(0, 0, 0, 0.6);
+    --surface-blur: 2px;
+    --bg-overlay-opacity: 0.3;
+}

@@ -1,0 +1,157 @@
+/* GLOBAL FONT AND LETTER SPACING*/
+body.mizu,
+body.mizu * {
+    font-family: var(--font-main, "Segoe UI", "Helvetica Neue", Arial, sans-serif) !important;
+    letter-spacing: 0.02em;
+}
+
+body.mizu .mizu-hidden {
+    display: none !important;
+}
+
+/* DEFAULT MAIN TEXT (Twitter primary text class) */
+body.mizu .r-a023e6 {
+    color: var(--color-text-main, #ffffff) !important;
+}
+
+/* REACTIONS TEXT */
+body.mizu .r-n6v787 {
+    color: var(--color-text-muted, #8899a6) !important;
+}
+
+/* SELECTED MENU ITEMS */
+body.mizu .r-1nao33i {
+    color: var(--color-accent, #1d9bf0) !important;
+}
+
+/* LINKS */
+body.mizu a {
+    color: var(--color-link, #1d9bf0) !important;
+    text-decoration: none !important;
+    transition: color 0.25s ease, text-shadow 0.25s ease;
+}
+
+body.mizu a:hover {
+    color: var(--color-link-hover, #4fb3ff) !important;
+    text-shadow: 0 0 4px var(--color-glow, rgba(29,155,240,0.4));
+}
+
+/* TWEET TEXT */
+body.mizu [data-testid="tweetText"] {
+    color: var(--color-tweet-text, var(--color-text-main, #ffffff)) !important;
+}
+
+/* PLACEHOLDER TEXT */
+body.mizu .public-DraftEditorPlaceholder-root {
+    color: var(--color-placeholder, #8899a6) !important;
+    opacity: 0.65;
+}
+
+/* ICONS */
+body.mizu svg {
+    color: var(--color-icon, currentColor) !important;
+    filter: drop-shadow(0 0 1px var(--color-glow, transparent));
+    transition: color 0.25s ease, filter 0.25s ease;
+}
+
+body.mizu svg:hover {
+    filter: drop-shadow(0 0 6px var(--color-glow, rgba(255,255,255,0.3)));
+}
+
+/* BUTTONS (Post/Edit etc.) */
+body.mizu .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
+    background: linear-gradient(
+        145deg,
+        var(--color-surface-1, #1e2732),
+        var(--color-surface-2, #263341) 50%,
+        var(--color-surface-3, #2f3f52)
+    ) !important;
+
+    border: none !important;
+    border-radius: var(--radius-btn, 20px) !important;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.08),
+        inset 0 -1px 0 rgba(0,0,0,0.45);
+
+    transition:
+        background 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.15s ease;
+}
+
+body.mizu .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21:hover {
+    background: linear-gradient(
+        145deg,
+        var(--color-surface-1-hover, var(--color-surface-1)),
+        var(--color-surface-2-hover, var(--color-surface-2)) 50%,
+        var(--color-surface-3-hover, var(--color-surface-3))
+    ) !important;
+
+    box-shadow:
+        0 0 10px var(--color-glow, rgba(255,255,255,0.3)),
+        inset 0 1px 0 rgba(255,255,255,0.12);
+
+    transform: translateY(-1px);
+}
+
+
+/* TRANSPARENT ROOT LAYERS */
+body.mizu .jetfuel-style-root,
+body.mizu #react-root > div,
+body.mizu #react-root > div > div > div,
+body.mizu .css-1dbjc4n,
+body.mizu [data-testid="placement-root"],
+body.mizu main {
+    background-color: transparent !important;
+}
+
+
+/* SURFACE PANELS */
+body.mizu .r-kemksi {
+    background-color: var(--color-surface-bg, rgba(0,0,0,0.4)) !important;
+    backdrop-filter: blur(var(--surface-blur, 2px));
+}
+
+
+/* BACKGROUND OVERLAY SYSTEM */
+body.mizu #x-background-overlay {
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: -1 !important;
+    pointer-events: none !important;
+
+    background-image: var(--mizu-bg-url) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+
+    opacity: var(--overlay-opacity, 0.35) !important;
+}
+
+
+/* FALLBACKS */
+:root {
+    --font-main: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+
+    --color-text-main: #ffffff;
+    --color-text-muted: #8899a6;
+    --color-placeholder: #8899a6;
+
+    --color-link: #1d9bf0;
+    --color-link-hover: #4fb3ff;
+    --color-accent: #1d9bf0;
+    --color-glow: rgba(29,155,240,0.4);
+
+    --color-icon: currentColor;
+
+    --color-surface-1: #1e2732;
+    --color-surface-2: #263341;
+    --color-surface-3: #2f3f52;
+
+    --color-surface-bg: rgba(0,0,0,0.4);
+
+    --radius-btn: 20px;
+    --overlay-opacity: 0.35;
+    --surface-blur: 2px;
+}

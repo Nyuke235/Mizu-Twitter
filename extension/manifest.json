@@ -1,59 +1,73 @@
 {
   "manifest_version": 3,
   "name": "Mizu Twitter",
-  "version": "0.2.1",
-  "description": "Browser extension that adds anime themes, hides unnecessary ui elements, and helps reduce exposure to political content on Twitter.",
+  "version": "0.3.0",
+  "description": "Adds anime themes, hides unnecessary UI elements, and reduces exposure to political content on Twitter/X.",
+
   "browser_specific_settings": {
     "gecko": {
       "id": "mizu-twitter@nyuke.com",
-      "data_collection_permissions": { "required": ["none"] }
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
     }
   },
+
   "icons": {
     "16": "images/icon16.png",
     "128": "images/icon128.png"
   },
-  "permissions": ["storage", "activeTab"],
+
+  "permissions": [
+    "storage"
+  ],
+
   "content_scripts": [
     {
-      "matches": ["*://twitter.com/*", "*://x.com/*"],
+      "matches": [
+        "*://twitter.com/*",
+        "*://x.com/*"
+      ],
       "css": [
-        "dist/th_matrix.css",
-        "dist/th_cyberpunk.css",
-        "dist/th_fate_jalter.css",
-        "dist/th_hatsunemiku.css",
-        "dist/th_steinsgate.css",
-        "dist/th_touhou_remiliascarlet.css",
-        "dist/th_touhou_yuyuko.css",
-        "dist/th_higurashi_rena.css",
-        "dist/th_madokamagica_homura.css",
-        "dist/th_umamusume_manhattancafe.css",
-        "dist/th_umineko_beatrice.css",
-        "dist/th_umineko_bernkastel.css",
-        "dist/th_zzz_yixuan.css",
-        "dist/th_bluearchive_rio.css",
-        "dist/th_touhou_koishi.css",
-        "dist/th_midnight.css",
-        "dist/th_graphite.css",
-        "dist/th_celestia_ludenberg.css",
-        "dist/styles.css"
+        "styles/base/base.css",
+        "styles/base/hideUI.css",
+
+        "styles/themes/th_bluearchive_rio.css",
+        "styles/themes/th_celestia_ludenberg.css",
+        "styles/themes/th_fate_jalter.css",
+        "styles/themes/th_hatsunemiku.css",
+        "styles/themes/th_higurashi_rena.css",
+        "styles/themes/th_madokamagica_homura.css",
+        "styles/themes/th_matrix.css",
+        "styles/themes/th_steinsgate.css",
+        "styles/themes/th_touhou_koishi.css",
+        "styles/themes/th_touhou_remiliascarlet.css",
+        "styles/themes/th_touhou_yuyuko.css",
+        "styles/themes/th_umamusume_manhattancafe.css",
+        "styles/themes/th_umineko_beatrice.css",
+        "styles/themes/th_umineko_bernkastel.css",
+        "styles/themes/th_zzz_yixuan.css"
       ],
       "js": [
         "scripts/defaultsettings.js",
         "scripts/content.js"
-      ],
-      "all_frames": true
+      ]
     }
   ],
+
   "web_accessible_resources": [
     {
       "resources": [
         "images/*",
         "data/pol.json"
       ],
-      "matches": ["*://twitter.com/*", "*://x.com/*"]
+      "matches": [
+        "*://twitter.com/*",
+        "*://x.com/*"
+      ]
     }
   ],
+
   "action": {
     "default_popup": "popup/popup.html",
     "default_title": "Mizu Twitter Settings"

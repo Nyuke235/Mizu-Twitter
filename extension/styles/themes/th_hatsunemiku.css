@@ -1,0 +1,37 @@
+body.th_hatsunemiku {
+    --font-main: "Manrope", "Segoe UI", sans-serif;
+    --miku-cyan: #6feaf4;
+    --miku-cyan-soft: #a8f5ff;
+    --miku-dark-1: #0f3f4a;
+    --miku-dark-2: #145c6b;
+    --miku-dark-3: #1a7286;
+
+    --color-text-main: #c4f6ff;
+    --color-text-muted: #a6dfe8;
+    --color-tweet-text: #f2fdff;
+    --color-placeholder: #88cdd8;
+    --color-link: var(--miku-cyan);
+    --color-link-hover: var(--miku-cyan-soft);
+    --color-accent: var(--miku-cyan);
+    --color-icon: #bff3ff;
+    --color-icon-hover: #ffffff;
+
+    --color-surface-1: var(--miku-dark-1);
+    --color-surface-2: var(--miku-dark-2);
+    --color-surface-3: var(--miku-dark-3);
+
+    --color-surface-1-hover: #165d6e;
+    --color-surface-2-hover: #1e7f96;
+    --color-surface-3-hover: #2aa4bf;
+
+    --btn-bg: linear-gradient(145deg, var(--miku-dark-1), var(--miku-dark-2) 50%, var(--miku-dark-3));
+    --btn-bg-hover: linear-gradient(145deg, #165d6e, #1e7f96 50%, #2aa4bf);
+    --btn-color: #ffffff;
+    --btn-radius: 22px;
+    --btn-shadow: inset 0 1px 0 rgba(255,255,255,0.08), inset 0 -1px 0 rgba(0,0,0,0.45);
+    --btn-hover-shadow: 0 0 10px rgba(111,234,244,0.35), inset 0 1px 0 rgba(255,255,255,0.1);
+
+    --color-surface-bg: rgba(5, 18, 20, 0.55);
+    --feed-bg: rgba(10, 14, 20, 0.55);
+    --surface-blur: 2px;
+}

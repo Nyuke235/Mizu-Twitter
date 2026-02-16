@@ -1,0 +1,22 @@
+body.th_touhou_remiliascarlet {
+    --font-main: "Segoe UI", "Helvetica Neue", "Arial", sans-serif;
+    --color-text-main: #ffecec;
+    --color-text-muted: #d6a3a8;
+    --color-tweet-text: #fff0f0;
+    --color-placeholder: #b07a80;
+    --color-link: #d71e3a;
+    --color-link-hover: #ff9aa2;
+    --color-accent: #ff9aa2;
+    --color-glow: #ff4d5a;
+    --color-icon: #d71e3a;
+    --color-surface-1: #2b070a;
+    --color-surface-2: #5a0f14;
+    --color-surface-3: #7a121a;
+    --color-surface-1-hover: #7a121a;
+    --color-surface-2-hover: #a01522;
+    --color-surface-3-hover: #d71e3a;
+    --color-surface-bg: rgba(30, 5, 8, 0.65);
+    --overlay-opacity: 0.35;
+    --surface-blur: 2px;
+    --radius-btn: 26px;
+}

@@ -1,0 +1,22 @@
+body.th_umineko_bernkastel {
+    --font-main: "Manrope", "Segoe UI", sans-serif;
+    --color-text-main: #d2c6ff;
+    --color-text-muted: #dfd5fe;
+    --color-tweet-text: #f6f3ff;
+    --color-placeholder: #a0a6cc;
+    --color-link: #b38cff;
+    --color-link-hover: #d6c1ff;
+    --color-accent: #c38cff;
+    --color-glow: rgba(195, 140, 255, 0.9);
+    --color-icon: #c7b7ff;
+    --color-surface-1: rgba(90, 55, 140, 0.85);
+    --color-surface-2: rgba(110, 70, 160, 0.9);
+    --color-surface-3: rgba(125, 80, 180, 0.9);
+    --color-surface-1-hover: rgba(120, 80, 180, 0.95);
+    --color-surface-2-hover: rgba(140, 95, 200, 0.98);
+    --color-surface-3-hover: rgba(160, 110, 215, 1);
+    --color-surface-bg: rgba(9, 2, 19, 0.5);
+    --overlay-opacity: 0.4;
+    --surface-blur: 2px;
+    --radius-btn: 2px;
+}

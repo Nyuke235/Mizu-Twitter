@@ -1,0 +1,35 @@
+body.th_madokamagica_homura {
+    --font-main: "Segoe UI", "Helvetica Neue", "Arial", sans-serif;
+    --color-text-main: #e0d4ff;
+    --color-text-muted: #b0b0b0;
+    --color-tweet-text: #f0e6ff;
+    --color-placeholder: #7a7a7a;
+    --color-link: #8b5cf6;
+    --color-link-hover: #caa0ff;
+    --color-accent: #caa0ff;
+    --color-glow: #d19aff;
+    --color-icon: #8b5cf6;
+    --color-icon-hover: #ffffff;
+
+    --color-surface-1: #1a1a2e;
+    --color-surface-2: #2b2b3f;
+    --color-surface-3: #3c3c50;
+    --color-surface-1-hover: #2f2a44;
+    --color-surface-2-hover: #3d3561;
+    --color-surface-3-hover: #4a417d;
+
+    --btn-bg: linear-gradient(145deg, var(--color-surface-1), var(--color-surface-2) 50%, var(--color-surface-3));
+    --btn-bg-hover: linear-gradient(145deg, var(--color-surface-1-hover), var(--color-surface-2-hover) 50%, var(--color-surface-3-hover));
+    --btn-color: #f0e6ff;
+    --btn-radius: 22px;
+    --btn-shadow: inset 0 1px 0 rgba(255,255,255,0.08), inset 0 -1px 0 rgba(0,0,0,0.45);
+    --btn-hover-shadow: 0 0 10px var(--color-glow), inset 0 1px 0 rgba(255,255,255,0.1);
+    --btn-font-weight: 700;
+    --btn-letter-spacing: 0.02em;
+    --btn-text-shadow: 0 0 4px rgba(255,255,255,0.25);
+
+    --color-surface-bg: rgba(10, 10, 20, 0.6);
+    --feed-bg: rgba(20, 15, 30, 0.55);
+    --overlay-opacity: 0.35;
+    --surface-blur: 2px;
+}

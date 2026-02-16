@@ -1,0 +1,22 @@
+body.th_steinsgate {
+    --font-main: "Space Grotesk", "Inter", sans-serif;
+    --color-text-main: #f2d8a7;
+    --color-text-muted: #c27c3c;
+    --color-tweet-text: #f9e6c2;
+    --color-placeholder: #a05d1f;
+    --color-link: #ffa500;
+    --color-link-hover: #ffcc66;
+    --color-accent: #ff9f00;
+    --color-glow: rgba(255, 165, 0, 0.8);
+    --color-icon: #ffa500;
+    --color-surface-1: rgba(50, 25, 0, 0.95);
+    --color-surface-2: rgba(85, 40, 0, 1);
+    --color-surface-3: rgba(120, 60, 0, 1);
+    --color-surface-1-hover: rgba(120, 60, 0, 1);
+    --color-surface-2-hover: rgba(200, 100, 0, 1);
+    --color-surface-3-hover: rgba(255, 140, 0, 1);
+    --color-surface-bg: rgba(0, 0, 0, 0.45);
+    --overlay-opacity: 0.45;
+    --surface-blur: 3px;
+    --radius-btn: 8px;
+}

@@ -1,0 +1,22 @@
+body.th_umineko_beatrice {
+    --font-main: "Merriweather", "Georgia", "Times New Roman", serif;
+    --color-text-main: rgb(255, 235, 179);
+    --color-text-muted: rgb(255, 180, 0);
+    --color-tweet-text: rgb(255, 243, 210);
+    --color-placeholder: rgb(200, 160, 0);
+    --color-link: rgb(255, 215, 0);
+    --color-link-hover: rgb(255, 245, 135);
+    --color-accent: rgb(255, 200, 0);
+    --color-glow: rgb(255, 215, 0);
+    --color-icon: rgb(255, 215, 0);
+    --color-surface-1: #2b1f00;
+    --color-surface-2: #3a2a00;
+    --color-surface-3: #443200;
+    --color-surface-1-hover: #3a2500;
+    --color-surface-2-hover: #553700;
+    --color-surface-3-hover: #664400;
+    --color-surface-bg: rgba(0, 0, 0, 0.2);
+    --overlay-opacity: 0.35;
+    --surface-blur: 2px;
+    --radius-btn: 2px;
+}

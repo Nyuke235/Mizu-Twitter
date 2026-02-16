@@ -7,27 +7,18 @@ initializeSettings();
 async function initializeSettings() {
     try {
         await loadPoliticalWords();
+
         const keys = Object.keys(DEFAULT_SETTINGS);
         const data = await getStorageValues(keys);
         LAST_SETTINGS = { ...data };
+
         applySettings(LAST_SETTINGS);
         filterPoliticalTweets();
     } catch (err) {
-        console.warn("Failed to initialize settings:", err);
+        console.warn("Mizu Twitter: Initialization failed:", err);
     }
 
-    const observer = new MutationObserver(() => {
-        try {
-            applySettings(LAST_SETTINGS);
-            filterPoliticalTweets();
-        } catch (err) {
-            console.warn("Observer failed:", err);
-        }
-    });
-
-    observer.observe(document.body, { childList: true, subtree: true });
-
-    ensureBackgroundOverlay();
+    setupObserver();
 }
 
 function getStorageValues(keys) {
@@ -39,7 +30,8 @@ function getStorageValues(keys) {
                     resolve({ ...DEFAULT_SETTINGS });
                 } else {
                     const settings = keys.reduce((acc, key) => {
-                        acc[key] = data[key] !== undefined ? data[key] : DEFAULT_SETTINGS[key];
+                        acc[key] =
+                            data[key] !== undefined ? data[key] : DEFAULT_SETTINGS[key];
                         return acc;
                     }, {});
                     resolve(settings);
@@ -54,36 +46,41 @@ function getStorageValues(keys) {
 
 function applySettings(settings) {
     const body = document.body;
+
+    if (!body) return;
+
+    if (!body.classList.contains("mizu")) {
+        body.classList.add("mizu");
+    }
+
     Object.entries(settings).forEach(([key, enabled]) => {
         if (key !== "theme") {
             body.classList.toggle(key, !!enabled);
         }
     });
 
-    [...body.classList].forEach(cls => {
-        if (cls.startsWith("th_")) {
-            body.classList.remove(cls);
-        }
-    });
+    const previousTheme = body.dataset.mizuTheme;
+    if (previousTheme) {
+        body.classList.remove(previousTheme);
+    }
 
-    const theme = settings.theme || "th_default_twitter";
+    const theme = settings.theme;
     body.classList.add(theme);
+    body.dataset.mizuTheme = theme;
 
+    ensureBackgroundOverlay();
     applyBackground(theme);
-    replaceHomeLogo();
+
+    enhanceDynamicUI();
 
     if (settings.hideForYouPage) {
-        const tabList = document.querySelector('[data-testid="ScrollSnap-List"]');
-        if (!tabList) return;
-
-        const forYouTab = [...tabList.querySelectorAll('[role="tab"]')]
-            .find(tab => tab.textContent.trim() === "For you");
-        if (forYouTab) forYouTab.remove();
+        removeForYouTab();
     }
 }
 
 function ensureBackgroundOverlay() {
     if (document.getElementById("x-background-overlay")) return;
+
     const overlay = document.createElement("div");
     overlay.id = "x-background-overlay";
     document.body.prepend(overlay);
@@ -93,40 +90,25 @@ function applyBackground(theme) {
     const imagePath = `images/backgrounds/${theme}.png`;
     const url = chrome.runtime.getURL(imagePath);
 
-    document.documentElement.style.setProperty("--mizu-bg-url", `url("${url}")`);
+    document.documentElement.style.setProperty(
+        "--mizu-bg-url",
+        `url("${url}")`
+    );
 }
 
-async function loadPoliticalWords() {
-    try {
-        const url = chrome.runtime.getURL("data/pol.json");
-        const response = await fetch(url);
-        const data = await response.json();
-
-        POLITICAL_KEYWORDS = data.words.map(w => w.toLowerCase());
-        POLITICAL_WORDS_LOADED = true;
-    } catch (err) {
-        console.warn("Mizu Twitter: Failed to load political words", err);
-    }
+function enhanceDynamicUI() {
+    tagPrimaryButtons();
+    replaceHomeLogo();
 }
 
-function filterPoliticalTweets() {
-    if (!LAST_SETTINGS.filterPolitics) return;
-    if (!POLITICAL_WORDS_LOADED) return;
+function tagPrimaryButtons() {
+    const buttons = document.querySelectorAll(
+        '.css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21'
+    );
 
-    const tweets = document.querySelectorAll("article");
-
-    tweets.forEach(tweet => {
-        if (tweet.dataset.mizuFiltered === "true") return;
-
-        const text = tweet.innerText.toLowerCase();
-
-        const isPolitical = POLITICAL_KEYWORDS.some(word =>
-            text.includes(word)
-        );
-
-        if (isPolitical) {
-            tweet.style.display = "none";
-            tweet.dataset.mizuFiltered = "true";
+    buttons.forEach((btn) => {
+        if (!btn.classList.contains("mizu-btn")) {
+            btn.classList.add("mizu-btn");
         }
     });
 }
@@ -145,11 +127,82 @@ function replaceHomeLogo() {
     homeLink.prepend(img);
 }
 
+function removeForYouTab() {
+    const tabList = document.querySelector('[data-testid="ScrollSnap-List"]');
+    if (!tabList) return;
+
+    const forYouTab = [...tabList.querySelectorAll('[role="tab"]')]
+        .find(tab => tab.textContent.trim() === "For you");
+
+    if (forYouTab) {
+        forYouTab.remove();
+    }
+}
+
+async function loadPoliticalWords() {
+    try {
+        const url = chrome.runtime.getURL("data/pol.json");
+        const response = await fetch(url);
+        const data = await response.json();
+
+        POLITICAL_KEYWORDS = data.words.map((w) => w.toLowerCase());
+        POLITICAL_WORDS_LOADED = true;
+    } catch (err) {
+        console.warn("Mizu Twitter: Failed to load political words", err);
+    }
+}
+
+function filterPoliticalTweets() {
+    if (!LAST_SETTINGS.filterPolitics) return;
+    if (!POLITICAL_WORDS_LOADED) return;
+
+    const tweets = document.querySelectorAll(
+        'article:not([data-mizu-filtered])'
+    );
+
+    tweets.forEach((tweet) => {
+        const text = tweet.innerText.toLowerCase();
+
+        const isPolitical = POLITICAL_KEYWORDS.some((word) =>
+            text.includes(word)
+        );
+
+        if (isPolitical) {
+            tweet.classList.add("mizu-hidden");
+        }
+
+        tweet.dataset.mizuFiltered = "true";
+    });
+}
+
+function setupObserver() {
+    let scheduled = false;
+
+    const observer = new MutationObserver(() => {
+        if (scheduled) return;
+
+        scheduled = true;
+
+        requestAnimationFrame(() => {
+            enhanceDynamicUI();
+            filterPoliticalTweets();
+            scheduled = false;
+        });
+    });
+
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+}
+
 chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
     if (msg.type === "UPDATE_SETTINGS" && msg.settings) {
         LAST_SETTINGS = { ...LAST_SETTINGS, ...msg.settings };
+
         applySettings(LAST_SETTINGS);
         filterPoliticalTweets();
     }
+
     sendResponse({ success: true });
 });

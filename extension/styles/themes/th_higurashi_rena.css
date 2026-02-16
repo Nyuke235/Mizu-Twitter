@@ -1,0 +1,37 @@
+body.th_higurashi_rena {
+    --font-main: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+
+    --color-text-main: #fffafa;
+    --color-text-muted: #ffb3b3;
+    --color-tweet-text: #f2f2f2;
+    --color-placeholder: #999;
+    --color-link: #ff6b6b;
+    --color-link-hover: #ff9a9a;
+    --color-accent: #ff6b6b;
+    --color-glow: rgba(255,107,107,0.35);
+    --color-icon: #ff6b6b;
+    --color-icon-hover: #ff9a9a;
+
+    --color-surface-1: rgba(120, 0, 0, 0.6);
+    --color-surface-2: rgba(120, 0, 0, 0.6);
+    --color-surface-3: rgba(120, 0, 0, 0.6);
+
+    --color-surface-1-hover: rgba(160, 0, 0, 0.7);
+    --color-surface-2-hover: rgba(160, 0, 0, 0.7);
+    --color-surface-3-hover: rgba(160, 0, 0, 0.7);
+
+    --btn-bg: var(--color-surface-1);
+    --btn-bg-hover: var(--color-surface-1-hover);
+    --btn-color: #fffafa;
+    --btn-radius: 0px;
+    --btn-shadow: inset 0 1px 0 rgba(255,255,255,0.08), inset 0 -1px 0 rgba(0,0,0,0.45);
+    --btn-hover-shadow: 0 0 8px var(--color-glow), inset 0 1px 0 rgba(255,255,255,0.12);
+    --btn-font-weight: 600;
+    --btn-letter-spacing: 0.01em;
+    --btn-text-shadow: 0 0 2px rgba(255,255,255,0.15);
+
+    --color-surface-bg: transparent;
+    --feed-bg: rgba(0, 0, 0, 0.55);
+    --overlay-opacity: 0.35;
+    --surface-blur: 2px;
+}

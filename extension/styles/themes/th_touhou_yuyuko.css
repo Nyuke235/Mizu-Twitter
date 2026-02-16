@@ -1,0 +1,22 @@
+body.th_touhou_yuyuko {
+    --font-main: "Segoe UI", "Helvetica Neue", "Arial", sans-serif;
+    --color-text-main: #f3aed3;
+    --color-text-muted: #cdd6e6;
+    --color-tweet-text: #f9fbff;
+    --color-placeholder: #b6bfd4;
+    --color-link: #c6ddf8;
+    --color-link-hover: #ffe9f3;
+    --color-accent: #f3f7ff;
+    --color-glow: rgba(166, 200, 242, 0.5);
+    --color-icon: #e7eef8;
+    --color-surface-1: #4b2742;
+    --color-surface-2: #5f3b63;
+    --color-surface-3: #7aa2d6;
+    --color-surface-1-hover: #5a3260;
+    --color-surface-2-hover: #6f4a86;
+    --color-surface-3-hover: #8bb7e8;
+    --color-surface-bg: rgba(12, 14, 26, 0.55);
+    --overlay-opacity: 0.38;
+    --surface-blur: 2px;
+    --radius-btn: 40px;
+}

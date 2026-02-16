@@ -1,0 +1,19 @@
+body.th_bluearchive_rio {
+    --font-main: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    --color-text-main: #ffffff;
+    --color-text-muted: #b3dce6;
+    --color-link: #c52c2c;
+    --color-link-hover: #e05050;
+    --color-accent: #e05050;
+    --color-glow: #e05050;
+    --color-icon: #e05050;
+    --color-tweet-text: #e0f7ff;
+    --color-placeholder: #8fc8e6;
+    --color-surface-1: #1a2a3a;
+    --color-surface-2: #22354a;
+    --color-surface-3: #2b4160;
+    --color-surface-1-hover: #1e3a50;
+    --color-surface-2-hover: #2c4d6a;
+    --color-surface-3-hover: #3a6090;
+    --overlay-opacity: 0.4;
+}

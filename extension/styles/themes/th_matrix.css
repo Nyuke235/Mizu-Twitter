@@ -1,0 +1,22 @@
+body.th_matrix {
+    --font-main: "IBM Plex Mono", "JetBrains Mono", "Source Code Pro", monospace;
+    --color-text-main: #8aff8a;
+    --color-text-muted: #6fbf6f;
+    --color-tweet-text: #e6ffe6;
+    --color-placeholder: #4a8a4a;
+    --color-link: #f9ff9e;
+    --color-link-hover: #feffca;
+    --color-accent: #6dff6d;
+    --color-glow: transparent;
+    --color-icon: #7fff7f;
+    --color-surface-1: #000000;
+    --color-surface-2: #000000;
+    --color-surface-3: #000000;
+    --color-surface-1-hover: #040804;
+    --color-surface-2-hover: #040804;
+    --color-surface-3-hover: #040804;
+    --color-surface-bg: #000000;
+    --overlay-opacity: 0;
+    --surface-blur: 0;
+    --radius-btn: 0px;
+}
