@@ -1,0 +1,22 @@
+body.th_datealive_tokisakikurumi {
+    --font-main: "Segoe UI", "Helvetica Neue", "Arial", sans-serif;
+    --color-text-main: #e0e0e0;
+    --color-text-muted: #888888;
+    --color-tweet-text: #ffffff;
+    --color-placeholder: #555555;
+    --color-link: #b30000;
+    --color-link-hover: #ff1a1a;
+    --color-accent: #d40000;
+    --color-glow: rgba(212, 0, 0, 0.5);
+    --color-icon: #b30000;
+    --color-surface-1: #0a0a0a;
+    --color-surface-2: #1a1a1a;
+    --color-surface-3: #2d2d2d;
+    --color-surface-1-hover: #1f1f1f;
+    --color-surface-2-hover: #2b2b2b;
+    --color-surface-3-hover: #b30000;
+    --color-surface-bg: rgba(0, 0, 0, 0.8);
+    --overlay-opacity: 0.5;
+    --surface-blur: 5px;
+    --radius-btn: 4px;
+}

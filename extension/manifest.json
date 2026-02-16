@@ -32,8 +32,10 @@
         "styles/base/base.css",
         "styles/base/hideUI.css",
 
+        "styles/themes/th_amagami_tanamachikaoru.css",
         "styles/themes/th_bluearchive_rio.css",
         "styles/themes/th_celestia_ludenberg.css",
+        "styles/themes/th_datealive_tokisakikurumi.css",
         "styles/themes/th_fate_jalter.css",
         "styles/themes/th_hatsunemiku.css",
         "styles/themes/th_higurashi_rena.css",

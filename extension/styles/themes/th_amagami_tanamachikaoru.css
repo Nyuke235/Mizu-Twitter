@@ -1,0 +1,22 @@
+body.th_amagami_tanamachikaoru {
+    --font-main: "Segoe UI", "Helvetica Neue", "Arial", sans-serif;
+    --color-text-main: #f4e9dc;
+    --color-text-muted: #a89a8e;
+    --color-tweet-text: #ffffff;
+    --color-placeholder: #7c726a;
+    --color-link: #88a37d;
+    --color-link-hover: #b4cc9f;
+    --color-accent: #9fb695;
+    --color-glow: rgba(136, 163, 125, 0.4);
+    --color-icon: #9fb695;
+    --color-surface-1: #1a1c1b;
+    --color-surface-2: #3d352f;
+    --color-surface-3: #5c4f44;
+    --color-surface-1-hover: #2d2f2e;
+    --color-surface-2-hover: #4f453d;
+    --color-surface-3-hover: #756557;
+    --color-surface-bg: rgba(22, 24, 23, 0.75);
+    --overlay-opacity: 0.4;
+    --surface-blur: 4px;
+    --radius-btn: 12px;
+}
