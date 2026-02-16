@@ -10,27 +10,21 @@
 
 ## Theme Examples
 <p align="center">
-  <img src="images/ex-yuyuko.png">
+  <img src="images/ex-touhou.png">
   <br>
-  <em>Touhou - Yuyuko theme</em>
+  <em>Touhou - Remilia Scarlet theme</em>
 </p>
 
 <p align="center">
-  <img src="images/ex-beatrice.png">
+  <img src="images/ex-umineko.png">
   <br>
   <em>Umineko - Beatrice theme</em>
 </p>
 
 <p align="center">
-  <img src="images/ex-yixuan.png">
+  <img src="images/ex-amagami.png">
   <br>
-  <em>Zenless Zone Zero - Yi Xuan theme</em>
-</p>
-
-<p align="center">
-  <img src="images/ex-matrix.png">
-  <br>
-  <em>Matrix theme</em>
+  <em>Amagami - Kaoru Tanamachi theme</em>
 </p>
 
 ## Installation
@@ -62,13 +56,25 @@ or `brave://extensions/` depending on your browser
 1. Visit Twitter/X and open the extension popup.
 2. Toggle features like Filter Politics or Themes to make sure they work.
 
-## Planned
-- Way more themes
-- Custom CSS theme
-- Custom filter
-- Enhanced political filtering
-- Firefox support
-
+## Available Themes
+- Default
+- Matrix
+- Amagami - Tanamachi Kaoru
+- Blue Archive - Rio
+- Danganronpa - Celestia Ludenberg
+- Date A Live - Tokisaki Kurumi
+- Fate - Jalter
+- Vocaloid - Hatsune Miku
+- Higurashi - Rena
+- Madoka Magica - Homura
+- Steins;Gate - Kurisu Makise
+- Touhou - Koishi Komeiji
+- Touhou - Remilia Scarlet
+- Touhou - Yuyuko Saigyouji
+- Umamusume - Manhattan Cafe
+- Umineko - Beatrice
+- Umineko - Bernkastel
+- Zenless Zone Zero - Yixuan
 
 ## Contributing
 Contributions are welcome! Feel free to suggest ideas, report bugs or improve the extension via pull requests.
