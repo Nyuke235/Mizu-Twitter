@@ -28,9 +28,9 @@
 </p>
 
 ## Installation
-You can get easily the extension on the *Chrome Web Store*: [Link](https://chromewebstore.google.com/detail/mizu-twitter/apebifiehlkceokaifbboakijidojhnp)
+You can get easily the extension on the **Chrome Web Store**: [Link](https://chromewebstore.google.com/detail/mizu-twitter/apebifiehlkceokaifbboakijidojhnp)
 <br>
-The extension is also compatible with Firefox
+and on **Firefox** : [Link](https://addons.mozilla.org/en-US/firefox/addon/mizu-twitter/)
 <br><br>
 __**Here's how you can download the extension manually:**__
 ### 1. Download the latest release on GitHub
