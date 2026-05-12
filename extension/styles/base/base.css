@@ -9,19 +9,33 @@ body.mizu .mizu-hidden {
     display: none !important;
 }
 
-/* DEFAULT MAIN TEXT (Twitter primary text class) */
-body.mizu .r-a023e6 {
+/* MAIN TEXT COLOR (rgba(231,233,234) in dark mode) */
+body.mizu .r-1nao33i {
     color: var(--color-text-main, #ffffff) !important;
 }
 
-/* REACTIONS TEXT */
-body.mizu .r-n6v787 {
+/* MUTED / SECONDARY TEXT (rgba(83,100,113) — timestamps, counts) */
+body.mizu .r-14j79pv {
     color: var(--color-text-muted, #8899a6) !important;
 }
 
-/* SELECTED MENU ITEMS */
-body.mizu .r-1nao33i {
-    color: var(--color-accent, #1d9bf0) !important;
+/* TAB TEXT — active and inactive (Twitter uses inline styles here) */
+body.mizu [role="tab"][aria-selected="true"] div[dir] {
+    color: var(--color-text-main, #ffffff) !important;
+}
+
+body.mizu [role="tab"][aria-selected="false"] div[dir] {
+    color: var(--color-text-muted, #8899a6) !important;
+}
+
+/* ACTIVE TAB INDICATOR — home tabs use an empty div with background-color */
+body.mizu [role="tab"][aria-selected="true"] div[dir] > div:empty {
+    background-color: var(--color-accent, #1d9bf0) !important;
+}
+
+/* ACTIVE TAB INDICATOR — profile/search tabs use a span with border-bottom */
+body.mizu [role="tab"][aria-selected="true"] div[dir] > div > span {
+    border-bottom-color: var(--color-accent, #1d9bf0) !important;
 }
 
 /* LINKS */
@@ -50,7 +64,6 @@ body.mizu .public-DraftEditorPlaceholder-root {
 /* ICONS */
 body.mizu svg {
     color: var(--color-icon, currentColor) !important;
-    filter: drop-shadow(0 0 1px var(--color-glow, transparent));
     transition: color 0.25s ease, filter 0.25s ease;
 }
 
@@ -58,8 +71,43 @@ body.mizu svg:hover {
     filter: drop-shadow(0 0 6px var(--color-glow, rgba(255,255,255,0.3)));
 }
 
+/* COMPOSE TOOLBAR BUTTONS — override mizu-btn gradient, keep them transparent */
+body.mizu [data-testid="toolBar"] .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    transform: none !important;
+}
+
+body.mizu [data-testid="toolBar"] .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21:hover {
+    background: transparent !important;
+    box-shadow: none !important;
+    transform: none !important;
+}
+
+body.mizu [data-testid="toolBar"] .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 div[dir] {
+    color: var(--color-icon, currentColor) !important;
+}
+
+/* COMPOSE TOOLBAR ICONS — use theme icon color, no glow */
+body.mizu [data-testid="toolBar"] svg {
+    color: var(--color-icon, currentColor) !important;
+    filter: none !important;
+}
+
+body.mizu [data-testid="toolBar"] svg:hover {
+    filter: none !important;
+}
+
+/* COMPOSE TOOLBAR UNDERLINE — hide the always-visible border-bottom span */
+body.mizu [data-testid="toolBar"] div[dir] > div > span {
+    border-bottom: none !important;
+}
+
 /* BUTTONS (Post/Edit etc.) */
 body.mizu .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
+    color: #ffffff !important;
+
     background: linear-gradient(
         145deg,
         var(--color-surface-1, #1e2732),
@@ -78,6 +126,11 @@ body.mizu .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
         background 0.25s ease,
         box-shadow 0.25s ease,
         transform 0.15s ease;
+}
+
+/* Force white on the inner div[dir] which has a dark inline color set by Twitter */
+body.mizu .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 div[dir] {
+    color: #ffffff !important;
 }
 
 body.mizu .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21:hover {
@@ -107,10 +160,21 @@ body.mizu main {
 }
 
 
-/* SURFACE PANELS */
+/* SURFACE PANELS — solid black panels */
 body.mizu .r-kemksi {
     background-color: var(--color-surface-bg, rgba(0,0,0,0.4)) !important;
     backdrop-filter: blur(var(--surface-blur, 2px));
+}
+
+/* WHITE SURFACES (inputs, cards, dropdowns) */
+body.mizu .r-14lw9ot {
+    background-color: var(--color-surface-bg, rgba(0,0,0,0.4)) !important;
+    backdrop-filter: blur(var(--surface-blur, 2px));
+}
+
+/* DARK OVERLAY (modals, drawers) */
+body.mizu .r-17c3jg3 {
+    background-color: rgba(0, 0, 0, 0.7) !important;
 }
 
 

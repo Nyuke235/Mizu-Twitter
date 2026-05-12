@@ -1,22 +1,120 @@
 body.th_matrix {
-    --font-main: "IBM Plex Mono", "JetBrains Mono", "Source Code Pro", monospace;
-    --color-text-main: #8aff8a;
-    --color-text-muted: #6fbf6f;
-    --color-tweet-text: #e6ffe6;
-    --color-placeholder: #4a8a4a;
-    --color-link: #f9ff9e;
-    --color-link-hover: #feffca;
-    --color-accent: #6dff6d;
-    --color-glow: transparent;
-    --color-icon: #7fff7f;
-    --color-surface-1: #000000;
-    --color-surface-2: #000000;
-    --color-surface-3: #000000;
-    --color-surface-1-hover: #040804;
-    --color-surface-2-hover: #040804;
-    --color-surface-3-hover: #040804;
-    --color-surface-bg: #000000;
+    --font-main: "IBM Plex Mono", "Courier New", monospace;
+
+    --color-text-main:   #00ff41;
+    --color-text-muted:  #008f11;
+    --color-tweet-text:  #ffffff;
+    --color-placeholder: #003b00;
+
+    --color-link:        #39ff14;
+    --color-link-hover:  #7dff7d;
+    --color-accent:      #00ff41;
+    --color-glow:        rgba(0, 255, 65, 0.75);
+    --color-icon:        #00cc33;
+
+    --color-surface-1:       #000000;
+    --color-surface-2:       #010a01;
+    --color-surface-3:       #010a01;
+    --color-surface-1-hover: #001a00;
+    --color-surface-2-hover: #002200;
+    --color-surface-3-hover: #002200;
+    --color-surface-bg:      rgba(0, 6, 0, 0.97);
+
     --overlay-opacity: 0;
-    --surface-blur: 0;
-    --radius-btn: 0px;
+    --surface-blur:    0px;
+    --radius-btn:      0px;
+}
+
+/* ── SCANLINES ──────────────────────────────────────────────────── */
+body.th_matrix::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.10) 0px,
+        rgba(0, 0, 0, 0.10) 1px,
+        transparent 1px,
+        transparent 3px
+    );
+    pointer-events: none;
+    z-index: 99999;
+}
+
+/* ── GLOWING TEXT ───────────────────────────────────────────────── */
+body.th_matrix .r-1nao33i,
+body.th_matrix [role="tab"] div[dir],
+body.th_matrix nav span {
+    text-shadow: 0 0 8px rgba(0, 255, 65, 0.7) !important;
+}
+
+body.th_matrix [data-testid="tweetText"],
+body.th_matrix [data-testid="tweetText"] span {
+    text-shadow: none !important;
+}
+
+/* ── DIVIDERS ───────────────────────────────────────────────────── */
+body.th_matrix .r-j5o65s {
+    border-bottom-color: #002200 !important;
+}
+
+/* ── TWEET ARTICLES ─────────────────────────────────────────────── */
+body.th_matrix article[data-testid="tweet"] {
+    border-bottom: 1px solid #001a00 !important;
+    border-left: 2px solid #004400 !important;
+    transition: border-left-color 0.2s ease, background-color 0.2s ease;
+}
+
+body.th_matrix article[data-testid="tweet"]:hover {
+    border-left-color: #00ff41 !important;
+    background-color: rgba(0, 20, 0, 0.4) !important;
+}
+
+/* ── BUTTONS ────────────────────────────────────────────────────── */
+body.th_matrix .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
+    background: #000000 !important;
+    border: 1px solid #00ff41 !important;
+    box-shadow:
+        0 0 8px rgba(0, 255, 65, 0.35),
+        inset 0 0 6px rgba(0, 255, 65, 0.08) !important;
+    transform: none !important;
+}
+
+body.th_matrix .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 div[dir] {
+    color: #00ff41 !important;
+    text-shadow: 0 0 8px rgba(0, 255, 65, 0.9) !important;
+}
+
+body.th_matrix .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21:hover {
+    background: #001a00 !important;
+    border-color: #7dff7d !important;
+    box-shadow:
+        0 0 16px rgba(0, 255, 65, 0.6),
+        inset 0 0 10px rgba(0, 255, 65, 0.12) !important;
+    transform: none !important;
+}
+
+/* ── COMPOSE CURSOR & SELECTION ─────────────────────────────────── */
+body.th_matrix [contenteditable="true"] {
+    caret-color: #00ff41 !important;
+}
+
+body.th_matrix ::selection {
+    background: rgba(0, 255, 65, 0.25) !important;
+    color: #00ff41 !important;
+}
+
+/* ── SCROLLBAR ──────────────────────────────────────────────────── */
+body.th_matrix ::-webkit-scrollbar {
+    width: 4px;
+    background: #000000;
+}
+
+body.th_matrix ::-webkit-scrollbar-thumb {
+    background: #00aa22;
+    box-shadow: 0 0 6px rgba(0, 255, 65, 0.6);
+}
+
+body.th_matrix ::-webkit-scrollbar-thumb:hover {
+    background: #00ff41;
 }

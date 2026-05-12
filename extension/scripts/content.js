@@ -5,6 +5,8 @@ let POLITICAL_WORDS_LOADED = false;
 initializeSettings();
 
 async function initializeSettings() {
+    chrome.runtime.sendMessage({ from: "content", subject: "showPageAction" });
+
     try {
         await loadPoliticalWords();
 
@@ -135,7 +137,8 @@ function removeForYouTab() {
         .find(tab => tab.textContent.trim() === "For you");
 
     if (forYouTab) {
-        forYouTab.remove();
+        const wrapper = forYouTab.closest('[role="presentation"]') ?? forYouTab;
+        wrapper.remove();
     }
 }
 

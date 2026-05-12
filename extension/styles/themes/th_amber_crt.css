@@ -1,0 +1,115 @@
+body.th_amber_crt {
+    --font-main: "IBM Plex Mono", "Courier New", monospace;
+
+    --color-text-main:   #ffb000;
+    --color-text-muted:  #8a5c00;
+    --color-tweet-text:  #ffb000;
+    --color-placeholder: #4a3000;
+
+    --color-link:        #ffd060;
+    --color-link-hover:  #ffe899;
+    --color-accent:      #ffc400;
+    --color-glow:        rgba(255, 176, 0, 0.75);
+    --color-icon:        #cc8800;
+
+    --color-surface-1:       #000000;
+    --color-surface-2:       #0a0500;
+    --color-surface-3:       #0f0800;
+    --color-surface-1-hover: #1a0e00;
+    --color-surface-2-hover: #221200;
+    --color-surface-3-hover: #2a1800;
+    --color-surface-bg:      rgba(6, 3, 0, 0.97);
+
+    --overlay-opacity: 0;
+    --surface-blur:    0px;
+    --radius-btn:      0px;
+}
+
+/* ── SCANLINES ──────────────────────────────────────────────────── */
+body.th_amber_crt::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.10) 0px,
+        rgba(0, 0, 0, 0.10) 1px,
+        transparent 1px,
+        transparent 3px
+    );
+    pointer-events: none;
+    z-index: 99999;
+}
+
+/* ── GLOWING TEXT ───────────────────────────────────────────────── */
+body.th_amber_crt .r-1nao33i,
+body.th_amber_crt [data-testid="tweetText"],
+body.th_amber_crt [data-testid="tweetText"] span,
+body.th_amber_crt [role="tab"] div[dir],
+body.th_amber_crt nav span {
+    text-shadow: 0 0 8px rgba(255, 176, 0, 0.7) !important;
+}
+
+/* ── DIVIDERS ───────────────────────────────────────────────────── */
+body.th_amber_crt .r-j5o65s {
+    border-bottom-color: #2a1800 !important;
+}
+
+/* ── TWEET ARTICLES ─────────────────────────────────────────────── */
+body.th_amber_crt article[data-testid="tweet"] {
+    border-bottom: 1px solid #1a0e00 !important;
+    border-left: 2px solid #4a2800 !important;
+    transition: border-left-color 0.2s ease, background-color 0.2s ease;
+}
+
+body.th_amber_crt article[data-testid="tweet"]:hover {
+    border-left-color: #ffb000 !important;
+    background-color: rgba(40, 20, 0, 0.4) !important;
+}
+
+/* ── BUTTONS ────────────────────────────────────────────────────── */
+body.th_amber_crt .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
+    background: #000000 !important;
+    border: 1px solid #ffb000 !important;
+    box-shadow:
+        0 0 8px rgba(255, 176, 0, 0.35),
+        inset 0 0 6px rgba(255, 176, 0, 0.08) !important;
+}
+
+body.th_amber_crt .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 div[dir] {
+    color: #ffb000 !important;
+    text-shadow: 0 0 8px rgba(255, 176, 0, 0.9) !important;
+}
+
+body.th_amber_crt .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21:hover {
+    background: #1a0e00 !important;
+    border-color: #ffd060 !important;
+    box-shadow:
+        0 0 16px rgba(255, 176, 0, 0.6),
+        inset 0 0 10px rgba(255, 176, 0, 0.12) !important;
+}
+
+/* ── COMPOSE ────────────────────────────────────────────────────── */
+body.th_amber_crt [contenteditable="true"] {
+    caret-color: #ffb000 !important;
+}
+
+body.th_amber_crt ::selection {
+    background: rgba(255, 176, 0, 0.25) !important;
+    color: #ffb000 !important;
+}
+
+/* ── SCROLLBAR ──────────────────────────────────────────────────── */
+body.th_amber_crt ::-webkit-scrollbar {
+    width: 4px;
+    background: #000000;
+}
+
+body.th_amber_crt ::-webkit-scrollbar-thumb {
+    background: #8a5c00;
+    box-shadow: 0 0 6px rgba(255, 176, 0, 0.6);
+}
+
+body.th_amber_crt ::-webkit-scrollbar-thumb:hover {
+    background: #ffb000;
+}
