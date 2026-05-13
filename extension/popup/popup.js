@@ -7,7 +7,7 @@ const SETTING_LABELS = {
     hideBusiness:      "Hide Business",
     hideExplore:       "Hide Explore",
     hideCreatorStudio: "Hide Creator Studio",
-    hideForYouPage:    "Hide ‘For You’ (show Following only)",
+    hideForYouPage:    "Hide \"For You\" (show Following only)",
     hideViewCount:     "Hide View Count",
     hideReactionCount: "Hide Reaction Count",
     filterPolitics:    "Filter Political Content",

@@ -74,10 +74,7 @@ function applySettings(settings) {
     applyBackground(theme);
 
     enhanceDynamicUI();
-
-    if (settings.hideForYouPage) {
-        removeForYouTab();
-    }
+    applyForYouTab(settings.hideForYouPage);
 }
 
 function ensureBackgroundOverlay() {
@@ -129,17 +126,17 @@ function replaceHomeLogo() {
     homeLink.prepend(img);
 }
 
-function removeForYouTab() {
+function applyForYouTab(hide) {
     const tabList = document.querySelector('[data-testid="ScrollSnap-List"]');
     if (!tabList) return;
 
     const forYouTab = [...tabList.querySelectorAll('[role="tab"]')]
         .find(tab => tab.textContent.trim() === "For you");
 
-    if (forYouTab) {
-        const wrapper = forYouTab.closest('[role="presentation"]') ?? forYouTab;
-        wrapper.remove();
-    }
+    if (!forYouTab) return;
+
+    const wrapper = forYouTab.closest('[role="presentation"]') ?? forYouTab;
+    wrapper.classList.toggle("mizu-hidden", hide);
 }
 
 async function loadPoliticalWords() {
@@ -189,7 +186,7 @@ function setupObserver() {
         requestAnimationFrame(() => {
             enhanceDynamicUI();
             filterPoliticalTweets();
-            if (LAST_SETTINGS.hideForYouPage) removeForYouTab();
+            applyForYouTab(LAST_SETTINGS.hideForYouPage);
             scheduled = false;
         });
     });
