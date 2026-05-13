@@ -9,17 +9,17 @@ body.mizu .mizu-hidden {
     display: none !important;
 }
 
-/* MAIN TEXT COLOR (rgba(231,233,234) in dark mode) */
+/* MAIN TEXT COLOR */
 body.mizu .r-1nao33i {
     color: var(--color-text-main, #ffffff) !important;
 }
 
-/* MUTED / SECONDARY TEXT (rgba(83,100,113) — timestamps, counts) */
+/* MUTED / SECONDARY TEXT */
 body.mizu .r-14j79pv {
     color: var(--color-text-muted, #8899a6) !important;
 }
 
-/* TAB TEXT — active and inactive (Twitter uses inline styles here) */
+/* TAB TEXT */
 body.mizu [role="tab"][aria-selected="true"] div[dir] {
     color: var(--color-text-main, #ffffff) !important;
 }
@@ -28,12 +28,12 @@ body.mizu [role="tab"][aria-selected="false"] div[dir] {
     color: var(--color-text-muted, #8899a6) !important;
 }
 
-/* ACTIVE TAB INDICATOR — home tabs use an empty div with background-color */
+/* ACTIVE TAB INDICATOR */
 body.mizu [role="tab"][aria-selected="true"] div[dir] > div:empty {
     background-color: var(--color-accent, #1d9bf0) !important;
 }
 
-/* ACTIVE TAB INDICATOR — profile/search tabs use a span with border-bottom */
+/* ACTIVE TAB INDICATOR */
 body.mizu [role="tab"][aria-selected="true"] div[dir] > div > span {
     border-bottom-color: var(--color-accent, #1d9bf0) !important;
 }
@@ -71,7 +71,7 @@ body.mizu svg:hover {
     filter: drop-shadow(0 0 6px var(--color-glow, rgba(255,255,255,0.3)));
 }
 
-/* COMPOSE TOOLBAR BUTTONS — override mizu-btn gradient, keep them transparent */
+/* COMPOSE TOOLBAR BUTTONS */
 body.mizu [data-testid="toolBar"] .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
     background: transparent !important;
     border: none !important;
@@ -89,7 +89,7 @@ body.mizu [data-testid="toolBar"] .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 div[
     color: var(--color-icon, currentColor) !important;
 }
 
-/* COMPOSE TOOLBAR ICONS — use theme icon color, no glow */
+/* COMPOSE TOOLBAR ICONS */
 body.mizu [data-testid="toolBar"] svg {
     color: var(--color-icon, currentColor) !important;
     filter: none !important;
@@ -99,7 +99,7 @@ body.mizu [data-testid="toolBar"] svg:hover {
     filter: none !important;
 }
 
-/* COMPOSE TOOLBAR UNDERLINE — hide the always-visible border-bottom span */
+/* COMPOSE TOOLBAR UNDERLINE */
 body.mizu [data-testid="toolBar"] div[dir] > div > span {
     border-bottom: none !important;
 }
@@ -160,7 +160,7 @@ body.mizu main {
 }
 
 
-/* SURFACE PANELS — solid black panels */
+/* SURFACE PANELS */
 body.mizu .r-kemksi {
     background-color: var(--color-surface-bg, rgba(0,0,0,0.4)) !important;
     backdrop-filter: blur(var(--surface-blur, 2px));

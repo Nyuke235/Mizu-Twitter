@@ -1,83 +1,89 @@
 # MIZU TWITTER
-**Mizu Twitter** is a browser extension designed for anime fans and anyone looking for a cleaner, more enjoyable Twitter experience. It enhances Twitter with anime themes and customization options, hides unnecessary or distracting interface elements, and helps reduce exposure to algorithmically amplified political content. **Mizu Twitter** aims to bring a bit of that old internet spirit back, putting you in control so you can enjoy Twitter the way it was meant to be-fun, personal, and stress-free.
 
-## Key Features
-- **Theme Customization**: Lets you switch between cozy anime-inspired themes.
-- **Distraction-Free Interface**: Optionally hides sidebars, communities, Grok/AI suggestions, premium features, and other clutter.
-- **Political Content Filtering**: Automatically hides tweets containing political words, phrases, or figures.
-- **Simple Settings**: Every feature can be enabled or disabled via the extension popup.
-- **Persistent & Lightweight**: Saves settings locally and runs efficiently without slowing down Twitter/X.
+**Mizu Twitter** is a browser extension for anime fans and anyone who wants a cleaner Twitter experience. It brings anime-inspired themes, hides distracting UI clutter, and reduces exposure to algorithmically amplified political content, putting you back in control of your feed.
+
+## Features
+
+- **Anime Themes**: Switch between 20+ hand-crafted themes, each with a unique color palette, background art, and visual style.
+- **Distraction-Free UI**: Optionally hide sidebars, Communities, Grok/AI suggestions, Premium upsells, trending topics, and other noise.
+- **Political Content Filter**: Automatically hides tweets containing political keywords, phrases, or public figures.
+- **Simple Toggles**: Every feature is independently switchable from the extension popup.
+- **Lightweight & Persistent**: Settings are saved locally via browser storage.
 
 ## Theme Examples
+
 <p align="center">
   <img src="images/ex-touhou.png">
   <br>
-  <em>Touhou - Remilia Scarlet theme</em>
+  <em>Touhou - Remilia Scarlet</em>
 </p>
 
 <p align="center">
   <img src="images/ex-umineko.png">
   <br>
-  <em>Umineko - Beatrice theme</em>
+  <em>Umineko - Beatrice</em>
 </p>
 
 <p align="center">
   <img src="images/ex-amagami.png">
   <br>
-  <em>Amagami - Kaoru Tanamachi theme</em>
+  <em>Amagami - Kaoru Tanamachi</em>
 </p>
 
 ## Installation
-You can get easily the extension on the **Chrome Web Store**: [Link](https://chromewebstore.google.com/detail/mizu-twitter/apebifiehlkceokaifbboakijidojhnp)
-<br>
-and on **Firefox** : [Link](https://addons.mozilla.org/en-US/firefox/addon/mizu-twitter/)
-<br><br>
-__**Here's how you can download the extension manually:**__
-### 1. Download the latest release on GitHub
-1. Download here: [Download ZIP](https://github.com/Nyuke235/Mizu-Twitter/releases/download/v0.3/MizuTwitter.zip)
-2. Extract the ZIP file on your computer.
 
-### 2. Open your Extensions Page
-1. Open your browser.
-2. Go to:
-```
-chrome://extensions/
-```
-or `brave://extensions/` depending on your browser
+The extension is available on the **Chrome Web Store** and on **Firefox Add-ons**:
 
-3. Toggle the Developer mode switch in the top-right corner.
+| Browser | Link |
+|---|---|
+| Chrome / Brave / Edge | [Chrome Web Store](https://chromewebstore.google.com/detail/mizu-twitter/apebifiehlkceokaifbboakijidojhnp) |
+| Firefox | [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/mizu-twitter/) |
 
-### 3. Load the Unpacked Extension
-1. Click "Load unpacked".
-2. Navigate to the `MizuTwitter/` folder (the folder containing manifest.json) and select it.
-3. The extension should appear in the toolbar.
+### Manual Installation
 
-### 4. Test the Extension
-1. Visit Twitter/X and open the extension popup.
-2. Toggle features like Filter Politics or Themes to make sure they work.
+1. Download the [latest release ZIP](https://github.com/Nyuke235/Mizu-Twitter/releases/latest) and extract it.
+2. Open your browser's extensions page:
+   - Chrome : `chrome://extensions/`
+   - Brave : `brave://extensions/`
+   - Edge: `edge://extensions/`
+3. Enable **Developer mode** (top-right toggle).
+4. Click **Load unpacked** and select the extracted `MizuTwitter/` folder.
+5. The Mizu icon will appear in your toolbar. Visit Twitter/X to try it out.
 
 ## Available Themes
-- Default
-- Matrix
-- Amagami - Tanamachi Kaoru
-- Blue Archive - Rio
-- Danganronpa - Celestia Ludenberg
-- Date A Live - Tokisaki Kurumi
-- Fate - Jalter
-- Vocaloid - Hatsune Miku
-- Higurashi - Rena
-- Madoka Magica - Homura
-- Steins;Gate - Kurisu Makise
-- Touhou - Koishi Komeiji
-- Touhou - Remilia Scarlet
-- Touhou - Yuyuko Saigyouji
-- Umamusume - Manhattan Cafe
-- Umineko - Beatrice
-- Umineko - Bernkastel
-- Zenless Zone Zero - Yixuan
+
+**Solid color themes**
+| Theme | Style |
+|---|---|
+| Default Twitter | Matches Twitter's default dark look |
+| Matrix | Green-on-black terminal with scanlines |
+| Amber CRT | Warm amber terminal with scanlines |
+| Deep Sea | Dark ocean blues with a bioluminescent glow |
+
+**Anime / character themes**
+| Theme | Art by |
+|---|---|
+| Amagami - Kaoru Tanamachi | Char (2V 26) |
+| Blue Archive - Tsukatsuki Rio | ZOMSAUCE |
+| Date A Live - Tokisaki Kurumi | mmrailgun |
+| Fate - Jeanne d'Arc Alter | Bison Cangshu |
+| Hatsune Miku | Popuru |
+| Higurashi - Rena | - |
+| Madoka Magica - Homura | Polychromatic |
+| Steins;Gate - Kurisu Makise | Pat86 |
+| Touhou - Koishi Komeiji | eps3rd |
+| Touhou - Sakuya Izayoi | Shideoukami |
+| Touhou - Remilia Scarlet | MISSILE228 |
+| Touhou - Yuyuko Saigyouji | Kitairoha |
+| Umamusume - Manhattan Cafe | Flippy (Cripine111) |
+| Umineko - Beatrice | Pat86 |
+| Umineko - Bernkastel | Mushi024 |
+| Zenless Zone Zero - Yi Xuan | Daymera |
 
 ## Contributing
-Contributions are welcome! Feel free to suggest ideas, report bugs or improve the extension via pull requests.
+
+Contributions are welcome — bug reports, feature suggestions, new themes, or pull requests. Feel free to open an issue or PR on GitHub.
 
 ## License
+
 MIT License

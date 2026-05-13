@@ -1,3 +1,18 @@
+const SETTING_LABELS = {
+    hideSidebar:       "Hide Sidebar",
+    hideFooter:        "Hide Footer",
+    hideGrok:          "Hide Grok / AI",
+    hidePremium:       "Hide Premium Upsells",
+    hideCommunities:   "Hide Communities",
+    hideBusiness:      "Hide Business",
+    hideExplore:       "Hide Explore",
+    hideCreatorStudio: "Hide Creator Studio",
+    hideForYouPage:    "Hide ‘For You’ (show Following only)",
+    hideViewCount:     "Hide View Count",
+    hideReactionCount: "Hide Reaction Count",
+    filterPolitics:    "Filter Political Content",
+};
+
 async function initPopup() {
     const settings = await loadSettings();
     const container = document.getElementById("settings");
@@ -12,7 +27,7 @@ async function initPopup() {
         checkbox.dataset.key = key;
 
         const label = document.createElement("label");
-        label.textContent = key;
+        label.textContent = SETTING_LABELS[key] ?? key;
 
         row.append(checkbox, label);
         container.appendChild(row);
@@ -51,7 +66,7 @@ async function initPopup() {
 function updateThemeArtistFromSelect() {
     const select = document.getElementById("theme-select");
     const artistBox = document.getElementById("theme-artist");
-const artistName = document.getElementById("artist-name");
+    const artistName = document.getElementById("artist-name");
 
     const option = select.options[select.selectedIndex];
     const artist = option.dataset.artist;

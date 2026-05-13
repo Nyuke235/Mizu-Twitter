@@ -189,6 +189,7 @@ function setupObserver() {
         requestAnimationFrame(() => {
             enhanceDynamicUI();
             filterPoliticalTweets();
+            if (LAST_SETTINGS.hideForYouPage) removeForYouTab();
             scheduled = false;
         });
     });
