@@ -78,6 +78,31 @@ select:focus {
   font-weight: 500;
 }
 
+.hidden {
+  display: none !important;
+}
+
+#custom-theme-panel {
+  margin-top: 12px;
+}
+
+#open-custom-editor {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 12px;
+  border-radius: 6px;
+  border: 1px solid #555;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#open-custom-editor:hover {
+  border-color: #4fc3f7;
+  color: #4fc3f7;
+}
+
 .theme-notice {
   margin-top: 16px;
   font-size: 10px;

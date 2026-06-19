@@ -5,6 +5,7 @@
 ## Features
 
 - **Anime Themes**: Switch between 20+ hand-crafted themes, each with a unique color palette, background art, and visual style.
+- **Custom Theme**: Build your own look — pick the color of every element (text, links, buttons, panels, glow, etc.) and upload your own background image.
 - **Distraction-Free UI**: Optionally hide sidebars, Communities, Grok/AI suggestions, Premium upsells, trending topics, and other noise.
 - **Simple Toggles**: Every feature is independently switchable from the extension popup.
 - **Lightweight & Persistent**: Settings are saved locally via browser storage.
@@ -66,14 +67,14 @@ The extension is available on the **Chrome Web Store** and on **Firefox Add-ons*
 | Date A Live - Tokisaki Kurumi | mmrailgun |
 | Hatsune Miku | Popuru |
 | Higurashi - Rena | - |
-| Madoka Magica - Homura | Polychromatic |
+| Madoka Magica - Homura | Takano Suzu |
 | Monogatari - Nadeko Sengoku | Tetsuado |
 | Monogatari - Hitagi Senjougahara | - |
 | Monogatari - Shinobu Oshino | - |
 | Steins;Gate - Kurisu Makise | Pat86 |
 | Touhou - Koishi Komeiji | eps3rd |
 | Touhou - Sakuya Izayoi | Shideoukami |
-| Touhou - Remilia Scarlet | MISSILE228 |
+| Touhou - Remilia Scarlet | - |
 | Umineko - Beatrice | Pat86 |
 | Umineko - Bernkastel | Mushi024 |
 

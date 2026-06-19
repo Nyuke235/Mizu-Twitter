@@ -1,0 +1,140 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 24px 20px 48px;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+h2 {
+  margin-top: 0;
+  color: #4fc3f7;
+}
+
+.hint {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #aaaaaa;
+}
+
+.hint strong {
+  color: #ffffff;
+}
+
+.custom-bg-row {
+  margin: 18px 0;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.custom-bg-row > label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #cfd8dc;
+}
+
+.bg-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#custom-bg-file {
+  flex: 1;
+  min-width: 0;
+  font-size: 12px;
+  color: #b0bec5;
+}
+
+#bg-preview {
+  margin-top: 12px;
+  height: 120px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background-color: #1a1a1a;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#bg-preview.empty::after {
+  content: "No background";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 12px;
+  color: #666;
+}
+
+#custom-theme-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.custom-field {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 10px;
+}
+
+.custom-field label {
+  font-size: 13px;
+  color: #cfd8dc;
+}
+
+.custom-field input[type="color"] {
+  width: 40px;
+  height: 24px;
+  padding: 0;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background: none;
+  cursor: pointer;
+}
+
+.custom-field input[type="range"] {
+  width: 120px;
+}
+
+.custom-field input[type="text"] {
+  width: 200px;
+  padding: 4px 6px;
+  font-size: 12px;
+  border-radius: 4px;
+  border: 1px solid #555;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+.custom-field-value {
+  min-width: 32px;
+  font-size: 12px;
+  color: #4fc3f7;
+  text-align: right;
+}
+
+button {
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 6px;
+  border: 1px solid #555;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  border-color: #4fc3f7;
+  color: #4fc3f7;
+}
+
+#custom-reset {
+  margin-top: 20px;
+  width: 100%;
+}

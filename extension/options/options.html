@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="options.css">
+</head>
+
+<body>
+    <script src="../scripts/defaultsettings.js"></script>
+    <script src="../scripts/settings.js"></script>
+    <script src="options.js"></script>
+
+    <h2>Custom Theme Editor</h2>
+    <p class="hint">
+        Changes apply live to open Twitter/X tabs. Select the
+        <strong>Custom</strong> theme from the extension popup to use these.
+    </p>
+
+    <div class="custom-bg-row">
+        <label for="custom-bg-file">Background image</label>
+        <div class="bg-controls">
+            <input type="file" id="custom-bg-file" accept="image/*">
+            <button type="button" id="custom-bg-clear">Clear</button>
+        </div>
+        <div id="bg-preview"></div>
+    </div>
+
+    <div id="custom-theme-fields"></div>
+
+    <button type="button" id="custom-reset">Reset to defaults</button>
+</body>
+
+</html>

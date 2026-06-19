@@ -22,6 +22,7 @@
     <h3>Appearance</h3>
     <select id="theme-select">
         <option value="th_default_twitter">Default Twitter</option>
+        <option value="th_custom">CUSTOM (your colors and image)</option>
         <option value="th_matrix">Matrix</option>
         <option value="th_deep_sea">Deep Sea</option>
         <option value="th_amagami_tanamachikaoru" data-artist="Char (2V 26)">Amagami - Kaoru Tanamachi</option>
@@ -29,20 +30,24 @@
         <option value="th_datealive_tokisakikurumi" data-artist="mmrailgun">Date A Live - Tokisaki Kurumi</option>
         <option value="th_hatsunemiku" data-artist="Popuru">Hatsune Miku</option>
         <option value="th_higurashi_rena" data-artist="UNKNOWN">Higurashi - Rena</option>
-        <option value="th_madokamagica_homura" data-artist="Polychromatic">Madoka Magica - Homura</option>
+        <option value="th_madokamagica_homura" data-artist="Takano Suzu">Madoka Magica - Homura</option>
         <option value="th_nadeko" data-artist="Tetsuado">Monogatari - Nadeko</option>
         <option value="th_senjougahara" data-artist="UNKNOWN">Monogatari - Senjougahara</option>
         <option value="th_shinobu" data-artist="UNKNOWN">Monogatari - Shinobu</option>
         <option value="th_steinsgate" data-artist="Pat86">Steins;Gate - Kurisu</option>
         <option value="th_touhou_koishi" data-artist="eps3rd">Touhou - Koishi</option>
         <option value="th_touhou_sakuya" data-artist="Shideoukami">Touhou - Sakuya</option>
-        <option value="th_touhou_remiliascarlet" data-artist="MISSILE228">Touhou - Remilia Scarlet</option>
+        <option value="th_touhou_remiliascarlet" data-artist="UNKNOWN">Touhou - Remilia Scarlet</option>
         <option value="th_umineko_beatrice" data-artist="Pat86">Umineko - Beatrice</option>
         <option value="th_umineko_bernkastel" data-artist="Mushi024">Umineko - Bernkastel</option>
     </select>
 
     <div id="theme-artist">
         Art by <span id="artist-name"></span>
+    </div>
+
+    <div id="custom-theme-panel" class="hidden">
+        <button type="button" id="open-custom-editor">Customize colors &amp; background →</button>
     </div>
 
     <p class="theme-notice">

@@ -1,4 +1,3 @@
-/* CENTER FOLLOWING TAB WHEN FOR YOU IS HIDDEN */
 body.hideForYouPage [data-testid="ScrollSnap-List"] {
     justify-content: center !important;
 }

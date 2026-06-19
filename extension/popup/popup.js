@@ -36,30 +36,46 @@ async function initPopup() {
         const key = e.target.dataset.key;
         settings[key] = e.target.checked;
         await saveSettings(settings);
-
-        chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
-            chrome.tabs.sendMessage(tabs[0].id, {
-                type: "UPDATE_SETTINGS",
-                settings: { [key]: settings[key] }
-            });
-        });
+        pushToContent({ [key]: settings[key] });
     });
 
     const themeSelect = document.getElementById("theme-select");
     themeSelect.value = settings.theme;
     updateThemeArtistFromSelect();
+    updateCustomVisibility();
 
     themeSelect.addEventListener("change", async () => {
         settings.theme = themeSelect.value;
         await saveSettings(settings);
         updateThemeArtistFromSelect();
-        chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
-            chrome.tabs.sendMessage(tabs[0].id, {
-                type: "UPDATE_SETTINGS",
-                settings: { theme: settings.theme }
-            });
+        updateCustomVisibility();
+        pushToContent({ theme: settings.theme });
+    });
+
+    document.getElementById("open-custom-editor").addEventListener("click", () => {
+        chrome.windows.create({
+            url: chrome.runtime.getURL("options/options.html"),
+            type: "popup",
+            width: 640,
+            height: 760
         });
     });
+}
+
+function pushToContent(partial) {
+    chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
+        if (!tabs[0]) return;
+        chrome.tabs.sendMessage(tabs[0].id, {
+            type: "UPDATE_SETTINGS",
+            settings: partial
+        });
+    });
+}
+
+function updateCustomVisibility() {
+    const select = document.getElementById("theme-select");
+    const panel = document.getElementById("custom-theme-panel");
+    panel.classList.toggle("hidden", select.value !== "th_custom");
 }
 
 function updateThemeArtistFromSelect() {
@@ -75,8 +91,8 @@ function updateThemeArtistFromSelect() {
         return;
     }
 
-    artistName.textContent = artist;
     artistBox.style.display = "block";
+    artistName.textContent = artist;
 }
 
 document.addEventListener("DOMContentLoaded", initPopup);

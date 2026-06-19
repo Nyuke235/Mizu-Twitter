@@ -25,7 +25,6 @@ body.th_matrix {
     --radius-btn:      0px;
 }
 
-/* ── SCANLINES ──────────────────────────────────────────────────── */
 body.th_matrix::after {
     content: "";
     position: fixed;
@@ -41,7 +40,6 @@ body.th_matrix::after {
     z-index: 99999;
 }
 
-/* ── GLOWING TEXT ───────────────────────────────────────────────── */
 body.th_matrix .r-1nao33i,
 body.th_matrix [role="tab"] div[dir],
 body.th_matrix nav span {
@@ -53,12 +51,10 @@ body.th_matrix [data-testid="tweetText"] span {
     text-shadow: none !important;
 }
 
-/* ── DIVIDERS ───────────────────────────────────────────────────── */
 body.th_matrix .r-j5o65s {
     border-bottom-color: #002200 !important;
 }
 
-/* ── TWEET ARTICLES ─────────────────────────────────────────────── */
 body.th_matrix article[data-testid="tweet"] {
     border-bottom: 1px solid #001a00 !important;
     border-left: 2px solid #004400 !important;
@@ -70,7 +66,6 @@ body.th_matrix article[data-testid="tweet"]:hover {
     background-color: rgba(0, 20, 0, 0.4) !important;
 }
 
-/* ── BUTTONS ────────────────────────────────────────────────────── */
 body.th_matrix .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
     background: #000000 !important;
     border: 1px solid #00ff41 !important;
@@ -94,7 +89,6 @@ body.th_matrix .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21:hover {
     transform: none !important;
 }
 
-/* ── COMPOSE CURSOR & SELECTION ─────────────────────────────────── */
 body.th_matrix [contenteditable="true"] {
     caret-color: #00ff41 !important;
 }
@@ -104,7 +98,6 @@ body.th_matrix ::selection {
     color: #00ff41 !important;
 }
 
-/* ── SCROLLBAR ──────────────────────────────────────────────────── */
 body.th_matrix ::-webkit-scrollbar {
     width: 4px;
     background: #000000;

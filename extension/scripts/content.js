@@ -55,8 +55,8 @@ function applySettings(settings) {
     }
 
     Object.entries(settings).forEach(([key, enabled]) => {
-        if (key !== "theme") {
-            body.classList.toggle(key, !!enabled);
+        if (typeof enabled === "boolean") {
+            body.classList.toggle(key, enabled);
         }
     });
 
@@ -69,11 +69,29 @@ function applySettings(settings) {
     body.classList.add(theme);
     body.dataset.mizuTheme = theme;
 
+    if (theme === "th_custom") {
+        applyCustomTheme(settings);
+    } else {
+        clearCustomTheme();
+    }
+
     ensureBackgroundOverlay();
-    applyBackground(theme);
+    applyBackground(theme, settings);
 
     enhanceDynamicUI();
     applyForYouTab(settings.hideForYouPage);
+}
+
+function applyCustomTheme(settings) {
+    const vars = buildCustomThemeVars(settings.customTheme);
+    Object.entries(vars).forEach(([key, value]) => {
+        document.body.style.setProperty(key, value);
+    });
+}
+
+function clearCustomTheme() {
+    const vars = buildCustomThemeVars({});
+    Object.keys(vars).forEach((key) => document.body.style.removeProperty(key));
 }
 
 function ensureBackgroundOverlay() {
@@ -84,7 +102,16 @@ function ensureBackgroundOverlay() {
     document.body.prepend(overlay);
 }
 
-function applyBackground(theme) {
+function applyBackground(theme, settings) {
+    if (theme === "th_custom") {
+        const dataUrl = settings && settings.customBackground;
+        document.documentElement.style.setProperty(
+            "--mizu-bg-url",
+            dataUrl ? `url("${dataUrl}")` : "none"
+        );
+        return;
+    }
+
     if (!isExtensionContextValid()) return;
 
     const imagePath = `images/backgrounds/${theme}.png`;
@@ -176,4 +203,16 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
     }
 
     sendResponse({ success: true });
+});
+
+chrome.storage.onChanged.addListener((changes, area) => {
+    if (area !== "local") return;
+
+    const updated = {};
+    Object.keys(changes).forEach((key) => {
+        updated[key] = changes[key].newValue;
+    });
+
+    LAST_SETTINGS = { ...LAST_SETTINGS, ...updated };
+    applySettings(LAST_SETTINGS);
 });

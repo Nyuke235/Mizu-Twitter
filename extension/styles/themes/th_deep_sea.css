@@ -25,19 +25,16 @@ body.th_deep_sea {
     --radius-btn:      20px;
 }
 
-/* ── BIOLUMINESCENT TEXT GLOW ───────────────────────────────────── */
 body.th_deep_sea .r-1nao33i,
 body.th_deep_sea [data-testid="tweetText"],
 body.th_deep_sea [data-testid="tweetText"] span {
     text-shadow: 0 0 12px rgba(0, 229, 255, 0.25) !important;
 }
 
-/* ── DIVIDERS ───────────────────────────────────────────────────── */
 body.th_deep_sea .r-j5o65s {
     border-bottom-color: #001a2e !important;
 }
 
-/* ── TWEET ARTICLES ─────────────────────────────────────────────── */
 body.th_deep_sea article[data-testid="tweet"] {
     border-bottom: 1px solid #001525 !important;
     transition: background-color 0.25s ease;
@@ -47,7 +44,6 @@ body.th_deep_sea article[data-testid="tweet"]:hover {
     background-color: rgba(0, 35, 55, 0.6) !important;
 }
 
-/* ── BUTTONS ────────────────────────────────────────────────────── */
 body.th_deep_sea .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21 {
     background: linear-gradient(
         145deg,
@@ -72,7 +68,6 @@ body.th_deep_sea .css-175oi2r.r-sdzlij.r-1ny4l3l.r-1loqt21:hover {
         inset 0 0 12px rgba(0, 229, 255, 0.08) !important;
 }
 
-/* ── COMPOSE ────────────────────────────────────────────────────── */
 body.th_deep_sea [contenteditable="true"] {
     caret-color: #00e5ff !important;
 }
@@ -82,7 +77,6 @@ body.th_deep_sea ::selection {
     color: #a0e8ff !important;
 }
 
-/* ── SCROLLBAR ──────────────────────────────────────────────────── */
 body.th_deep_sea ::-webkit-scrollbar {
     width: 4px;
     background: #000d1a;
