@@ -56,28 +56,26 @@ The extension is available on the **Chrome Web Store** and on **Firefox Add-ons*
 |---|---|
 | Default Twitter | Matches Twitter's default dark look |
 | Matrix | Green-on-black terminal with scanlines |
-| Amber CRT | Warm amber terminal with scanlines |
 | Deep Sea | Dark ocean blues with a bioluminescent glow |
 
 **Anime / character themes**
 | Theme | Art by |
 |---|---|
 | Amagami - Kaoru Tanamachi | Char (2V 26) |
-| Blue Archive - Tsukatsuki Rio | ZOMSAUCE |
+| Chaos;Head | - |
 | Date A Live - Tokisaki Kurumi | mmrailgun |
-| Fate - Jeanne d'Arc Alter | Bison Cangshu |
 | Hatsune Miku | Popuru |
 | Higurashi - Rena | - |
 | Madoka Magica - Homura | Polychromatic |
+| Monogatari - Nadeko Sengoku | Tetsuado |
+| Monogatari - Hitagi Senjougahara | - |
+| Monogatari - Shinobu Oshino | - |
 | Steins;Gate - Kurisu Makise | Pat86 |
 | Touhou - Koishi Komeiji | eps3rd |
 | Touhou - Sakuya Izayoi | Shideoukami |
 | Touhou - Remilia Scarlet | MISSILE228 |
-| Touhou - Yuyuko Saigyouji | Kitairoha |
-| Umamusume - Manhattan Cafe | Flippy (Cripine111) |
 | Umineko - Beatrice | Pat86 |
 | Umineko - Bernkastel | Mushi024 |
-| Zenless Zone Zero - Yi Xuan | Daymera |
 
 ## Contributing
 

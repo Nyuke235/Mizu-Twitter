@@ -1,0 +1,36 @@
+body.th_nadeko {
+    --font-main: "Quicksand", "Segoe UI", "Helvetica Neue", sans-serif;
+    --color-text-main: #f6dde8;
+    --color-text-muted: #b08a9e;
+    --color-tweet-text: #fcecf3;
+    --color-placeholder: #7d5c6e;
+    --color-link: #ff9ec7;
+    --color-link-hover: #ffc2dc;
+    --color-accent: #ff8fbf;
+    --color-glow: rgba(255, 158, 199, 0.6);
+    --color-icon: #f3a6c6;
+    --color-icon-hover: #fff0f6;
+
+    --color-surface-1: #20131d;
+    --color-surface-2: #2d1a29;
+    --color-surface-3: #3b2335;
+    --color-surface-1-hover: #2c1a28;
+    --color-surface-2-hover: #3c2336;
+    --color-surface-3-hover: #4d2e45;
+
+    --btn-bg: linear-gradient(145deg, var(--color-surface-2), var(--color-surface-3));
+    --btn-bg-hover: linear-gradient(145deg, var(--color-surface-2-hover), var(--color-surface-3-hover));
+    --btn-color: #fff0f6;
+    --btn-radius: 20px;
+    --btn-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), inset 0 -1px 0 rgba(0, 0, 0, 0.4);
+    --btn-hover-shadow: 0 0 10px var(--color-glow), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+    --btn-font-weight: 600;
+    --btn-letter-spacing: 0.01em;
+    --btn-text-shadow: 0 0 4px rgba(255, 158, 199, 0.3);
+
+    --color-surface-bg: rgba(16, 8, 14, 0.55);
+    --feed-bg: rgba(26, 14, 23, 0.5);
+    --overlay-opacity: 0.4;
+    --surface-blur: 2px;
+    --radius-btn: 20px;
+}

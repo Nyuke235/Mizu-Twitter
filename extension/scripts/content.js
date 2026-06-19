@@ -2,6 +2,10 @@ let LAST_SETTINGS = { ...DEFAULT_SETTINGS };
 
 initializeSettings();
 
+function isExtensionContextValid() {
+    return !!(chrome.runtime && chrome.runtime.id);
+}
+
 async function initializeSettings() {
     chrome.runtime.sendMessage({ from: "content", subject: "showPageAction" });
 
@@ -81,6 +85,8 @@ function ensureBackgroundOverlay() {
 }
 
 function applyBackground(theme) {
+    if (!isExtensionContextValid()) return;
+
     const imagePath = `images/backgrounds/${theme}.png`;
     const url = chrome.runtime.getURL(imagePath);
 
@@ -108,6 +114,8 @@ function tagPrimaryButtons() {
 }
 
 function replaceHomeLogo() {
+    if (!isExtensionContextValid()) return;
+
     const homeLink = document.querySelector('header a[href="/home"]');
     if (!homeLink) return;
 
@@ -138,6 +146,11 @@ function setupObserver() {
     let scheduled = false;
 
     const observer = new MutationObserver(() => {
+        if (!isExtensionContextValid()) {
+            observer.disconnect();
+            return;
+        }
+
         if (scheduled) return;
 
         scheduled = true;

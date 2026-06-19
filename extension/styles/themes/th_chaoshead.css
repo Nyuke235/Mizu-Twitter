@@ -1,0 +1,36 @@
+body.th_chaoshead {
+    --font-main: "Rajdhani", "Segoe UI", "Helvetica Neue", sans-serif;
+    --color-text-main: #f0e1b0;
+    --color-text-muted: #9a8a5c;
+    --color-tweet-text: #f8eecb;
+    --color-placeholder: #6f6240;
+    --color-link: #ffb521;
+    --color-link-hover: #ffd66b;
+    --color-accent: #ffbf2e;
+    --color-glow: rgba(255, 181, 33, 0.65);
+    --color-icon: #e6b94d;
+    --color-icon-hover: #fff2c8;
+
+    --color-surface-1: #0a0805;
+    --color-surface-2: #14100a;
+    --color-surface-3: #1f1810;
+    --color-surface-1-hover: #15110a;
+    --color-surface-2-hover: #221a0e;
+    --color-surface-3-hover: #302410;
+
+    --btn-bg: linear-gradient(150deg, var(--color-surface-2), var(--color-surface-3));
+    --btn-bg-hover: linear-gradient(150deg, var(--color-surface-2-hover), var(--color-surface-3-hover));
+    --btn-color: #ffe6a0;
+    --btn-radius: 2px;
+    --btn-shadow: inset 0 0 0 1px rgba(255, 181, 33, 0.3), inset 0 -1px 0 rgba(0, 0, 0, 0.6);
+    --btn-hover-shadow: 0 0 12px var(--color-glow), inset 0 0 0 1px rgba(255, 214, 107, 0.55);
+    --btn-font-weight: 700;
+    --btn-letter-spacing: 0.06em;
+    --btn-text-shadow: 0 0 6px rgba(255, 181, 33, 0.45);
+
+    --color-surface-bg: rgba(4, 3, 1, 0.55);
+    --feed-bg: rgba(8, 6, 2, 0.5);
+    --overlay-opacity: 0.5;
+    --surface-blur: 2px;
+    --radius-btn: 2px;
+}

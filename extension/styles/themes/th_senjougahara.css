@@ -1,0 +1,36 @@
+body.th_senjougahara {
+    --font-main: "Cormorant Garamond", "Georgia", "Times New Roman", serif;
+    --color-text-main: #e3d3e6;
+    --color-text-muted: #9a8298;
+    --color-tweet-text: #f4ecf4;
+    --color-placeholder: #6f5a6e;
+    --color-link: #c77dbb;
+    --color-link-hover: #e2a6d8;
+    --color-accent: #b86fc4;
+    --color-glow: rgba(184, 111, 196, 0.55);
+    --color-icon: #b88bbf;
+    --color-icon-hover: #f4ecf4;
+
+    --color-surface-1: #1c1019;
+    --color-surface-2: #281622;
+    --color-surface-3: #361e2f;
+    --color-surface-1-hover: #2a1825;
+    --color-surface-2-hover: #3a2235;
+    --color-surface-3-hover: #4a2c44;
+
+    --btn-bg: linear-gradient(150deg, var(--color-surface-2), var(--color-surface-3));
+    --btn-bg-hover: linear-gradient(150deg, var(--color-surface-2-hover), var(--color-surface-3-hover));
+    --btn-color: #f4ecf4;
+    --btn-radius: 4px;
+    --btn-shadow: inset 0 0 0 1px rgba(184, 111, 196, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+    --btn-hover-shadow: 0 0 8px var(--color-glow), inset 0 0 0 1px rgba(226, 166, 216, 0.45);
+    --btn-font-weight: 600;
+    --btn-letter-spacing: 0.04em;
+    --btn-text-shadow: none;
+
+    --color-surface-bg: rgba(14, 7, 12, 0.55);
+    --feed-bg: rgba(22, 12, 20, 0.5);
+    --overlay-opacity: 0.42;
+    --surface-blur: 2px;
+    --radius-btn: 4px;
+}
