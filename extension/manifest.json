@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Mizu Twitter",
   "version": "0.4.1",
-  "description": "Adds anime themes, hides unnecessary UI elements, and reduces exposure to political content on Twitter/X.",
+  "description": "Adds anime themes and hides unnecessary UI elements on Twitter/X.",
 
   "browser_specific_settings": {
     "gecko": {
@@ -66,8 +66,7 @@
   "web_accessible_resources": [
     {
       "resources": [
-        "images/*",
-        "data/pol.json"
+        "images/*"
       ],
       "matches": [
         "*://twitter.com/*",

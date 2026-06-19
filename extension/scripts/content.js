@@ -1,6 +1,4 @@
 let LAST_SETTINGS = { ...DEFAULT_SETTINGS };
-let POLITICAL_KEYWORDS = [];
-let POLITICAL_WORDS_LOADED = false;
 
 initializeSettings();
 
@@ -8,14 +6,11 @@ async function initializeSettings() {
     chrome.runtime.sendMessage({ from: "content", subject: "showPageAction" });
 
     try {
-        await loadPoliticalWords();
-
         const keys = Object.keys(DEFAULT_SETTINGS);
         const data = await getStorageValues(keys);
         LAST_SETTINGS = { ...data };
 
         applySettings(LAST_SETTINGS);
-        filterPoliticalTweets();
     } catch (err) {
         console.warn("Mizu Twitter: Initialization failed:", err);
     }
@@ -139,42 +134,6 @@ function applyForYouTab(hide) {
     wrapper.classList.toggle("mizu-hidden", hide);
 }
 
-async function loadPoliticalWords() {
-    try {
-        const url = chrome.runtime.getURL("data/pol.json");
-        const response = await fetch(url);
-        const data = await response.json();
-
-        POLITICAL_KEYWORDS = data.words.map((w) => w.toLowerCase());
-        POLITICAL_WORDS_LOADED = true;
-    } catch (err) {
-        console.warn("Mizu Twitter: Failed to load political words", err);
-    }
-}
-
-function filterPoliticalTweets() {
-    if (!LAST_SETTINGS.filterPolitics) return;
-    if (!POLITICAL_WORDS_LOADED) return;
-
-    const tweets = document.querySelectorAll(
-        'article:not([data-mizu-filtered])'
-    );
-
-    tweets.forEach((tweet) => {
-        const text = tweet.innerText.toLowerCase();
-
-        const isPolitical = POLITICAL_KEYWORDS.some((word) =>
-            text.includes(word)
-        );
-
-        if (isPolitical) {
-            tweet.classList.add("mizu-hidden");
-        }
-
-        tweet.dataset.mizuFiltered = "true";
-    });
-}
-
 function setupObserver() {
     let scheduled = false;
 
@@ -185,7 +144,6 @@ function setupObserver() {
 
         requestAnimationFrame(() => {
             enhanceDynamicUI();
-            filterPoliticalTweets();
             applyForYouTab(LAST_SETTINGS.hideForYouPage);
             scheduled = false;
         });
@@ -202,7 +160,6 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
         LAST_SETTINGS = { ...LAST_SETTINGS, ...msg.settings };
 
         applySettings(LAST_SETTINGS);
-        filterPoliticalTweets();
     }
 
     sendResponse({ success: true });

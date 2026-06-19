@@ -11,7 +11,5 @@ const DEFAULT_SETTINGS = {
     hideViewCount: false,
     hideReactionCount: false,
 
-    filterPolitics: true,
-
     theme: "th_default_twitter"
 };

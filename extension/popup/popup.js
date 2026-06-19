@@ -10,7 +10,6 @@ const SETTING_LABELS = {
     hideForYouPage:    "Hide \"For You\" (show Following only)",
     hideViewCount:     "Hide View Count",
     hideReactionCount: "Hide Reaction Count",
-    filterPolitics:    "Filter Political Content",
 };
 
 async function initPopup() {

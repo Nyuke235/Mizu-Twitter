@@ -1,12 +1,11 @@
 # MIZU TWITTER
 
-**Mizu Twitter** is a browser extension for anime fans and anyone who wants a cleaner Twitter experience. It brings anime-inspired themes, hides distracting UI clutter, and reduces exposure to algorithmically amplified political content, putting you back in control of your feed.
+**Mizu Twitter** is a browser extension for anime fans and anyone who wants a cleaner Twitter experience. It brings anime-inspired themes and hides distracting UI clutter, putting you back in control of your feed.
 
 ## Features
 
 - **Anime Themes**: Switch between 20+ hand-crafted themes, each with a unique color palette, background art, and visual style.
 - **Distraction-Free UI**: Optionally hide sidebars, Communities, Grok/AI suggestions, Premium upsells, trending topics, and other noise.
-- **Political Content Filter**: Automatically hides tweets containing political keywords, phrases, or public figures.
 - **Simple Toggles**: Every feature is independently switchable from the extension popup.
 - **Lightweight & Persistent**: Settings are saved locally via browser storage.
 
