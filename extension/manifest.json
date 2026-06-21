@@ -6,7 +6,7 @@
 
   "browser_specific_settings": {
     "gecko": {
-      "id": "mizu-twitter@nyuke.com",
+      "id": "mizu-twitter@nyuke235.com",
       "data_collection_permissions": {
         "required": ["none"]
       }
@@ -24,7 +24,8 @@
   ],
 
   "background": {
-    "service_worker": "scripts/background.js"
+    "service_worker": "scripts/background.js",
+    "scripts": ["scripts/background.js"]
   },
 
   "content_scripts": [
